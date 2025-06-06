@@ -2,13 +2,42 @@ require("dotenv").config();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const pool = require("../db.js");
+const { useId, use } = require("react");
 
 const JWT_SECRET = process.env.JWT_SECRET;
 const EXPRIE_IN = process.env.JWT_EXPIRE_IN;
-const SALT_ROUND = parseInt(process.env.BCRYPT_SALT_ROUNDS);
+const SALT_ROUND = process.env.BCRYPT_SALT_ROUNDS;
 
-function generateToken(userId) {
-  return jwt.sign({ userId }, JWT_SECRET, { expiresIn: EXPRIE_IN });
+const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
+const REFRESH_TOKEN_EXPIRES_IN = parseInt(
+  process.env.REFRESH_TOKEN_EXPIRES_IN,
+  10
+);
+
+function generateAccessToken(userId) {
+  return jwt.sign({ userId, purpose: "access" }, JWT_SECRET, {
+    expiresIn: EXPRIE_IN,
+  });
+}
+
+async function generateRefreshToken(userId) {
+  const refreshToken = jwt.sign(
+    { useId, pupose: "refresh" },
+    REFRESH_TOKEN,
+
+    { expiresIn: REFRESH_TOKEN_EXPIRES_IN }
+  );
+
+  await pool.query(
+    `update users
+    set refresh_token = $1,
+    refresh_token_expires_at = NOW() + ( $2 * INTERVAL '1 second' )
+    where id = $3
+    `,
+    [REFRESH_TOKEN, REFRESH_TOKEN_EXPIRES_IN, userId]
+  );
+
+  return refreshToken;
 }
 
 async function signUp(req, res, next) {
@@ -34,17 +63,35 @@ async function signUp(req, res, next) {
     const hashPassword = await bcrypt.hash(password, SALT_ROUND);
 
     const result = await pool.query(
-      "insert into users (name,email,password) values ($1,$2,$3) returning id",
+      "insert into users (name,email,password) values ($1,$2,$3) returning id, email , created_at",
       [name, email, hashPassword]
     );
 
-    const newUserId = result.rows[0].id;
+    const newUser = result.rows[0];
 
-    const token = generateToken(newUserId);
+    const newUserId = newUser.id;
+
+    const accessToken = generateAccessToken(newUserId);
+
+    const refreshToken = await generateRefreshToken(newUserId);
 
     console.log(`New user created => ${newUserId} ${email}`);
 
-    res.status(201).json({ token, message: "Register successfully!" });
+    res.status(201).json({
+      success: true,
+      data: {
+        accessToken,
+        expires_in: parseInt(process.env.EXPRIE_IN),
+        id: newUserId,
+        name: newUser.name,
+        refreshToken,
+        refreshtokenExpiresAt: parseInt(
+          process.env.REFRESH_TOKEN_EXPIRES_IN,
+          10
+        ),
+        createAt: newUser.created_at,
+      },
+    });
   } catch (err) {
     next(err);
   }
@@ -61,7 +108,7 @@ async function signIn(req, res, next) {
     }
 
     const result = await pool.query(
-      "select id,password from users where email = $1",
+      "select id,name, email, password, created_at from users where email = $1",
       [email]
     );
     if (result.rows.length === 0) {
@@ -80,8 +127,76 @@ async function signIn(req, res, next) {
       throw err;
     }
 
-    const token = generateToken(user.id);
-    res.json({ token });
+    const accessToken = generateAccessToken(user.id);
+
+    const refreshToken = await generateRefreshToken(user.id);
+
+    res.json({
+      success: true,
+      accessToken,
+      expiresIn: parseInt(process.env.EXPRIE_IN),
+      refreshToken,
+      refreshtokenExpiresAt: parseInt(process.env.REFRESH_TOKEN_EXPIRES_IN),
+      name: user.name,
+      createdAt: user.created_at,
+    });
+  } catch (err) {
+    next(err);
+  }
+}
+
+async function refreshAccessToken(req, res, next) {
+  try {
+    const { refreshToken } = req.body;
+
+    if (!refreshToken) {
+      const err = new Error("Refresh Token is missing");
+      err.status = 401;
+      throw err;
+    }
+
+    let payload;
+    try {
+      payload = jwt.verify(refreshToken, process.env.REFRESH_TOKEN);
+    } catch (jwtErr) {
+      jwtErr.status = 401;
+      return next(jwtErr);
+    }
+
+    const userId = payload.userId;
+
+    const userRes = await pool.query(
+      `select refresh_token_expires_at from users where Id = $1 and refresh_token = $2`,
+      [userId, refreshToken]
+    );
+
+    if (userRes.rows.length === 0) {
+      const e = new Error("Refresh token not found in this user");
+      e.status = 401;
+      throw e;
+    }
+
+    const { refreshtokenExpiresAt } = userRes.rows[0];
+
+    if (refreshtokenExpiresAt < new Date()) {
+      const e = new Error("Refresh Token is expired!");
+      e.status = 401;
+      throw e;
+    }
+
+    const newAccess = generateAccessToken(payload.userId);
+
+    const newRefresh = generateRefreshToken(payload.userId);
+
+    return res.status(201).json({
+      success: true,
+      newAccess,
+      expiresIn: parseInt(process.env.EXPRIE_IN),
+      newRefresh,
+      refrerefreshtokenExpiresAt: parseInt(
+        process.env.REFRESH_TOKEN_EXPIRES_IN
+      ),
+    });
   } catch (err) {
     next(err);
   }
@@ -117,5 +232,6 @@ async function getUserProfile(req, res, next) {
 module.exports = {
   signIn,
   signUp,
+  refreshAccessToken,
   getUserProfile,
 };
