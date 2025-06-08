@@ -2,11 +2,10 @@ require("dotenv").config();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const pool = require("../db.js");
-const { useId, use } = require("react");
 
 const JWT_SECRET = process.env.JWT_SECRET;
-const EXPRIE_IN = process.env.JWT_EXPIRE_IN;
-const SALT_ROUND = process.env.BCRYPT_SALT_ROUNDS;
+const EXPIRE_IN = process.env.JWT_EXPIRE_IN;
+const SALT_ROUND = (process.env.BCRYPT_SALT_ROUNDS, 10);
 
 const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 const REFRESH_TOKEN_EXPIRES_IN = parseInt(
@@ -16,13 +15,13 @@ const REFRESH_TOKEN_EXPIRES_IN = parseInt(
 
 function generateAccessToken(userId) {
   return jwt.sign({ userId, purpose: "access" }, JWT_SECRET, {
-    expiresIn: EXPRIE_IN,
+    expiresIn: EXPIRE_IN,
   });
 }
 
 async function generateRefreshToken(userId) {
   const refreshToken = jwt.sign(
-    { useId, pupose: "refresh" },
+    { userId, purpose: "refresh" },
     REFRESH_TOKEN,
 
     { expiresIn: REFRESH_TOKEN_EXPIRES_IN }
@@ -34,7 +33,7 @@ async function generateRefreshToken(userId) {
     refresh_token_expires_at = NOW() + ( $2 * INTERVAL '1 second' )
     where id = $3
     `,
-    [REFRESH_TOKEN, REFRESH_TOKEN_EXPIRES_IN, userId]
+    [refreshToken, REFRESH_TOKEN_EXPIRES_IN, userId]
   );
 
   return refreshToken;
@@ -80,11 +79,11 @@ async function signUp(req, res, next) {
     res.status(201).json({
       success: true,
       data: {
-        accessToken,
-        expires_in: parseInt(process.env.EXPRIE_IN),
+        accessToken: accessToken,
+        expires_in: parseInt(process.env.EXPIRE_IN),
         id: newUserId,
         name: newUser.name,
-        refreshToken,
+        refreshToken: refreshToken,
         refreshtokenExpiresAt: parseInt(
           process.env.REFRESH_TOKEN_EXPIRES_IN,
           10
@@ -133,12 +132,14 @@ async function signIn(req, res, next) {
 
     res.json({
       success: true,
-      accessToken,
-      expiresIn: parseInt(process.env.EXPRIE_IN),
-      refreshToken,
-      refreshtokenExpiresAt: parseInt(process.env.REFRESH_TOKEN_EXPIRES_IN),
-      name: user.name,
-      createdAt: user.created_at,
+      data: {
+        accessToken: accessToken,
+        expiresIn: parseInt(process.env.EXPIRE_IN),
+        refreshToken: refreshToken,
+        refreshtokenExpiresAt: parseInt(process.env.REFRESH_TOKEN_EXPIRES_IN),
+        name: user.name,
+        createdAt: user.created_at,
+      },
     });
   } catch (err) {
     next(err);
@@ -190,9 +191,9 @@ async function refreshAccessToken(req, res, next) {
 
     return res.status(201).json({
       success: true,
-      newAccess,
-      expiresIn: parseInt(process.env.EXPRIE_IN),
-      newRefresh,
+      newAccess: newAccess,
+      expiresIn: parseInt(process.env.EXPIRE_IN),
+      newRefresh: newRefresh,
       refrerefreshtokenExpiresAt: parseInt(
         process.env.REFRESH_TOKEN_EXPIRES_IN
       ),
@@ -223,7 +224,7 @@ async function getUserProfile(req, res, next) {
       throw err;
     }
 
-    res.json(result.rows[0]);
+    res.status(201).json(result.rows[0]);
   } catch (err) {
     next(err);
   }
