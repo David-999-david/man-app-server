@@ -2,9 +2,10 @@ require("dotenv").config();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const pool = require("../db.js");
+const logger = require("../helper/logger.js");
 
 const JWT_SECRET = process.env.JWT_SECRET;
-const EXPIRE_IN = process.env.JWT_EXPIRE_IN;
+const EXPIRE_IN = parseInt(process.env.JWT_EXPIRE_IN, 10);
 const SALT_ROUND = (process.env.BCRYPT_SALT_ROUNDS, 10);
 
 const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
@@ -151,9 +152,7 @@ async function refreshAccessToken(req, res, next) {
     const { refreshToken } = req.body;
 
     if (!refreshToken) {
-      const err = new Error("Refresh Token is missing");
-      err.status = 401;
-      throw err;
+      return res.status(400).json({ error: "Refresh token is required" });
     }
 
     let payload;
@@ -189,6 +188,8 @@ async function refreshAccessToken(req, res, next) {
 
     const newRefresh = generateRefreshToken(payload.userId);
 
+    res.status(201);
+    logger.info(`Refresh success => status=${res.statusCode}`)
     return res.status(201).json({
       success: true,
       newAccess: newAccess,
@@ -199,13 +200,20 @@ async function refreshAccessToken(req, res, next) {
       ),
     });
   } catch (err) {
-    next(err);
+    if (err.name == "TokenExpiredError") {
+      return res.status(401).json({ error: "jwt expired" });
+    }
+    if (err.name == "JsonWebTokenError") {
+      return res.status(401).json({ error: "jwt malformed" });
+    }
+    return res.status(500).json({ error: "Internal server error" });
   }
 }
 
 async function getUserProfile(req, res, next) {
   try {
     const userId = req.userId;
+    logger.info(`GET /api/me - Request receive: userId=${userId}`);
 
     if (!userId) {
       const err = new Error("no user id in request!");

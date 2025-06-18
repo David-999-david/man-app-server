@@ -1,0 +1,473 @@
+25Y-06-18 19:32:32 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:33:36 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:33:39 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:33:45 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:34:02 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:34:04 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:34:06 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:34:16 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:34:20 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:34:22 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:34:24 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:36:59 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:37:01 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:37:03 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:37:19 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:37:23 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:37:26 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+25Y-06-18 19:38:12 [function toUpperCase() { [native code] }] : POST /api/signin 200 178.664 ms - 500 bytes
+25Y-06-18 19:38:13 [function toUpperCase() { [native code] }] : GET /api/me - Request receive: userId=30
+25Y-06-18 19:38:13 [function toUpperCase() { [native code] }] : GET /api/me 201 5.049 ms - 92 bytes
+2025-06-18 19:40:27 [function toUpperCase() { [native code] }] : PSQL pool connected successfully!
+2025-06-18 19:40:36 [INFO] : PSQL pool connected successfully!
+2025-06-18 19:40:40 [INFO] : GET /api/me - Request receive: userId=30
+2025-06-18 19:40:40 [INFO] : GET /api/me 201 32.045 ms - 92 bytes
+2025-06-18 19:43:15 [INFO] : PSQL pool connected successfully!
+2025-06-18 19:43:18 [INFO] : PSQL pool connected successfully!
+2025-06-18 19:43:21 [INFO] : PSQL pool connected successfully!
+2025-06-18 19:43:25 [INFO] : GET /api/me - Request receive: userId=30
+2025-06-18 19:43:25 [INFO] : Get /api/me - Response sent: userId = 30, status=200
+2025-06-18 19:43:25 [INFO] : GET /api/me 201 11.289 ms - 92 bytes
+[90m2025-06-18 19:51:43[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 19:51:55[39m [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=[36m30[39m[39m
+[90m2025-06-18 19:51:55[39m [[32MINFO[39M] : [32mGET /api/me - - ms - - bytes[39m
+[90m2025-06-18 19:51:55[39m [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+[90m2025-06-18 19:52:08[39m [[32MINFO[39M] : [32mPOST /api/signin 200 229.349 ms - 500 bytes[39m
+[90m2025-06-18 19:52:09[39m [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=[36m30[39m[39m
+[90m2025-06-18 19:52:09[39m [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+[90m2025-06-18 19:52:09[39m [[32MINFO[39M] : [32mGET /api/me 201 3.182 ms - 92 bytes[39m
+[90m2025-06-18 19:52:35[39m [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=[36m30[39m[39m
+[90m2025-06-18 19:52:35[39m [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+[90m2025-06-18 19:52:35[39m [[32MINFO[39M] : [32mGET /api/me 201 38.264 ms - 92 bytes[39m
+[90m2025-06-18 19:53:02[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 19:53:17[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 19:53:19[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 19:53:28[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 19:53:36[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 19:53:41[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 19:54:01[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 19:54:07[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 19:54:12[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 19:54:15[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 19:54:49[39m [[32MINFO[39M] : [32mPOST /api/signin 200 270.350 ms - 500 bytes[39m
+[90m2025-06-18 19:54:49[39m [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=[36m30[39m[39m
+[90m2025-06-18 19:54:49[39m [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+[90m2025-06-18 19:54:49[39m [[32MINFO[39M] : [32mGET /api/me 201 5.030 ms - 92 bytes[39m
+[90m2025-06-18 20:12:26[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:14:04[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:14:05[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:14:07[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:14:17[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:14:40[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:14:41[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:15:23[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:15:25[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:15:27[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:17:30[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:17:33[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:17:49[39m [[32MINFO[39M] : [32mPOST /api/signin 200 258.809 ms - 500 bytes[39m
+[90m2025-06-18 20:17:50[39m [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=[36m30[39m[39m
+[90m2025-06-18 20:17:50[39m [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+[90m2025-06-18 20:17:50[39m [[32MINFO[39M] : [32mGET /api/me 201 5.623 ms - 92 bytes[39m
+[90m2025-06-18 20:19:20[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:19:27[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+[90m2025-06-18 20:19:57[39m [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=[36m30[39m[39m
+[90m2025-06-18 20:19:57[39m [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+[90m2025-06-18 20:19:57[39m [[32MINFO[39M] : [32mGET /api/me 201 49.301 ms - 92 bytes[39m
+2025-06-18 20:21:02 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:21:03 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:21:06 [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=30[39m
+2025-06-18 20:21:06 [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+2025-06-18 20:21:06 [[32MINFO[39M] : [32mGET /api/me 201 14.885 ms - 92 bytes[39m
+2025-06-18 20:26:55 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:27:16 [[34MDEBUG[39M] : [34mLogger initalized[39m
+2025-06-18 20:27:16 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:27:17 [[34MDEBUG[39M] : [34mLogger initalized[39m
+2025-06-18 20:27:17 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:29:19 [[34MDEBUG[39M] : [34mLogger initalized[39m
+2025-06-18 20:29:19 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:29:21 [[34MDEBUG[39M] : [34mLogger initalized[39m
+2025-06-18 20:29:21 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:29:29 [[34MDEBUG[39M] : [34mLogger initalized[39m
+2025-06-18 20:29:29 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:29:33 [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=30[39m
+2025-06-18 20:29:33 [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+2025-06-18 20:29:33 [[34MDEBUG[39M] : [34mGet /api/me - Final status: function status(code) {[39m
+[34m  // Check if the status code is not an integer[39m
+[34m  if (!Number.isInteger(code)) {[39m
+[34m    throw new TypeError(`Invalid status code: ${JSON.stringify(code)}. Status code must be an integer.`);[39m
+[34m  }[39m
+[34m  // Check if the status code is outside of Node's valid range[39m
+[34m  if (code < 100 || code > 999) {[39m
+[34m    throw new RangeError(`Invalid status code: ${JSON.stringify(code)}. Status code must be greater than 99 and less than 1000.`);[39m
+[34m  }[39m
+
+[34m  this.statusCode = code;[39m
+[34m  return this;[39m
+[34m}[39m
+2025-06-18 20:29:33 [[32MINFO[39M] : [32mGET /api/me 201 11.713 ms - 92 bytes[39m
+2025-06-18 20:31:10 [[34MDEBUG[39M] : [34mLogger initalized[39m
+2025-06-18 20:31:10 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:31:33 [[34MDEBUG[39M] : [34mLogger initalized[39m
+2025-06-18 20:31:33 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:31:38 [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=30[39m
+2025-06-18 20:31:38 [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+2025-06-18 20:31:38 [[34MDEBUG[39M] : [34mGet /api/me - Final status: function status(code) {[39m
+[34m  // Check if the status code is not an integer[39m
+[34m  if (!Number.isInteger(code)) {[39m
+[34m    throw new TypeError(`Invalid status code: ${JSON.stringify(code)}. Status code must be an integer.`);[39m
+[34m  }[39m
+[34m  // Check if the status code is outside of Node's valid range[39m
+[34m  if (code < 100 || code > 999) {[39m
+[34m    throw new RangeError(`Invalid status code: ${JSON.stringify(code)}. Status code must be greater than 99 and less than 1000.`);[39m
+[34m  }[39m
+
+[34m  this.statusCode = code;[39m
+[34m  return this;[39m
+[34m}[39m
+2025-06-18 20:31:38 [[32MINFO[39M] : [32mGET /api/me 201 12.444 ms - 92 bytes[39m
+2025-06-18 20:31:55 [[34MDEBUG[39M] : [34mLogger initalized[39m
+2025-06-18 20:31:55 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:33:52 [[34MDEBUG[39M] : [34mLogger initalized[39m
+2025-06-18 20:33:52 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:34:04 [[32MINFO[39M] : [32mPOST /api/signin 200 157.646 ms - 500 bytes[39m
+2025-06-18 20:34:05 [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=30[39m
+2025-06-18 20:34:05 [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+2025-06-18 20:34:05 [[32MINFO[39M] : [32mGET /api/me 201 4.773 ms - 92 bytes[39m
+2025-06-18 20:34:08 [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=30[39m
+2025-06-18 20:34:08 [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+2025-06-18 20:34:08 [[32MINFO[39M] : [32mGET /api/me 201 2.287 ms - 92 bytes[39m
+[90m2025-06-18 20:34:43[39m [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:34:50 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:34:55 [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=[36m30[39m[39m
+2025-06-18 20:34:55 [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+2025-06-18 20:34:55 [[32MINFO[39M] : [32mGET /api/me 201 11.743 ms - 92 bytes[39m
+2025-06-18 20:35:29 [INFO] : PSQL pool connected successfully!
+2025-06-18 20:35:32 [INFO] : GET /api/me - Request receive: userId=30
+2025-06-18 20:35:32 [INFO] : Get /api/me - Response sent: userId = 30, status=200
+2025-06-18 20:35:32 [INFO] : GET /api/me 201 12.855 ms - 92 bytes
+2025-06-18 20:35:41 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:36:06 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:36:14 [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=[36m30[39m[39m
+2025-06-18 20:36:14 [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=200[39m
+2025-06-18 20:36:14 [[32MINFO[39M] : [32mGET /api/me 201 12.232 ms - 92 bytes[39m
+2025-06-18 20:36:41 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:36:50 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:36:52 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:37:04 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:37:04 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:37:08 [[32MINFO[39M]: [32mGET /api/me - Request receive: userId=30[39m
+2025-06-18 20:37:08 [[32MINFO[39M]: [32mGet /api/me - Response sent: userId = 30, status=200[39m
+2025-06-18 20:37:08 [[32MINFO[39M]: [32mGET /api/me 201 11.928 ms - 92 bytes[39m
+2025-06-18 20:37:16 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:37:16 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:37:47 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:37:48 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:37:55 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:37:55 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:37:59 [[32MINFO[39M]: [32mGET /api/me - Request receive: userId=30[39m
+2025-06-18 20:37:59 [[32MINFO[39M]: [32mGet /api/me - Response sent: userId = 30, status=200[39m
+2025-06-18 20:37:59 [[34MDEBUG[39M]: [34mGet /api/me - Final status: function status(code) {[39m
+[34m  // Check if the status code is not an integer[39m
+[34m  if (!Number.isInteger(code)) {[39m
+[34m    throw new TypeError(`Invalid status code: ${JSON.stringify(code)}. Status code must be an integer.`);[39m
+[34m  }[39m
+[34m  // Check if the status code is outside of Node's valid range[39m
+[34m  if (code < 100 || code > 999) {[39m
+[34m    throw new RangeError(`Invalid status code: ${JSON.stringify(code)}. Status code must be greater than 99 and less than 1000.`);[39m
+[34m  }[39m
+
+[34m  this.statusCode = code;[39m
+[34m  return this;[39m
+[34m}[39m
+2025-06-18 20:37:59 [[32MINFO[39M]: [32mGET /api/me 201 11.719 ms - 92 bytes[39m
+2025-06-18 20:38:36 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:38:36 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:39:38 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:39:38 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:40:38 [[32MINFO[39M]: [32mGET /api/me - Request receive: userId=30[39m
+2025-06-18 20:40:38 [[32MINFO[39M]: [32mGet /api/me - Response sent: userId = 30, status=201[39m
+2025-06-18 20:40:38 [[34MDEBUG[39M]: [34mGet /api/me - Final status: function status(code) {[39m
+[34m  // Check if the status code is not an integer[39m
+[34m  if (!Number.isInteger(code)) {[39m
+[34m    throw new TypeError(`Invalid status code: ${JSON.stringify(code)}. Status code must be an integer.`);[39m
+[34m  }[39m
+[34m  // Check if the status code is outside of Node's valid range[39m
+[34m  if (code < 100 || code > 999) {[39m
+[34m    throw new RangeError(`Invalid status code: ${JSON.stringify(code)}. Status code must be greater than 99 and less than 1000.`);[39m
+[34m  }[39m
+
+[34m  this.statusCode = code;[39m
+[34m  return this;[39m
+[34m}[39m
+2025-06-18 20:40:38 [[32MINFO[39M]: [32mGET /api/me 201 48.438 ms - 92 bytes[39m
+2025-06-18 20:44:39 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:44:39 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:45:06 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:45:06 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:45:11 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:45:11 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:45:16 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:45:16 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:45:19 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:45:19 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:45:46 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:45:46 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:45:48 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:45:49 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:46:07 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:46:07 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:46:17 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:46:17 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:46:18 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:46:18 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:47:05 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:47:10 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:47:10 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:47:12 [[34MDEBUG[39M]: [34mLogger initialized[39m
+2025-06-18 20:47:12 [[32MINFO[39M]: [32mPSQL pool connected successfully![39m
+2025-06-18 20:47:38 [DEBUG]: Logger initialized
+2025-06-18 20:47:38 [INFO]: PSQL pool connected successfully!
+2025-06-18 20:47:51 [DEBUG]: Logger initialized
+2025-06-18 20:47:51 [INFO]: PSQL pool connected successfully!
+2025-06-18 20:48:11 [DEBUG]: Logger initialized
+2025-06-18 20:48:11 [INFO]: PSQL pool connected successfully!
+2025-06-18 20:48:24 [DEBUG]: Logger initialized
+2025-06-18 20:48:24 [INFO]: PSQL pool connected successfully!
+2025-06-18 20:48:28 [DEBUG]: Logger initialized
+2025-06-18 20:48:29 [INFO]: PSQL pool connected successfully!
+2025-06-18 20:48:36 [DEBUG]: Logger initialized
+2025-06-18 20:48:36 [INFO]: PSQL pool connected successfully!
+2025-06-18 20:48:40 [DEBUG]: Logger initialized
+2025-06-18 20:48:40 [INFO]: PSQL pool connected successfully!
+2025-06-18 20:48:41 [DEBUG]: Logger initialized
+2025-06-18 20:48:41 [INFO]: PSQL pool connected successfully!
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+2025-06-18 20:55:53 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:55:54 [[32MINFO[39M] : [32mPSQL pool connected successfully![39m
+2025-06-18 20:56:01 [[32MINFO[39M] : [32mGET /api/me - Request receive: userId=[36m30[39m[39m
+2025-06-18 20:56:01 [[32MINFO[39M] : [32mGet /api/me - Response sent: userId = 30, status=201[39m
+2025-06-18 20:56:01 [[32MINFO[39M] : [32mGET /api/me 201 10.695 ms - 92 bytes[39m
+[90m2025-06-18 20:57:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 20:57:19[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 20:57:19[39m [INFO] : Get /api/me - Response sent: userId = 30, status=201
+[90m2025-06-18 20:57:19[39m [INFO] : GET /api/me 201 14.098 ms - 92 bytes
+[90m2025-06-18 20:57:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 20:57:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 20:57:45[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 20:57:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 20:57:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 20:57:54[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 20:57:54[39m [INFO] : Get /api/me - Response sent: userId = 30, status=201
+[90m2025-06-18 20:57:54[39m [INFO] : GET /api/me 201 17.545 ms - 92 bytes
+[90m2025-06-18 20:59:52[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 20:59:58[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 20:59:58[39m [INFO] : Get /api/me - Response sent: userId = 30, status=201
+[90m2025-06-18 21:00:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 21:00:10[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 21:00:10[39m [INFO] : Get /api/me - Response sent: userId = 30, status=201
+[90m2025-06-18 21:00:10[39m [INFO] : GET /api/me 201 11.441 ms - 92 bytes
+[90m2025-06-18 22:36:25[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:36:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:36:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:37:01[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:37:20[39m [INFO] : POST /api/signin 200 229.133 ms - 500 bytes
+[90m2025-06-18 22:37:20[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 22:37:20[39m [INFO] : Get /api/me - Response sent: userId = 30, status=201
+[90m2025-06-18 22:37:20[39m [INFO] : GET /api/me 201 8.073 ms - 92 bytes
+[90m2025-06-18 22:38:56[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:39:00[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 22:39:00[39m [INFO] : GET /api/me 201 22.993 ms - 92 bytes
+[90m2025-06-18 22:39:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:40:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:40:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:41:11[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:41:14[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:41:27[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 22:41:27[39m [INFO] : Get /api/me - Response sent: userId = 30, status=201
+[90m2025-06-18 22:41:27[39m [INFO] : GET /api/me 201 92.782 ms - 92 bytes
+PSQL pool connected successfully!
+GET /api/me - Request receive: userId=[36m30[39m
+Get /api/me - Response sent: userId = 30, status=201
+GET /api/me 201 21.433 ms - 92 bytes
+[90m2025-06-18 22:45:32[39m [INFO] : PSQL pool connected successfully!
+PSQL pool connected successfully!
+[90m2025-06-18 22:47:01[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:48:05[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:48:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:49:07[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:49:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:49:11[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:49:13[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:49:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:49:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:49:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:49:22[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 22:49:22[39m [INFO] : Get /api/me - Response sent: userId = 30, status=201
+[90m2025-06-18 22:49:22[39m [INFO] : GET /api/me 201 11.313 ms - 92 bytes
+[90m2025-06-18 22:49:27[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 22:49:27[39m [INFO] : Get /api/me - Response sent: userId = 30, status=201
+[90m2025-06-18 22:49:27[39m [INFO] : GET /api/me 201 2.798 ms - 92 bytes
+[90m2025-06-18 22:50:32[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:50:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:50:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:50:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:50:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:50:57[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 22:50:57[39m [INFO] : Get /api/me - Response sent: userId = 30, status=201
+[90m2025-06-18 22:50:57[39m [INFO] : GET /api/me 201 11.581 ms - 92 bytes
+[90m2025-06-18 22:51:56[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:51:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:52:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:52:22[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:52:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:53:36[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:53:39[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 22:53:39[39m [INFO] : GET /api/me 201 14.983 ms - 92 bytes
+[90m2025-06-18 22:54:18[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:54:21[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:54:23[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:54:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:54:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:54:35[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 22:54:35[39m [INFO] : GET /api/me 201 11.894 ms - 92 bytes
+[90m2025-06-18 22:55:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:55:53[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 22:55:53[39m [INFO] : GET /api/me status=[33m201[39m 11.449 ms - 92 bytes
+[90m2025-06-18 22:57:30[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:57:32[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:57:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:57:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:57:54[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:58:03[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:58:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:58:18[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:58:50[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 22:58:51[39m [INFO] : GET /api/me status=[33m201[39m 58.111 ms - 92 bytes
+[90m2025-06-18 22:59:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:59:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:59:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:59:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 22:59:59[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 23:00:04[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 23:00:07[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 23:00:07[39m [INFO] : GET /api/me status=[33m201[39m 18.758 ms - 92 bytes
+[90m2025-06-18 23:01:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 23:02:49[39m [INFO] : POST /api/signin status=[33m200[39m 128.187 ms - 500 bytes
+[90m2025-06-18 23:02:50[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 23:02:50[39m [INFO] : GET /api/me status=[33m201[39m 5.730 ms - 92 bytes
+[90m2025-06-18 23:07:45[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 23:07:45[39m [INFO] : GET /api/me status=[33m201[39m 50.769 ms - 92 bytes
+[90m2025-06-18 23:07:49[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 23:07:49[39m [INFO] : GET /api/me status=[33m201[39m 2.648 ms - 92 bytes
+[90m2025-06-18 23:09:21[39m [INFO] : Error: jwt expired,TokenExpiredError: jwt expired
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorizationCheck (C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:28:7)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:342:13)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:582:12)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:186:3)
+[90m2025-06-18 23:09:21[39m [INFO] : GET /api/me status=[33m401[39m 2.340 ms - 23 bytes
+[90m2025-06-18 23:09:21[39m [INFO] : Error: jwt expired,TokenExpiredError: jwt expired
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at refreshAccessToken (C:\Users\user\Desktop\man-app-server\controllers\userController.js:160:21)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-18 23:09:21[39m [INFO] : POST /api/token/refresh status=[33m401[39m 3.199 ms - 23 bytes
+[90m2025-06-18 23:12:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-18 23:13:21[39m [INFO] : POST /api/signin status=[33m200[39m 120.162 ms - 500 bytes
+[90m2025-06-18 23:13:21[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 23:13:21[39m [INFO] : GET /api/me status=[33m201[39m 4.905 ms - 92 bytes
+[90m2025-06-18 23:17:16[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 23:17:16[39m [INFO] : GET /api/me status=[33m201[39m 43.441 ms - 92 bytes
+[90m2025-06-18 23:18:00[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 23:18:00[39m [INFO] : GET /api/me status=[33m201[39m 44.954 ms - 92 bytes
+[90m2025-06-18 23:18:46[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 23:18:46[39m [INFO] : GET /api/me status=[33m201[39m 45.822 ms - 92 bytes
+[90m2025-06-18 23:18:55[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 23:18:55[39m [INFO] : GET /api/me status=[33m201[39m 2.526 ms - 92 bytes
+[90m2025-06-18 23:19:07[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 23:19:07[39m [INFO] : GET /api/me status=[33m201[39m 38.829 ms - 92 bytes
+[90m2025-06-18 23:20:01[39m [INFO] : Error: jwt expired,TokenExpiredError: jwt expired
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorizationCheck (C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:28:7)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:342:13)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:582:12)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:186:3)
+[90m2025-06-18 23:20:01[39m [INFO] : GET /api/me status=[33m401[39m 2.164 ms - 23 bytes
+[90m2025-06-18 23:20:01[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-18 23:20:01[39m [INFO] : POST /api/token/refresh status=[33m201[39m 46.202 ms - 266 bytes
+[90m2025-06-18 23:20:01[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-18 23:20:01[39m [INFO] : GET /api/me status=[33m201[39m 2.595 ms - 92 bytes

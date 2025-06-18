@@ -1,10 +1,13 @@
-module.exports = function errorHandler(err, req, res, next){
-    console.error(err.stack);
+const logger = require("../helper/logger");
 
-    const statusCode = err.status || 500;
-    const message = err.message || 'Internal Server Error';
+module.exports = function errorHandler(err, req, res, next) {
+  console.error(err.stack);
+  logger.info(`Error: ${err.message},${err.stack}`);
 
-    res.status(statusCode).json({
-        error : message
-    });
+  const statusCode = err.status || 500;
+  const message = err.message || "Internal Server Error";
+
+  res.status(statusCode).json({
+    error: message,
+  });
 };
