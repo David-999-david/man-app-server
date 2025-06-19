@@ -471,3 +471,389 @@ PSQL pool connected successfully!
 [90m2025-06-18 23:20:01[39m [INFO] : POST /api/token/refresh status=[33m201[39m 46.202 ms - 266 bytes
 [90m2025-06-18 23:20:01[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
 [90m2025-06-18 23:20:01[39m [INFO] : GET /api/me status=[33m201[39m 2.595 ms - 92 bytes
+[90m2025-06-19 08:28:09[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:30:23[39m [INFO] : POST /api/signin status=[33m200[39m 159.783 ms - 500 bytes
+[90m2025-06-19 08:30:24[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 08:30:24[39m [INFO] : GET /api/me status=[33m201[39m 5.306 ms - 92 bytes
+[90m2025-06-19 08:44:14[39m [INFO] : POST /api/signin status=[33m200[39m 142.474 ms - 500 bytes
+[90m2025-06-19 08:44:14[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 08:44:14[39m [INFO] : GET /api/me status=[33m201[39m 2.740 ms - 92 bytes
+[90m2025-06-19 08:44:32[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 08:44:32[39m [INFO] : GET /api/me status=[33m201[39m 47.693 ms - 92 bytes
+[90m2025-06-19 08:44:36[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 08:44:36[39m [INFO] : GET /api/me status=[33m201[39m 2.767 ms - 92 bytes
+[90m2025-06-19 08:45:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:45:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:45:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:45:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:45:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:45:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:46:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:46:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:46:45[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:47:07[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:47:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:47:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:47:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:48:04[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:48:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:48:07[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:49:25[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 08:49:25[39m [INFO] : GET /api/me status=[33m201[39m 55.415 ms - 92 bytes
+[90m2025-06-19 08:49:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 08:52:02[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-19 08:52:02[39m [INFO] : POST /api/token/refresh status=[33m201[39m 67.139 ms - 266 bytes
+[90m2025-06-19 08:52:02[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 08:52:02[39m [INFO] : GET /api/me status=[33m201[39m 3.395 ms - 92 bytes
+[90m2025-06-19 08:56:38[39m [INFO] : POST /api/signin status=[33m200[39m 106.706 ms - 500 bytes
+[90m2025-06-19 08:56:39[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 08:56:39[39m [INFO] : GET /api/me status=[33m201[39m 3.103 ms - 92 bytes
+[90m2025-06-19 08:56:42[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 08:56:42[39m [INFO] : GET /api/me status=[33m201[39m 2.883 ms - 92 bytes
+[90m2025-06-19 08:59:30[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 08:59:30[39m [INFO] : GET /api/me status=[33m201[39m 139.264 ms - 92 bytes
+[90m2025-06-19 09:00:11[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:00:11[39m [INFO] : GET /api/me status=[33m201[39m 146.219 ms - 92 bytes
+[90m2025-06-19 09:00:25[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:00:25[39m [INFO] : GET /api/me status=[33m201[39m 41.847 ms - 92 bytes
+[90m2025-06-19 09:00:36[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:00:36[39m [INFO] : GET /api/me status=[33m201[39m 55.209 ms - 92 bytes
+[90m2025-06-19 09:00:39[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:00:39[39m [INFO] : GET /api/me status=[33m201[39m 3.262 ms - 92 bytes
+[90m2025-06-19 09:00:50[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:00:50[39m [INFO] : GET /api/me status=[33m201[39m 47.136 ms - 92 bytes
+[90m2025-06-19 09:01:37[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:01:37[39m [INFO] : GET /api/me status=[33m201[39m 47.277 ms - 92 bytes
+[90m2025-06-19 09:01:45[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:01:45[39m [INFO] : GET /api/me status=[33m201[39m 2.777 ms - 92 bytes
+[90m2025-06-19 09:01:51[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:01:51[39m [INFO] : GET /api/me status=[33m201[39m 3.113 ms - 92 bytes
+[90m2025-06-19 09:02:17[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:02:17[39m [INFO] : GET /api/me status=[33m201[39m 45.495 ms - 92 bytes
+[90m2025-06-19 09:02:25[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:02:25[39m [INFO] : GET /api/me status=[33m201[39m 2.879 ms - 92 bytes
+[90m2025-06-19 09:02:32[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:02:32[39m [INFO] : GET /api/me status=[33m201[39m 2.051 ms - 92 bytes
+[90m2025-06-19 09:02:37[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:02:37[39m [INFO] : GET /api/me status=[33m201[39m 2.181 ms - 92 bytes
+[90m2025-06-19 09:02:55[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-19 09:02:55[39m [INFO] : POST /api/token/refresh status=[33m201[39m 44.769 ms - 266 bytes
+[90m2025-06-19 09:02:55[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 09:02:55[39m [INFO] : GET /api/me status=[33m201[39m 2.546 ms - 92 bytes
+[90m2025-06-19 09:10:09[39m [INFO] : Error: jwt malformed,JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:70:17)
+    at refreshAccessToken (C:\Users\user\Desktop\man-app-server\controllers\userController.js:159:21)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+    at processParams (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:582:12)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:291:5)
+[90m2025-06-19 09:10:09[39m [INFO] : POST /api/token/refresh status=[33m401[39m 2.807 ms - 25 bytes
+[90m2025-06-19 09:13:57[39m [INFO] : Incorrect password : status=[33m200[39m
+[90m2025-06-19 09:13:57[39m [INFO] : POST /api/signin status=[33m401[39m 112.774 ms - 30 bytes
+[90m2025-06-19 09:13:57[39m [INFO] : Error: Cannot set headers after they are sent to the client,Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:684:10)
+    at ServerResponse.send (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:161:12)
+    at ServerResponse.json (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:250:15)
+    at signIn (C:\Users\user\Desktop\man-app-server\controllers\userController.js:133:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-19 09:15:35[39m [INFO] : Incorrect password : status=[33m200[39m
+[90m2025-06-19 09:15:35[39m [INFO] : POST /api/signin status=[33m401[39m 110.479 ms - 30 bytes
+[90m2025-06-19 09:15:35[39m [INFO] : Error: Cannot set headers after they are sent to the client,Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:684:10)
+    at ServerResponse.send (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:161:12)
+    at ServerResponse.json (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:250:15)
+    at signIn (C:\Users\user\Desktop\man-app-server\controllers\userController.js:133:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-19 09:17:08[39m [INFO] : Incorrect password : status=[33m200[39m
+[90m2025-06-19 09:17:08[39m [INFO] : POST /api/signin status=[33m401[39m 95.653 ms - 30 bytes
+[90m2025-06-19 09:17:08[39m [INFO] : Error: Cannot set headers after they are sent to the client,Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:684:10)
+    at ServerResponse.send (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:161:12)
+    at ServerResponse.json (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:250:15)
+    at signIn (C:\Users\user\Desktop\man-app-server\controllers\userController.js:133:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-19 09:18:13[39m [INFO] : Incorrect password : status=[33m200[39m
+[90m2025-06-19 09:18:13[39m [INFO] : POST /api/signin status=[33m401[39m 98.936 ms - 30 bytes
+[90m2025-06-19 09:18:13[39m [INFO] : Error: Cannot set headers after they are sent to the client,Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:684:10)
+    at ServerResponse.send (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:161:12)
+    at ServerResponse.json (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:250:15)
+    at signIn (C:\Users\user\Desktop\man-app-server\controllers\userController.js:133:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-19 09:44:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 09:44:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 09:44:09[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 09:44:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 09:44:53[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 09:44:53[39m [INFO] : POST /api/signin status=[33m401[39m 135.427 ms - 30 bytes
+[90m2025-06-19 09:47:03[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 09:47:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 09:47:43[39m [INFO] : Error: Cannot read properties of undefined (reading 'info'),TypeError: Cannot read properties of undefined (reading 'info')
+    at signIn (C:\Users\user\Desktop\man-app-server\controllers\userController.js:125:29)
+[90m2025-06-19 09:47:43[39m [INFO] : POST /api/signin status=[33m500[39m 215.340 ms - 64 bytes
+[90m2025-06-19 09:48:57[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 09:49:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 09:49:03[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 09:49:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 09:49:23[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 09:49:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 09:53:03[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 09:53:03[39m [INFO] : POST /api/signin status=[33m401[39m 105.307 ms - 30 bytes
+[90m2025-06-19 09:56:23[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 09:56:23[39m [INFO] : POST /api/signin status=[33m401[39m 101.155 ms - 30 bytes
+[90m2025-06-19 10:33:54[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 10:33:54[39m [INFO] : POST /api/signin status=[33m401[39m 100.398 ms - 30 bytes
+[90m2025-06-19 11:17:26[39m [INFO] : POST /api/signin status=[33m200[39m 125.540 ms - 500 bytes
+[90m2025-06-19 11:17:27[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 11:17:27[39m [INFO] : GET /api/me status=[33m201[39m 4.845 ms - 92 bytes
+[90m2025-06-19 11:17:30[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 11:17:30[39m [INFO] : GET /api/me status=[33m201[39m 2.612 ms - 92 bytes
+[90m2025-06-19 11:18:02[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 11:18:02[39m [INFO] : GET /api/me status=[33m201[39m 42.642 ms - 92 bytes
+[90m2025-06-19 11:34:27[39m [INFO] : Error: jwt expired,TokenExpiredError: jwt expired
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at refreshAccessToken (C:\Users\user\Desktop\man-app-server\controllers\userController.js:159:21)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-19 11:34:27[39m [INFO] : POST /api/token/refresh status=[33m401[39m 2.767 ms - 23 bytes
+[90m2025-06-19 12:27:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:29:52[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 12:29:52[39m [INFO] : POST /api/signin status=[33m401[39m 158.215 ms - 30 bytes
+[90m2025-06-19 12:30:29[39m [INFO] : Error: Invalid credentials.,Error: Invalid credentials.
+    at signIn (C:\Users\user\Desktop\man-app-server\controllers\userController.js:115:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-19 12:30:29[39m [INFO] : POST /api/signin status=[33m401[39m 45.888 ms - 32 bytes
+[90m2025-06-19 12:31:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:31:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:31:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:31:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:32:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:32:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:32:48[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:32:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:32:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:33:03[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:33:27[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 12:33:27[39m [INFO] : POST /api/signin status=[33m401[39m 59.643 ms - 32 bytes
+[90m2025-06-19 12:37:48[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:37:49[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:37:54[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:37:57[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 12:38:57[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 12:38:57[39m [INFO] : POST /api/signin status=[33m401[39m 54.741 ms - 32 bytes
+[90m2025-06-19 12:39:13[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 12:39:13[39m [INFO] : POST /api/signin status=[33m401[39m 114.953 ms - 30 bytes
+[90m2025-06-19 12:39:17[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 12:39:17[39m [INFO] : POST /api/signin status=[33m401[39m 59.243 ms - 30 bytes
+[90m2025-06-19 12:40:39[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 12:40:39[39m [INFO] : POST /api/signin status=[33m401[39m 94.266 ms - 30 bytes
+[90m2025-06-19 12:40:45[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 12:40:45[39m [INFO] : POST /api/signin status=[33m401[39m 2.614 ms - 32 bytes
+[90m2025-06-19 12:40:50[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 12:40:50[39m [INFO] : POST /api/signin status=[33m401[39m 3.060 ms - 32 bytes
+[90m2025-06-19 12:40:59[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 12:40:59[39m [INFO] : POST /api/signin status=[33m401[39m 2.707 ms - 32 bytes
+[90m2025-06-19 12:41:02[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 12:41:02[39m [INFO] : POST /api/signin status=[33m401[39m 1.696 ms - 32 bytes
+[90m2025-06-19 12:41:21[39m [INFO] : POST /api/signin status=[33m200[39m 228.495 ms - 500 bytes
+[90m2025-06-19 12:41:22[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 12:41:22[39m [INFO] : GET /api/me status=[33m201[39m 4.782 ms - 92 bytes
+[90m2025-06-19 13:48:12[39m [INFO] : Error: jwt expired,TokenExpiredError: jwt expired
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at refreshAccessToken (C:\Users\user\Desktop\man-app-server\controllers\userController.js:158:21)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-19 13:48:12[39m [INFO] : POST /api/token/refresh status=[33m401[39m 2.598 ms - 23 bytes
+[90m2025-06-19 13:55:24[39m [INFO] : POST /api/signin status=[33m200[39m 116.474 ms - 500 bytes
+[90m2025-06-19 13:55:24[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 13:55:24[39m [INFO] : GET /api/me status=[33m201[39m 1.920 ms - 92 bytes
+[90m2025-06-19 13:55:27[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 13:55:27[39m [INFO] : GET /api/me status=[33m201[39m 2.944 ms - 92 bytes
+[90m2025-06-19 13:55:47[39m [INFO] : GET /api/me - Request receive: userId=[36m30[39m
+[90m2025-06-19 13:55:47[39m [INFO] : GET /api/me status=[33m201[39m 42.582 ms - 92 bytes
+[90m2025-06-19 14:13:03[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 14:13:03[39m [INFO] : POST /api/signin status=[33m401[39m 134.511 ms - 30 bytes
+[90m2025-06-19 14:13:18[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 14:13:18[39m [INFO] : POST /api/signin status=[33m401[39m 49.540 ms - 32 bytes
+[90m2025-06-19 14:13:21[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 14:13:21[39m [INFO] : POST /api/signin status=[33m401[39m 9.586 ms - 32 bytes
+[90m2025-06-19 14:16:15[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 14:16:15[39m [INFO] : POST /api/signin status=[33m401[39m 204.852 ms - 30 bytes
+[90m2025-06-19 14:16:20[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 14:16:20[39m [INFO] : POST /api/signin status=[33m401[39m 5.223 ms - 32 bytes
+[90m2025-06-19 14:16:27[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 14:16:27[39m [INFO] : POST /api/signin status=[33m401[39m 2.716 ms - 32 bytes
+[90m2025-06-19 14:18:12[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 14:18:12[39m [INFO] : POST /api/signin status=[33m401[39m 202.458 ms - 30 bytes
+[90m2025-06-19 14:18:18[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 14:18:18[39m [INFO] : POST /api/signin status=[33m401[39m 7.981 ms - 32 bytes
+[90m2025-06-19 14:22:54[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 14:22:54[39m [INFO] : POST /api/signin status=[33m401[39m 110.842 ms - 30 bytes
+[90m2025-06-19 14:23:00[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 14:23:00[39m [INFO] : POST /api/signin status=[33m401[39m 2.430 ms - 32 bytes
+[90m2025-06-19 14:23:46[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 14:23:46[39m [INFO] : POST /api/signin status=[33m401[39m 103.588 ms - 30 bytes
+[90m2025-06-19 14:23:49[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 14:23:49[39m [INFO] : POST /api/signin status=[33m401[39m 2.219 ms - 32 bytes
+[90m2025-06-19 14:26:22[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 14:26:22[39m [INFO] : POST /api/signin status=[33m401[39m 205.225 ms - 30 bytes
+[90m2025-06-19 14:26:26[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 14:26:26[39m [INFO] : POST /api/signin status=[33m401[39m 2.724 ms - 32 bytes
+[90m2025-06-19 14:26:41[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 14:26:41[39m [INFO] : POST /api/signin status=[33m401[39m 39.004 ms - 32 bytes
+[90m2025-06-19 14:28:21[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 14:28:21[39m [INFO] : POST /api/signin status=[33m401[39m 98.793 ms - 30 bytes
+[90m2025-06-19 14:28:24[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 14:28:24[39m [INFO] : POST /api/signin status=[33m401[39m 2.281 ms - 32 bytes
+[90m2025-06-19 14:28:46[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 14:28:46[39m [INFO] : POST /api/signin status=[33m401[39m 116.923 ms - 30 bytes
+[90m2025-06-19 14:28:49[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 14:28:49[39m [INFO] : POST /api/signin status=[33m401[39m 3.923 ms - 32 bytes
+[90m2025-06-19 14:28:52[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-19 14:28:52[39m [INFO] : POST /api/signin status=[33m401[39m 2.246 ms - 32 bytes
+[90m2025-06-19 14:29:51[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-19 14:29:51[39m [INFO] : POST /api/signin status=[33m401[39m 97.190 ms - 30 bytes
+[90m2025-06-19 14:34:23[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:34:33[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:34:45[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:34:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:34:55[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:35:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:35:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:35:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:35:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:35:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:36:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:36:07[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:36:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:36:49[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:36:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:36:55[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:36:59[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:37:03[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:37:05[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:37:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:37:14[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:37:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:37:24[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:37:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:37:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 14:48:26[39m [INFO] : POST /api/signup status=[33m201[39m 190.096 ms - 492 bytes
+[90m2025-06-19 14:48:27[39m [INFO] : GET /api/me - Request receive: userId=[36m32[39m
+[90m2025-06-19 14:48:27[39m [INFO] : GET /api/me status=[33m201[39m 6.627 ms - 84 bytes
+[90m2025-06-19 14:48:44[39m [INFO] : GET /api/me - Request receive: userId=[36m32[39m
+[90m2025-06-19 14:48:44[39m [INFO] : GET /api/me status=[33m201[39m 44.460 ms - 84 bytes
+[90m2025-06-19 14:54:01[39m [INFO] : Email had already taken! : status=[33m401[39m
+[90m2025-06-19 14:54:01[39m [INFO] : POST /api/signup status=[33m401[39m 148.098 ms - 36 bytes
+[90m2025-06-19 14:54:01[39m [INFO] : Error: duplicate key value violates unique constraint "users_email_key",error: duplicate key value violates unique constraint "users_email_key"
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async signUp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:63:20)
+[90m2025-06-19 14:54:04[39m [INFO] : Email had already taken! : status=[33m401[39m
+[90m2025-06-19 14:54:04[39m [INFO] : POST /api/signup status=[33m401[39m 38.262 ms - 36 bytes
+[90m2025-06-19 14:54:04[39m [INFO] : Error: duplicate key value violates unique constraint "users_email_key",error: duplicate key value violates unique constraint "users_email_key"
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async signUp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:63:20)
+[90m2025-06-19 14:54:24[39m [INFO] : Email had already taken! : status=[33m401[39m
+[90m2025-06-19 14:54:24[39m [INFO] : POST /api/signup status=[33m401[39m 38.676 ms - 36 bytes
+[90m2025-06-19 14:54:24[39m [INFO] : Error: duplicate key value violates unique constraint "users_email_key",error: duplicate key value violates unique constraint "users_email_key"
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async signUp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:63:20)
+[90m2025-06-19 14:54:25[39m [INFO] : Email had already taken! : status=[33m401[39m
+[90m2025-06-19 14:54:25[39m [INFO] : POST /api/signup status=[33m401[39m 150.551 ms - 36 bytes
+[90m2025-06-19 14:54:25[39m [INFO] : Error: duplicate key value violates unique constraint "users_email_key",error: duplicate key value violates unique constraint "users_email_key"
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async signUp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:63:20)
+[90m2025-06-19 14:54:51[39m [INFO] : Email had already taken! : status=[33m401[39m
+[90m2025-06-19 14:54:51[39m [INFO] : POST /api/signup status=[33m401[39m 41.434 ms - 36 bytes
+[90m2025-06-19 14:54:51[39m [INFO] : Error: duplicate key value violates unique constraint "users_email_key",error: duplicate key value violates unique constraint "users_email_key"
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async signUp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:63:20)
+[90m2025-06-19 14:54:52[39m [INFO] : Email had already taken! : status=[33m401[39m
+[90m2025-06-19 14:54:52[39m [INFO] : POST /api/signup status=[33m401[39m 41.151 ms - 36 bytes
+[90m2025-06-19 14:54:52[39m [INFO] : Error: duplicate key value violates unique constraint "users_email_key",error: duplicate key value violates unique constraint "users_email_key"
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async signUp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:63:20)
+[90m2025-06-19 14:56:53[39m [INFO] : Email had already taken! : status=[33m401[39m
+[90m2025-06-19 14:56:53[39m [INFO] : POST /api/signup status=[33m401[39m 65.064 ms - 36 bytes
+[90m2025-06-19 14:56:53[39m [INFO] : Error: duplicate key value violates unique constraint "users_email_key",error: duplicate key value violates unique constraint "users_email_key"
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async signUp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:63:20)
+[90m2025-06-19 15:56:32[39m [INFO] : POST /api/signin status=[33m200[39m 236.517 ms - 496 bytes
+[90m2025-06-19 15:56:32[39m [INFO] : GET /api/me - Request receive: userId=[36m32[39m
+[90m2025-06-19 15:56:32[39m [INFO] : GET /api/me status=[33m201[39m 3.372 ms - 84 bytes
+[90m2025-06-19 15:56:40[39m [INFO] : GET /api/me - Request receive: userId=[36m32[39m
+[90m2025-06-19 15:56:40[39m [INFO] : GET /api/me status=[33m201[39m 4.141 ms - 84 bytes
+[90m2025-06-19 19:11:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:12:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:12:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:12:57[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:13:13[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:13:22[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:13:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:13:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:14:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:14:30[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:14:33[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:14:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:14:54[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:15:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:15:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:15:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:15:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:15:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:15:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:16:05[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:16:09[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:16:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:16:16[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:16:33[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:16:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:16:41[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:16:56[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:17:01[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:17:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:17:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:17:22[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:17:24[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:17:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:17:41[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:17:45[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:18:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:18:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:18:49[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:19:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:19:05[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:19:13[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:19:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:19:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:19:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:20:01[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 19:20:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-19 21:10:55[39m [INFO] : PSQL pool connected successfully!

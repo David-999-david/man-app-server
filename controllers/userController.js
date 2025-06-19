@@ -3,6 +3,8 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const pool = require("../db.js");
 const logger = require("../helper/logger.js");
+const crypto = require("crypto");
+const nodemailer = require("nodemailer");
 
 const JWT_SECRET = process.env.JWT_SECRET;
 const EXPIRE_IN = parseInt(process.env.JWT_EXPIRE_IN, 10);
@@ -45,9 +47,8 @@ async function signUp(req, res, next) {
     const { name, email, password } = req.body;
 
     if (!name || !email || !password) {
-      const err = new Error("Email and password are required!");
-      err.status = 400;
-      throw err;
+      logger.log("Fields are required : status=401");
+      res.status(401).json({ error: "Feilds are required" });
     }
 
     const emailExist = await pool.query(
@@ -55,9 +56,8 @@ async function signUp(req, res, next) {
       [email]
     );
     if (emailExist.rows.length > 0) {
-      const err = new Error("Email had already taken!");
-      err.status = 409;
-      throw err;
+      logger.info("Email had already taken! : status=401");
+      res.status(401).json({ error: "Email had already taken!" });
     }
 
     const hashPassword = await bcrypt.hash(password, SALT_ROUND);
@@ -112,9 +112,8 @@ async function signIn(req, res, next) {
       [email]
     );
     if (result.rows.length === 0) {
-      const err = new Error("Invalid credentials.");
-      err.status = 401;
-      throw err;
+      logger.info(`Email not match : status=401`);
+      return res.status(401).json({ error: "Email does not exist" });
     }
 
     const user = result.rows[0];
@@ -122,9 +121,8 @@ async function signIn(req, res, next) {
     const matchPass = await bcrypt.compare(password, user.password);
 
     if (!matchPass) {
-      const err = new Error("Password is incorrect!");
-      err.status = 401;
-      throw err;
+      logger.info(`Incorrect password : status=401`);
+      return res.status(401).json({ error: "Incorrect password" });
     }
 
     const accessToken = generateAccessToken(user.id);
@@ -189,7 +187,7 @@ async function refreshAccessToken(req, res, next) {
     const newRefresh = generateRefreshToken(payload.userId);
 
     res.status(201);
-    logger.info(`Refresh success => status=${res.statusCode}`)
+    logger.info(`Refresh success => status=${res.statusCode}`);
     return res.status(201).json({
       success: true,
       newAccess: newAccess,
@@ -236,6 +234,74 @@ async function getUserProfile(req, res, next) {
   } catch (err) {
     next(err);
   }
+}
+
+function generateOptRandom() {
+  const min = 100_000;
+  const max = 900_000;
+  const num = crypto.randomInt(min, max);
+  return num.toString();
+}
+
+async function emailRequestOtp(req, res, next) {
+  const email = req.body;
+
+  if (email === null) {
+    logger.info("Required email status=401");
+    res.status(401).json({ error: "Email is required" });
+  }
+
+  const userRes = await pool.query(`select * from users where email=$1`, [
+    email,
+  ]);
+
+  if (userRes.rows.length === 0) {
+    logger.info(
+      `User with ${userRes.rows[0].email} does not exist : status=401`
+    );
+    res.status(401).json({ error: "Email does not exist" });
+  }
+
+  const userId = userRes.rows[0].id;
+  const randomOtp = generateOptRandom;
+  const hashOtp = bcrypt.hash(RandomOtp, 10);
+  const expires_in = new Date(Date.now() + 10 * 60 * 1000);
+
+  await pool.query(
+    `insert into password_reset_opt (user_id,otp_hash,expires_at)
+    values ($1,$2,$3)
+    on conflict (user_id)
+    do update set otp_hash = Excluded.otp_hash,
+                  expires_at = Excluded.expires_at,
+                  used = false
+    `,
+    [userId, hashOtp, expires_in]
+  );
+
+  const transporter = nodemailer.createTestAccount({
+    host: process.env.SMTP_HOST,
+    port: +process.env.SMTP_PORT,
+    secure: true,
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+    },
+  });
+
+  await transporter.sendMail({
+    to: email,
+    subject: "Your password reset code",
+    html: `
+    <p>Your password reset code is:</p>
+    <h2>${randomOtp}</h2>
+    <p>It expires in 10 minutes.</p>
+    `,
+  });
+
+  logger.info(`An OTP is send to ${email} status=201`);
+  return res.status(201).json({
+    message: "If that email is registered, you'll recevie an OTP",
+  });
 }
 
 module.exports = {
