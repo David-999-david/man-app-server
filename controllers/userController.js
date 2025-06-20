@@ -5,6 +5,7 @@ const pool = require("../db.js");
 const logger = require("../helper/logger.js");
 const crypto = require("crypto");
 const nodemailer = require("nodemailer");
+const { error } = require("console");
 
 const JWT_SECRET = process.env.JWT_SECRET;
 const EXPIRE_IN = parseInt(process.env.JWT_EXPIRE_IN, 10);
@@ -48,7 +49,7 @@ async function signUp(req, res, next) {
 
     if (!name || !email || !password) {
       logger.log("Fields are required : status=401");
-      res.status(401).json({ error: "Feilds are required" });
+      return res.status(401).json({ error: "Feilds are required" });
     }
 
     const emailExist = await pool.query(
@@ -57,7 +58,7 @@ async function signUp(req, res, next) {
     );
     if (emailExist.rows.length > 0) {
       logger.info("Email had already taken! : status=401");
-      res.status(401).json({ error: "Email had already taken!" });
+      return res.status(401).json({ error: "Email had already taken!" });
     }
 
     const hashPassword = await bcrypt.hash(password, SALT_ROUND);
@@ -77,7 +78,7 @@ async function signUp(req, res, next) {
 
     console.log(`New user created => ${newUserId} ${email}`);
 
-    res.status(201).json({
+    return res.status(201).json({
       success: true,
       data: {
         accessToken: accessToken,
@@ -230,7 +231,7 @@ async function getUserProfile(req, res, next) {
       throw err;
     }
 
-    res.status(201).json(result.rows[0]);
+    return res.status(201).json(result.rows[0]);
   } catch (err) {
     next(err);
   }
@@ -248,7 +249,7 @@ async function emailRequestOtp(req, res, next) {
 
   if (email === null) {
     logger.info("Required email status=401");
-    res.status(401).json({ error: "Email is required" });
+    return res.status(401).json({ error: "Email is required" });
   }
 
   const userRes = await pool.query(`select * from users where email=$1`, [
@@ -259,12 +260,12 @@ async function emailRequestOtp(req, res, next) {
     logger.info(
       `User with ${userRes.rows[0].email} does not exist : status=401`
     );
-    res.status(401).json({ error: "Email does not exist" });
+    return res.status(401).json({ error: "Email does not exist" });
   }
 
   const userId = userRes.rows[0].id;
-  const randomOtp = generateOptRandom;
-  const hashOtp = bcrypt.hash(RandomOtp, 10);
+  const randomOtp = generateOptRandom();
+  const hashOtp = await bcrypt.hash(RandomOtp, 10);
   const expires_in = new Date(Date.now() + 10 * 60 * 1000);
 
   await pool.query(
@@ -299,9 +300,138 @@ async function emailRequestOtp(req, res, next) {
   });
 
   logger.info(`An OTP is send to ${email} status=201`);
-  return res.status(201).json({
+  return res.status(200).json({
     message: "If that email is registered, you'll recevie an OTP",
   });
+}
+
+async function verifyOtp(req, res, next) {
+  const { otp, email } = req.body;
+
+  if (email === null) {
+    logger.info("Invalid email : status=401");
+    return res.status(401).json({ error: "Invalid email" });
+  }
+
+  if (otp === null) {
+    logger.info("User input of otp is empty : status=401");
+    return res.status(401).json({ error: "Otp is empty" });
+  }
+
+  try {
+    const usersRes = await pool.query(`select id from users where email=$1 `, [
+      email,
+    ]);
+
+    if (usersRes.rows.length === 0) {
+      logger.info("Can't find user, status=401");
+      return res.status(401).json({ error: "Cannot find the user" });
+    }
+
+    const userId = userRes.rows[0].id;
+
+    const optRes = await pool.query(
+      `select id,opt_hash,expires_at,used from password_reset_opt
+    where user_id = $1
+    `,
+      [userId]
+    );
+
+    if (optRes.rows.length === 0) {
+      logger.info("Can't find user, status=400");
+      return res.status(400).json({ error: "Cannot find the user" });
+    }
+
+    const { id: otpId, otp_hash, expires_at, used } = optRes.rows[0];
+
+    if (used) {
+      logger.info(`This opt ${otp} already had been used`);
+      return res
+        .status(400)
+        .json({ error: `This opt ${otp} already had been used` });
+    }
+
+    if (new Date(expires_at) < new Date()) {
+      logger.info(`This otp ${otp} is expires, status=400`);
+      return res.status(400).json({ error: `This otp ${otp} is expires` });
+    }
+
+    const match = await bcrypt.compare(otp, otp_hash);
+
+    if (!match) {
+      logger.info("OTP is not match");
+      return res.status(401).json({ error: "Otp is not match" });
+    }
+
+    await pool.query(`update password_reset_opt set used = true where id=$1`, [
+      otpId,
+    ]);
+
+    const resetToken = jwt.sign(
+      { userId, purpose: "reset" },
+      process.env.RESET_SECRET,
+      { expires_in: process.env.RESET_EXPIRES_IN }
+    );
+
+    return res
+      .status(200)
+      .json({ message: "Verify-otp success.", resetToken: resetToken });
+  } catch (e) {
+    logger.error("Server error : status=500");
+    return res.status(500).json({ error: "Server error." });
+  }
+}
+
+async function resetPassword(req, res, next) {
+  const { resetToken, newPsw } = req.body;
+
+  if (!resetToken) {
+    logger.info("Reset Token is missing, status=401");
+    return res.status(401).json({ error: "Reset Token is missing" });
+  }
+  if (newPsw == null) {
+    logger.info("New password is required, status=401");
+    return res.status(401).json({ error: "New password is required" });
+  }
+
+  let payload;
+  try {
+    payload = jwt.verify(resetToken, process.env.RESET_SECRET);
+
+    if (payload.purpose !== "reset") {
+      return res.status(401).json({ error: "Invalid token reset" });
+    }
+
+    const userId = payload.userId;
+
+    const hashPsw =await bcrypt.hash(newPsw, 10);
+
+    await pool.query(
+      `
+      update users
+      set password = $1,
+      refresh_token = Null,
+      refresh_token_expires_at = now()
+      where id = $2
+      `,
+      [hashPsw, userId]
+    );
+
+    await pool.query(
+      `
+      delete from password_reset_opt where user_id=$1
+      `,
+      [userId]
+    );
+
+    logger.info("Password reset success : status=200");
+    return res.status(200).json({ message: "Password reset success" });
+  } catch (e) {
+    if (e.name === "TokenExpiredError" || e.name === "JsonWebTokenError") {
+      return res.status(401).json({ error: "Invalid or expired reset token" });
+    }
+    return res.status(500).json({ error: "Server error" });
+  }
 }
 
 module.exports = {
@@ -309,4 +439,7 @@ module.exports = {
   signUp,
   refreshAccessToken,
   getUserProfile,
+  emailRequestOtp,
+  verifyOtp,
+  resetPassword,
 };
