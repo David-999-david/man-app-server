@@ -858,3 +858,98 @@ PSQL pool connected successfully!
 [90m2025-06-19 19:20:02[39m [INFO] : PSQL pool connected successfully!
 [90m2025-06-19 21:10:55[39m [INFO] : PSQL pool connected successfully!
 [90m2025-06-20 20:09:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-20 20:11:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-20 21:02:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 07:29:03[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 07:40:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 10:21:33[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 10:57:58[39m [INFO] : POST /api/signup status=[33m201[39m 215.306 ms - 492 bytes
+[90m2025-06-21 10:57:58[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-21 10:57:58[39m [INFO] : GET /api/me status=[33m201[39m 6.692 ms - 91 bytes
+[90m2025-06-21 10:58:00[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-21 10:58:00[39m [INFO] : GET /api/me status=[33m201[39m 4.411 ms - 91 bytes
+[90m2025-06-21 10:58:02[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-21 10:58:02[39m [INFO] : GET /api/me status=[33m201[39m 2.459 ms - 91 bytes
+[90m2025-06-21 10:59:29[39m [INFO] : Error: Cannot read properties of undefined (reading 'email'),TypeError: Cannot read properties of undefined (reading 'email')
+    at emailRequestOtp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:261:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-21 10:59:29[39m [INFO] : POST /api/request-otp status=[33m500[39m 49.574 ms - 65 bytes
+[90m2025-06-21 11:01:11[39m [INFO] : Error: Cannot read properties of undefined (reading 'email'),TypeError: Cannot read properties of undefined (reading 'email')
+    at emailRequestOtp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:261:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-21 11:01:11[39m [INFO] : POST /api/request-otp status=[33m500[39m 144.892 ms - 65 bytes
+[90m2025-06-21 11:02:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:02:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:03:18[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-21 11:03:18[39m [INFO] : POST /api/token/refresh status=[33m201[39m 52.960 ms - 266 bytes
+[90m2025-06-21 11:03:18[39m [INFO] : Error: RandomOtp is not defined,ReferenceError: RandomOtp is not defined
+    at emailRequestOtp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:268:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-21 11:03:18[39m [INFO] : POST /api/request-otp status=[33m500[39m 4.245 ms - 36 bytes
+[90m2025-06-21 11:04:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:04:18[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:04:31[39m [INFO] : Error: RandomOtp is not defined,ReferenceError: RandomOtp is not defined
+    at emailRequestOtp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:268:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-21 11:04:31[39m [INFO] : POST /api/request-otp status=[33m500[39m 58.473 ms - 36 bytes
+[90m2025-06-21 11:04:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:04:55[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:05:09[39m [INFO] : Error: transporter.sendMail is not a function,TypeError: transporter.sendMail is not a function
+    at emailRequestOtp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:292:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-21 11:05:09[39m [INFO] : POST /api/request-otp status=[33m500[39m 228.571 ms - 50 bytes
+[90m2025-06-21 11:05:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:05:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:07:45[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:07:48[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:08:04[39m [INFO] : Error: Invalid login: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d9443c01a7336-237d8393210sm31554995ad.49 - gsmtp,Error: Invalid login: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d9443c01a7336-237d8393210sm31554995ad.49 - gsmtp
+    at SMTPConnection._formatError (C:\Users\user\Desktop\man-app-server\node_modules\nodemailer\lib\smtp-connection\index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\user\Desktop\man-app-server\node_modules\nodemailer\lib\smtp-connection\index.js:1588:34)
+    at SMTPConnection.<anonymous> (C:\Users\user\Desktop\man-app-server\node_modules\nodemailer\lib\smtp-connection\index.js:556:26)
+    at SMTPConnection._processResponse (C:\Users\user\Desktop\man-app-server\node_modules\nodemailer\lib\smtp-connection\index.js:993:20)
+    at SMTPConnection._onData (C:\Users\user\Desktop\man-app-server\node_modules\nodemailer\lib\smtp-connection\index.js:774:14)
+    at SMTPConnection._onSocketData (C:\Users\user\Desktop\man-app-server\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[90m2025-06-21 11:08:04[39m [INFO] : POST /api/request-otp status=[33m500[39m 1168.890 ms - 220 bytes
+[90m2025-06-21 11:15:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:15:32[39m [INFO] : Error: jwt malformed,JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:70:17)
+    at refreshAccessToken (C:\Users\user\Desktop\man-app-server\controllers\userController.js:159:21)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+    at processParams (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:582:12)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:291:5)
+[90m2025-06-21 11:15:32[39m [INFO] : POST /api/token/refresh status=[33m401[39m 12.689 ms - 25 bytes
+[90m2025-06-21 11:16:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:16:43[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 11:16:43[39m [INFO] : POST /api/request-otp status=[33m200[39m 2586.385 ms - 64 bytes
+[90m2025-06-21 11:19:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:19:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:19:20[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 11:19:20[39m [INFO] : POST /api/request-otp status=[33m200[39m 3236.356 ms - 64 bytes
+[90m2025-06-21 11:19:47[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 11:19:47[39m [INFO] : POST /api/request-otp status=[33m200[39m 2455.378 ms - 64 bytes
+[90m2025-06-21 11:20:01[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 11:20:01[39m [INFO] : POST /api/request-otp status=[33m200[39m 2496.576 ms - 64 bytes
+[90m2025-06-21 11:20:08[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 11:20:08[39m [INFO] : POST /api/request-otp status=[33m200[39m 2512.296 ms - 64 bytes
+[90m2025-06-21 11:20:14[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 11:20:14[39m [INFO] : POST /api/request-otp status=[33m200[39m 2376.811 ms - 64 bytes
+[90m2025-06-21 11:20:22[39m [INFO] : POST /api/request-otp status=[33m429[39m 1.663 ms - 69 bytes
+[90m2025-06-21 11:21:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:21:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:21:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:21:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:21:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:21:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 11:22:02[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 11:22:02[39m [INFO] : POST /api/request-otp status=[33m200[39m 2650.771 ms - 64 bytes

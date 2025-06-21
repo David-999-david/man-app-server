@@ -245,14 +245,14 @@ function generateOptRandom() {
 }
 
 async function emailRequestOtp(req, res, next) {
-  const email = req.body;
+  const { email } = req.body;
 
   if (email === null) {
     logger.info("Required email status=401");
     return res.status(401).json({ error: "Email is required" });
   }
 
-  const userRes = await pool.query(`select * from users where email=$1`, [
+  const userRes = await pool.query(`select id from users where email=$1`, [
     email,
   ]);
 
@@ -265,7 +265,7 @@ async function emailRequestOtp(req, res, next) {
 
   const userId = userRes.rows[0].id;
   const randomOtp = generateOptRandom();
-  const hashOtp = await bcrypt.hash(RandomOtp, 10);
+  const hashOtp = await bcrypt.hash(randomOtp, 10);
   const expires_in = new Date(Date.now() + 10 * 60 * 1000);
 
   await pool.query(
@@ -279,7 +279,7 @@ async function emailRequestOtp(req, res, next) {
     [userId, hashOtp, expires_in]
   );
 
-  const transporter = nodemailer.createTestAccount({
+  const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: +process.env.SMTP_PORT,
     secure: true,
@@ -290,6 +290,7 @@ async function emailRequestOtp(req, res, next) {
   });
 
   await transporter.sendMail({
+    from: '"MyApp Support" <David@myapp.com>',
     to: email,
     subject: "Your password reset code",
     html: `
@@ -393,6 +394,10 @@ async function resetPassword(req, res, next) {
     logger.info("New password is required, status=401");
     return res.status(401).json({ error: "New password is required" });
   }
+  if (newPsw.length < 6) {
+    logger.info("Password length less than 6 : status=401");
+    return res.status(401).json({ error: "Password length less than 6" });
+  }
 
   let payload;
   try {
@@ -404,7 +409,7 @@ async function resetPassword(req, res, next) {
 
     const userId = payload.userId;
 
-    const hashPsw =await bcrypt.hash(newPsw, 10);
+    const hashPsw = await bcrypt.hash(newPsw, 10);
 
     await pool.query(
       `
@@ -428,8 +433,10 @@ async function resetPassword(req, res, next) {
     return res.status(200).json({ message: "Password reset success" });
   } catch (e) {
     if (e.name === "TokenExpiredError" || e.name === "JsonWebTokenError") {
+      logger.error("Invalid or expired reset token : status=401");
       return res.status(401).json({ error: "Invalid or expired reset token" });
     }
+    logger.info("Server error : status=500");
     return res.status(500).json({ error: "Server error" });
   }
 }
