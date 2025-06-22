@@ -953,3 +953,197 @@ PSQL pool connected successfully!
 [90m2025-06-21 11:21:42[39m [INFO] : PSQL pool connected successfully!
 [90m2025-06-21 11:22:02[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
 [90m2025-06-21 11:22:02[39m [INFO] : POST /api/request-otp status=[33m200[39m 2650.771 ms - 64 bytes
+[90m2025-06-21 14:18:18[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 14:19:59[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 14:19:59[39m [INFO] : POST /api/request-otp status=[33m200[39m 2756.914 ms - 64 bytes
+[90m2025-06-21 14:23:07[39m [INFO] : POST /api/signup status=[33m201[39m 131.488 ms - 492 bytes
+[90m2025-06-21 14:23:07[39m [INFO] : GET /api/me - Request receive: userId=[36m41[39m
+[90m2025-06-21 14:23:07[39m [INFO] : GET /api/me status=[33m201[39m 5.260 ms - 93 bytes
+[90m2025-06-21 14:23:30[39m [INFO] : An OTP is send to htaydavid99@gmail.com status=[33m201[39m
+[90m2025-06-21 14:23:30[39m [INFO] : POST /api/request-otp status=[33m200[39m 3312.209 ms - 64 bytes
+[90m2025-06-21 14:26:56[39m [INFO] : POST /api/signin status=[33m200[39m 96.051 ms - 496 bytes
+[90m2025-06-21 14:26:56[39m [INFO] : GET /api/me - Request receive: userId=[36m41[39m
+[90m2025-06-21 14:26:56[39m [INFO] : GET /api/me status=[33m201[39m 2.943 ms - 93 bytes
+[90m2025-06-21 14:27:15[39m [INFO] : An OTP is send to htaydavid99@gmail.com status=[33m201[39m
+[90m2025-06-21 14:27:15[39m [INFO] : POST /api/request-otp status=[33m200[39m 3386.157 ms - 64 bytes
+[90m2025-06-21 14:29:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 14:32:37[39m [INFO] : An OTP is send to htaydavid99@gmail.com status=[33m201[39m
+[90m2025-06-21 14:32:37[39m [INFO] : POST /api/request-otp status=[33m200[39m 2614.082 ms - 64 bytes
+[90m2025-06-21 14:41:53[39m [INFO] : An OTP is send to htaydavid99@gmail.com status=[33m201[39m
+[90m2025-06-21 14:41:53[39m [INFO] : POST /api/request-otp status=[33m200[39m 3302.329 ms - 64 bytes
+[90m2025-06-21 14:43:31[39m [INFO] : An OTP is send to htaydavid99@gmail.com status=[33m201[39m
+[90m2025-06-21 14:43:31[39m [INFO] : POST /api/request-otp status=[33m200[39m 3205.980 ms - 64 bytes
+[90m2025-06-21 15:07:13[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 15:08:04[39m [INFO] : Error: Cannot read properties of undefined (reading 'email'),TypeError: Cannot read properties of undefined (reading 'email')
+    at emailRequestOtp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:261:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-21 15:08:04[39m [INFO] : POST /api/request-otp status=[33m500[39m 51.527 ms - 65 bytes
+[90m2025-06-21 15:09:16[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-21 15:09:33[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 15:09:33[39m [INFO] : POST /api/request-otp status=[33m200[39m 3408.191 ms - 64 bytes
+[90m2025-06-21 15:27:33[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 15:27:33[39m [INFO] : POST /api/request-otp status=[33m200[39m 2611.162 ms - 64 bytes
+[90m2025-06-21 15:31:40[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 15:31:40[39m [INFO] : POST /api/request-otp status=[33m200[39m 2569.182 ms - 64 bytes
+[90m2025-06-21 15:35:44[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 15:35:44[39m [INFO] : POST /api/request-otp status=[33m200[39m 3441.188 ms - 64 bytes
+[90m2025-06-21 15:45:07[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 15:45:07[39m [INFO] : POST /api/request-otp status=[33m200[39m 2638.789 ms - 64 bytes
+[90m2025-06-21 16:18:44[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-21 16:18:44[39m [INFO] : POST /api/request-otp status=[33m200[39m 3514.722 ms - 64 bytes
+[90m2025-06-22 07:56:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 07:58:02[39m [INFO] : Error: Cannot read properties of undefined (reading 'email'),TypeError: Cannot read properties of undefined (reading 'email')
+    at emailRequestOtp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:261:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-22 07:58:02[39m [INFO] : POST /api/request-otp status=[33m500[39m 82.338 ms - 65 bytes
+[90m2025-06-22 07:58:47[39m [INFO] : Error: Cannot read properties of undefined (reading 'email'),TypeError: Cannot read properties of undefined (reading 'email')
+    at emailRequestOtp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:261:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-22 07:58:47[39m [INFO] : POST /api/request-otp status=[33m500[39m 57.154 ms - 65 bytes
+[90m2025-06-22 07:59:00[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 07:59:00[39m [INFO] : POST /api/request-otp status=[33m200[39m 2776.341 ms - 64 bytes
+[90m2025-06-22 08:01:12[39m [INFO] : Error: Cannot read properties of undefined (reading 'email'),TypeError: Cannot read properties of undefined (reading 'email')
+    at emailRequestOtp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:261:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-22 08:01:12[39m [INFO] : POST /api/request-otp status=[33m500[39m 55.335 ms - 65 bytes
+[90m2025-06-22 08:01:18[39m [INFO] : Error: Cannot read properties of undefined (reading 'email'),TypeError: Cannot read properties of undefined (reading 'email')
+    at emailRequestOtp (C:\Users\user\Desktop\man-app-server\controllers\userController.js:261:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-22 08:01:18[39m [INFO] : POST /api/request-otp status=[33m500[39m 3.905 ms - 65 bytes
+[90m2025-06-22 08:06:05[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 08:06:25[39m [INFO] : User with dontsjbdhd@gmail.com does not exist : status=[33m401[39m
+[90m2025-06-22 08:06:25[39m [INFO] : POST /api/request-otp status=[33m401[39m 52.848 ms - 32 bytes
+[90m2025-06-22 08:08:54[39m [INFO] : User with dontgjdghs@gmail.com does not exist : status=[33m401[39m
+[90m2025-06-22 08:08:54[39m [INFO] : POST /api/request-otp status=[33m401[39m 43.090 ms - 32 bytes
+[90m2025-06-22 08:09:48[39m [INFO] : User with sugshs@gmail.com does not exist : status=[33m401[39m
+[90m2025-06-22 08:09:48[39m [INFO] : POST /api/request-otp status=[33m401[39m 42.694 ms - 32 bytes
+[90m2025-06-22 08:10:48[39m [INFO] : User with djdvjs@gmail.com does not exist : status=[33m401[39m
+[90m2025-06-22 08:10:48[39m [INFO] : POST /api/request-otp status=[33m401[39m 40.870 ms - 32 bytes
+[90m2025-06-22 08:12:13[39m [INFO] : User with dontishdcj@gmail.com does not exist : status=[33m401[39m
+[90m2025-06-22 08:12:13[39m [INFO] : POST /api/request-otp status=[33m401[39m 41.345 ms - 32 bytes
+[90m2025-06-22 08:18:05[39m [INFO] : POST /api/request-otp status=[33m429[39m 4.926 ms - 69 bytes
+[90m2025-06-22 08:22:52[39m [INFO] : User with svdhd@gmail.com does not exist : status=[33m401[39m
+[90m2025-06-22 08:22:52[39m [INFO] : POST /api/request-otp status=[33m401[39m 42.752 ms - 32 bytes
+[90m2025-06-22 08:22:56[39m [INFO] : User with svdhd@gmail.com does not exist : status=[33m401[39m
+[90m2025-06-22 08:22:56[39m [INFO] : POST /api/request-otp status=[33m401[39m 2.031 ms - 32 bytes
+[90m2025-06-22 08:22:57[39m [INFO] : User with svdhd@gmail.com does not exist : status=[33m401[39m
+[90m2025-06-22 08:22:57[39m [INFO] : POST /api/request-otp status=[33m401[39m 2.538 ms - 32 bytes
+[90m2025-06-22 08:22:58[39m [INFO] : User with svdhd@gmail.com does not exist : status=[33m401[39m
+[90m2025-06-22 08:22:58[39m [INFO] : POST /api/request-otp status=[33m401[39m 6.951 ms - 32 bytes
+[90m2025-06-22 08:22:59[39m [INFO] : User with svdhd@gmail.com does not exist : status=[33m401[39m
+[90m2025-06-22 08:22:59[39m [INFO] : POST /api/request-otp status=[33m401[39m 1.815 ms - 32 bytes
+[90m2025-06-22 08:23:05[39m [INFO] : POST /api/request-otp status=[33m429[39m 0.870 ms - 69 bytes
+[90m2025-06-22 08:23:24[39m [INFO] : POST /api/request-otp status=[33m429[39m 0.792 ms - 69 bytes
+[90m2025-06-22 08:31:56[39m [INFO] : POST /api/request-otp status=[33m429[39m 5.287 ms - 69 bytes
+[90m2025-06-22 08:40:00[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 08:40:00[39m [INFO] : POST /api/request-otp status=[33m200[39m 3647.703 ms - 64 bytes
+[90m2025-06-22 15:31:04[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:32:23[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 15:32:23[39m [INFO] : POST /api/request-otp status=[33m200[39m 6697.970 ms - 64 bytes
+[90m2025-06-22 15:34:34[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 15:34:34[39m [INFO] : POST /api/request-otp status=[33m200[39m 2443.771 ms - 64 bytes
+[90m2025-06-22 15:38:31[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 15:38:31[39m [INFO] : POST /api/request-otp status=[33m200[39m 2623.592 ms - 64 bytes
+[90m2025-06-22 15:38:45[39m [ERROR] : Server error : status=[33m500[39m
+[90m2025-06-22 15:38:45[39m [INFO] : POST /api/verify-otp status=[33m500[39m 133.591 ms - 25 bytes
+[90m2025-06-22 15:41:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:41:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:42:33[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:42:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:43:18[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 15:43:18[39m [INFO] : POST /api/request-otp status=[33m200[39m 2680.769 ms - 64 bytes
+[90m2025-06-22 15:43:34[39m [ERROR] : Server error : status=[33m500[39m
+[90m2025-06-22 15:43:34[39m [INFO] : POST /api/verify-otp status=[33m500[39m 49.778 ms - 25 bytes
+[90m2025-06-22 15:46:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:47:42[39m [ERROR] : Server error : status=[33m500[39m
+[90m2025-06-22 15:47:42[39m [INFO] : POST /api/verify-otp status=[33m500[39m 219.446 ms - 25 bytes
+[90m2025-06-22 15:47:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:48:36[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 15:48:36[39m [INFO] : POST /api/request-otp status=[33m200[39m 2526.519 ms - 64 bytes
+[90m2025-06-22 15:49:08[39m [ERROR] : Server error : status=[33m500[39m
+[90m2025-06-22 15:49:08[39m [INFO] : POST /api/verify-otp status=[33m500[39m 113.105 ms - 25 bytes
+[90m2025-06-22 15:50:41[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:50:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:50:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:50:48[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:50:49[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:51:24[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:51:25[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:51:32[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:52:05[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 15:52:05[39m [INFO] : POST /api/request-otp status=[33m200[39m 2485.235 ms - 64 bytes
+[90m2025-06-22 15:52:17[39m [INFO] : OTP is not match
+[90m2025-06-22 15:52:17[39m [INFO] : POST /api/verify-otp status=[33m401[39m 104.076 ms - 28 bytes
+[90m2025-06-22 15:52:23[39m [ERROR] : Server error : status=[33m500[39m  "expiresIn" should be a number of seconds or string representing a timespan
+[90m2025-06-22 15:52:23[39m [INFO] : POST /api/verify-otp status=[33m500[39m 71.012 ms - 25 bytes
+[90m2025-06-22 15:56:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:57:00[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 15:57:00[39m [INFO] : POST /api/request-otp status=[33m200[39m 2546.417 ms - 64 bytes
+[90m2025-06-22 15:57:14[39m [ERROR] : Server error : status=[33m500[39m  "expiresIn" should be a number of seconds or string representing a timespan
+[90m2025-06-22 15:57:14[39m [INFO] : POST /api/verify-otp status=[33m500[39m 110.662 ms - 25 bytes
+[90m2025-06-22 15:58:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:58:21[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:58:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:58:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:58:49[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:59:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:59:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-22 15:59:36[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 15:59:36[39m [INFO] : POST /api/request-otp status=[33m200[39m 3265.108 ms - 64 bytes
+[90m2025-06-22 15:59:50[39m [INFO] : POST /api/verify-otp status=[33m200[39m 110.838 ms - 217 bytes
+[90m2025-06-22 16:00:36[39m [INFO] : Email not match : status=[33m401[39m
+[90m2025-06-22 16:00:36[39m [INFO] : POST /api/signin status=[33m401[39m 38.266 ms - 32 bytes
+[90m2025-06-22 16:00:44[39m [INFO] : Incorrect password : status=[33m401[39m
+[90m2025-06-22 16:00:44[39m [INFO] : POST /api/signin status=[33m401[39m 80.450 ms - 30 bytes
+[90m2025-06-22 16:01:12[39m [INFO] : User with dontgun54@gfmail.com does not exist : status=[33m401[39m
+[90m2025-06-22 16:01:12[39m [INFO] : POST /api/request-otp status=[33m401[39m 39.393 ms - 32 bytes
+[90m2025-06-22 16:01:18[39m [INFO] : User with dontgun5jhsb4@gmail.com does not exist : status=[33m401[39m
+[90m2025-06-22 16:01:18[39m [INFO] : POST /api/request-otp status=[33m401[39m 2.202 ms - 32 bytes
+[90m2025-06-22 16:01:38[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 16:01:38[39m [INFO] : POST /api/request-otp status=[33m200[39m 3271.442 ms - 64 bytes
+[90m2025-06-22 16:01:43[39m [INFO] : OTP is not match
+[90m2025-06-22 16:01:43[39m [INFO] : POST /api/verify-otp status=[33m401[39m 65.440 ms - 28 bytes
+[90m2025-06-22 16:15:53[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 16:15:53[39m [INFO] : POST /api/request-otp status=[33m200[39m 2799.518 ms - 64 bytes
+[90m2025-06-22 16:19:29[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 16:19:29[39m [INFO] : POST /api/request-otp status=[33m200[39m 2488.057 ms - 64 bytes
+[90m2025-06-22 16:20:57[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 16:20:57[39m [INFO] : POST /api/request-otp status=[33m200[39m 2525.501 ms - 64 bytes
+[90m2025-06-22 16:56:12[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 16:56:12[39m [INFO] : POST /api/request-otp status=[33m200[39m 3324.283 ms - 64 bytes
+[90m2025-06-22 16:57:04[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 16:57:04[39m [INFO] : POST /api/request-otp status=[33m200[39m 3144.637 ms - 64 bytes
+[90m2025-06-22 17:02:00[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 17:02:00[39m [INFO] : POST /api/request-otp status=[33m200[39m 3271.734 ms - 64 bytes
+[90m2025-06-22 17:07:46[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 17:07:46[39m [INFO] : POST /api/request-otp status=[33m200[39m 3215.987 ms - 64 bytes
+[90m2025-06-22 17:07:58[39m [INFO] : OTP is not match
+[90m2025-06-22 17:07:58[39m [INFO] : POST /api/verify-otp status=[33m401[39m 211.030 ms - 28 bytes
+[90m2025-06-22 17:08:04[39m [INFO] : POST /api/verify-otp status=[33m200[39m 78.520 ms - 217 bytes
+[90m2025-06-22 17:08:18[39m [INFO] : This opt 884835 already had been used
+[90m2025-06-22 17:08:18[39m [INFO] : POST /api/verify-otp status=[33m400[39m 39.855 ms - 49 bytes
+[90m2025-06-22 17:09:38[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 17:09:38[39m [INFO] : POST /api/request-otp status=[33m200[39m 2434.742 ms - 64 bytes
+[90m2025-06-22 17:09:47[39m [INFO] : OTP is not match
+[90m2025-06-22 17:09:47[39m [INFO] : POST /api/verify-otp status=[33m401[39m 102.778 ms - 28 bytes
+[90m2025-06-22 17:10:03[39m [INFO] : OTP is not match
+[90m2025-06-22 17:10:03[39m [INFO] : POST /api/verify-otp status=[33m401[39m 87.075 ms - 28 bytes
+[90m2025-06-22 17:10:14[39m [INFO] : POST /api/verify-otp status=[33m200[39m 106.299 ms - 217 bytes
+[90m2025-06-22 17:10:25[39m [INFO] : This opt 661694 already had been used
+[90m2025-06-22 17:10:25[39m [INFO] : POST /api/verify-otp status=[33m400[39m 41.914 ms - 49 bytes
+[90m2025-06-22 17:11:37[39m [INFO] : This opt 661694 already had been used
+[90m2025-06-22 17:11:37[39m [INFO] : POST /api/verify-otp status=[33m400[39m 38.567 ms - 49 bytes
+[90m2025-06-22 17:11:44[39m [INFO] : This opt 687646 already had been used
+[90m2025-06-22 17:11:44[39m [INFO] : POST /api/verify-otp status=[33m400[39m 3.161 ms - 49 bytes
+[90m2025-06-22 17:12:19[39m [INFO] : This opt 684664 already had been used
+[90m2025-06-22 17:12:19[39m [INFO] : POST /api/verify-otp status=[33m400[39m 40.367 ms - 49 bytes
+[90m2025-06-22 17:13:01[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 17:13:01[39m [INFO] : POST /api/request-otp status=[33m200[39m 2585.158 ms - 64 bytes
+[90m2025-06-22 17:13:08[39m [INFO] : POST /api/verify-otp status=[33m429[39m 1.193 ms - 61 bytes
+[90m2025-06-22 17:13:25[39m [INFO] : POST /api/verify-otp status=[33m429[39m 0.888 ms - 61 bytes
+[90m2025-06-22 18:53:25[39m [INFO] : An OTP is send to dontgun54@gmail.com status=[33m201[39m
+[90m2025-06-22 18:53:25[39m [INFO] : POST /api/request-otp status=[33m200[39m 2843.550 ms - 64 bytes
+[90m2025-06-22 18:57:05[39m [INFO] : OTP is not match
+[90m2025-06-22 18:57:05[39m [INFO] : POST /api/verify-otp status=[33m401[39m 101.844 ms - 28 bytes
+[90m2025-06-22 18:57:16[39m [INFO] : OTP is not match
+[90m2025-06-22 18:57:16[39m [INFO] : POST /api/verify-otp status=[33m401[39m 92.633 ms - 28 bytes

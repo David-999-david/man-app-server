@@ -17,6 +17,8 @@ const REFRESH_TOKEN_EXPIRES_IN = parseInt(
   10
 );
 
+const RESET_EXPIRE_IN = parseInt(process.env.RESET_EXPIRE_IN, 10);
+
 function generateAccessToken(userId) {
   return jwt.sign({ userId, purpose: "access" }, JWT_SECRET, {
     expiresIn: EXPIRE_IN,
@@ -257,9 +259,7 @@ async function emailRequestOtp(req, res, next) {
   ]);
 
   if (userRes.rows.length === 0) {
-    logger.info(
-      `User with ${userRes.rows[0].email} does not exist : status=401`
-    );
+    logger.info(`User with ${email} does not exist : status=401`);
     return res.status(401).json({ error: "Email does not exist" });
   }
 
@@ -290,7 +290,7 @@ async function emailRequestOtp(req, res, next) {
   });
 
   await transporter.sendMail({
-    from: '"MyApp Support" <David@myapp.com>',
+    from: "没有油小墨水 <dontgun54@gmail.com>",
     to: email,
     subject: "Your password reset code",
     html: `
@@ -329,10 +329,10 @@ async function verifyOtp(req, res, next) {
       return res.status(401).json({ error: "Cannot find the user" });
     }
 
-    const userId = userRes.rows[0].id;
+    const userId = usersRes.rows[0].id;
 
     const optRes = await pool.query(
-      `select id,opt_hash,expires_at,used from password_reset_opt
+      `select id,otp_hash,expires_at,used from password_reset_opt
     where user_id = $1
     `,
       [userId]
@@ -371,14 +371,14 @@ async function verifyOtp(req, res, next) {
     const resetToken = jwt.sign(
       { userId, purpose: "reset" },
       process.env.RESET_SECRET,
-      { expires_in: process.env.RESET_EXPIRES_IN }
+      { expiresIn: RESET_EXPIRE_IN }
     );
 
     return res
       .status(200)
       .json({ message: "Verify-otp success.", resetToken: resetToken });
   } catch (e) {
-    logger.error("Server error : status=500");
+    logger.error("Server error : status=500 ", e);
     return res.status(500).json({ error: "Server error." });
   }
 }
