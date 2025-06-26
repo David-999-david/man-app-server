@@ -187,7 +187,7 @@ async function refreshAccessToken(req, res, next) {
 
     const newAccess = generateAccessToken(payload.userId);
 
-    const newRefresh = generateRefreshToken(payload.userId);
+    const newRefresh =await generateRefreshToken(payload.userId);
 
     res.status(201);
     logger.info(`Refresh success => status=${res.statusCode}`);
