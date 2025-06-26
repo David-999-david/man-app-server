@@ -1745,3 +1745,500 @@ PSQL pool connected successfully!
 [90m2025-06-24 21:46:42[39m [INFO] : PSQL pool connected successfully!
 [90m2025-06-24 21:46:48[39m [INFO] : PSQL pool connected successfully!
 [90m2025-06-24 21:46:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 05:48:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 05:48:40[39m [INFO] : POST /api/auth/signin status=[33m200[39m 107.103 ms - 496 bytes
+[90m2025-06-26 05:48:58[39m [INFO] : GET /api/todos status=[33m200[39m 50.268 ms - 527 bytes
+[90m2025-06-26 05:49:38[39m [INFO] : Error: jwt expired,TokenExpiredError: jwt expired
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorizationCheck (C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:28:7)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-26 05:49:38[39m [INFO] : POST /api/todos status=[33m401[39m 3.919 ms - 23 bytes
+[90m2025-06-26 05:50:04[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 05:50:11[39m [INFO] : POST /api/auth/signin status=[33m200[39m 85.168 ms - 497 bytes
+[90m2025-06-26 05:50:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 05:50:37[39m [INFO] : POST /api/auth/signin status=[33m200[39m 71.412 ms - 497 bytes
+[90m2025-06-26 05:51:10[39m [INFO] : POST /api/todos status=[33m201[39m 54.116 ms - 205 bytes
+[90m2025-06-26 05:51:18[39m [INFO] : POST /api/todos status=[33m201[39m 6.195 ms - 205 bytes
+[90m2025-06-26 05:51:24[39m [INFO] : POST /api/todos status=[33m201[39m 6.228 ms - 205 bytes
+[90m2025-06-26 05:51:31[39m [INFO] : POST /api/todos status=[33m201[39m 2.845 ms - 205 bytes
+[90m2025-06-26 05:51:40[39m [INFO] : POST /api/todos status=[33m201[39m 2.369 ms - 205 bytes
+[90m2025-06-26 05:51:46[39m [INFO] : POST /api/todos status=[33m201[39m 5.565 ms - 206 bytes
+[90m2025-06-26 05:51:52[39m [INFO] : POST /api/todos status=[33m201[39m 5.850 ms - 206 bytes
+[90m2025-06-26 05:51:58[39m [INFO] : POST /api/todos status=[33m201[39m 6.125 ms - 206 bytes
+[90m2025-06-26 05:52:03[39m [INFO] : POST /api/todos status=[33m201[39m 5.808 ms - 206 bytes
+[90m2025-06-26 05:52:09[39m [INFO] : POST /api/todos status=[33m201[39m 5.558 ms - 206 bytes
+[90m2025-06-26 05:52:17[39m [INFO] : POST /api/todos status=[33m201[39m 1.987 ms - 206 bytes
+[90m2025-06-26 05:52:23[39m [INFO] : POST /api/todos status=[33m201[39m 5.668 ms - 206 bytes
+[90m2025-06-26 05:52:28[39m [INFO] : POST /api/todos status=[33m201[39m 5.084 ms - 206 bytes
+[90m2025-06-26 05:52:36[39m [INFO] : POST /api/todos status=[33m201[39m 5.006 ms - 206 bytes
+[90m2025-06-26 05:52:42[39m [INFO] : POST /api/todos status=[33m201[39m 2.143 ms - 206 bytes
+[90m2025-06-26 05:52:45[39m [INFO] : POST /api/todos status=[33m201[39m 4.922 ms - 206 bytes
+[90m2025-06-26 05:52:46[39m [INFO] : POST /api/todos status=[33m201[39m 4.985 ms - 206 bytes
+[90m2025-06-26 05:52:47[39m [INFO] : POST /api/todos status=[33m201[39m 5.263 ms - 206 bytes
+[90m2025-06-26 05:52:47[39m [INFO] : POST /api/todos status=[33m201[39m 2.303 ms - 206 bytes
+[90m2025-06-26 05:52:48[39m [INFO] : POST /api/todos status=[33m201[39m 5.443 ms - 206 bytes
+[90m2025-06-26 05:52:49[39m [INFO] : POST /api/todos status=[33m201[39m 4.882 ms - 206 bytes
+[90m2025-06-26 05:52:49[39m [INFO] : POST /api/todos status=[33m201[39m 5.384 ms - 206 bytes
+[90m2025-06-26 05:52:50[39m [INFO] : POST /api/todos status=[33m201[39m 5.212 ms - 206 bytes
+[90m2025-06-26 05:52:51[39m [INFO] : POST /api/todos status=[33m201[39m 2.248 ms - 206 bytes
+[90m2025-06-26 05:52:51[39m [INFO] : POST /api/todos status=[33m201[39m 5.282 ms - 206 bytes
+[90m2025-06-26 05:52:52[39m [INFO] : POST /api/todos status=[33m201[39m 4.972 ms - 206 bytes
+[90m2025-06-26 05:52:53[39m [INFO] : POST /api/todos status=[33m201[39m 1.982 ms - 206 bytes
+[90m2025-06-26 05:52:53[39m [INFO] : POST /api/todos status=[33m201[39m 4.980 ms - 206 bytes
+[90m2025-06-26 05:52:54[39m [INFO] : POST /api/todos status=[33m201[39m 2.571 ms - 206 bytes
+[90m2025-06-26 05:52:56[39m [INFO] : POST /api/todos status=[33m201[39m 5.216 ms - 206 bytes
+[90m2025-06-26 05:52:57[39m [INFO] : POST /api/todos status=[33m201[39m 5.145 ms - 206 bytes
+[90m2025-06-26 05:52:58[39m [INFO] : POST /api/todos status=[33m201[39m 5.124 ms - 206 bytes
+[90m2025-06-26 05:52:59[39m [INFO] : POST /api/todos status=[33m201[39m 32.217 ms - 206 bytes
+[90m2025-06-26 05:53:00[39m [INFO] : POST /api/todos status=[33m201[39m 4.855 ms - 206 bytes
+[90m2025-06-26 05:53:01[39m [INFO] : POST /api/todos status=[33m201[39m 2.433 ms - 206 bytes
+[90m2025-06-26 05:53:08[39m [INFO] : POST /api/todos status=[33m201[39m 5.008 ms - 210 bytes
+[90m2025-06-26 05:53:08[39m [INFO] : POST /api/todos status=[33m201[39m 5.220 ms - 210 bytes
+[90m2025-06-26 05:53:09[39m [INFO] : POST /api/todos status=[33m201[39m 2.030 ms - 210 bytes
+[90m2025-06-26 05:53:10[39m [INFO] : POST /api/todos status=[33m201[39m 5.347 ms - 210 bytes
+[90m2025-06-26 05:53:10[39m [INFO] : POST /api/todos status=[33m201[39m 5.013 ms - 210 bytes
+[90m2025-06-26 05:53:11[39m [INFO] : POST /api/todos status=[33m201[39m 2.134 ms - 210 bytes
+[90m2025-06-26 05:53:12[39m [INFO] : POST /api/todos status=[33m201[39m 2.145 ms - 210 bytes
+[90m2025-06-26 05:53:12[39m [INFO] : POST /api/todos status=[33m201[39m 5.190 ms - 210 bytes
+[90m2025-06-26 05:53:13[39m [INFO] : POST /api/todos status=[33m201[39m 4.902 ms - 210 bytes
+[90m2025-06-26 05:53:19[39m [INFO] : POST /api/todos status=[33m201[39m 4.981 ms - 211 bytes
+[90m2025-06-26 05:53:21[39m [INFO] : POST /api/todos status=[33m201[39m 2.254 ms - 211 bytes
+[90m2025-06-26 05:53:22[39m [INFO] : POST /api/todos status=[33m201[39m 5.023 ms - 211 bytes
+[90m2025-06-26 05:53:23[39m [INFO] : POST /api/todos status=[33m201[39m 4.638 ms - 211 bytes
+[90m2025-06-26 05:53:23[39m [INFO] : POST /api/todos status=[33m201[39m 5.225 ms - 211 bytes
+[90m2025-06-26 05:53:24[39m [INFO] : POST /api/todos status=[33m201[39m 2.023 ms - 211 bytes
+[90m2025-06-26 05:53:24[39m [INFO] : POST /api/todos status=[33m201[39m 4.751 ms - 211 bytes
+[90m2025-06-26 05:53:25[39m [INFO] : POST /api/todos status=[33m201[39m 5.035 ms - 211 bytes
+[90m2025-06-26 05:53:26[39m [INFO] : POST /api/todos status=[33m201[39m 5.384 ms - 211 bytes
+[90m2025-06-26 05:53:27[39m [INFO] : POST /api/todos status=[33m201[39m 5.032 ms - 211 bytes
+[90m2025-06-26 05:53:28[39m [INFO] : POST /api/todos status=[33m201[39m 2.363 ms - 211 bytes
+[90m2025-06-26 05:53:28[39m [INFO] : POST /api/todos status=[33m201[39m 4.619 ms - 211 bytes
+[90m2025-06-26 05:53:29[39m [INFO] : POST /api/todos status=[33m201[39m 4.921 ms - 211 bytes
+[90m2025-06-26 05:53:29[39m [INFO] : POST /api/todos status=[33m201[39m 4.983 ms - 211 bytes
+[90m2025-06-26 05:53:30[39m [INFO] : POST /api/todos status=[33m201[39m 4.724 ms - 211 bytes
+[90m2025-06-26 05:53:36[39m [INFO] : GET /api/todos status=[33m200[39m 4.336 ms - 3309 bytes
+[90m2025-06-26 05:54:16[39m [INFO] : GET /api/todos?page=2 status=[33m200[39m 147.862 ms - 3230 bytes
+[90m2025-06-26 05:54:34[39m [INFO] : GET /api/todos?page=2&limit=10 status=[33m200[39m 37.774 ms - 1699 bytes
+[90m2025-06-26 05:57:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 05:57:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 05:57:17[39m [INFO] : Error: TotalCounts is not defined,ReferenceError: TotalCounts is not defined
+    at getAllTodo (C:\Users\user\Desktop\man-app-server\controllers\todoController.js:101:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-26 05:57:17[39m [INFO] : GET /api/todos?page=2&limit=10 status=[33m500[39m 11.942 ms - 38 bytes
+[90m2025-06-26 05:57:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 05:57:30[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 05:57:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 05:57:59[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 05:58:01[39m [INFO] : GET /api/todos?page=2&limit=10 status=[33m200[39m 13.618 ms - 1699 bytes
+[90m2025-06-26 06:05:14[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 06:05:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 06:05:21[39m [INFO] : Error: counts is not defined,ReferenceError: counts is not defined
+    at getAllTodo (C:\Users\user\Desktop\man-app-server\controllers\todoController.js:102:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-06-26 06:05:21[39m [INFO] : GET /api/todos?page=2&limit=10 status=[33m500[39m 13.544 ms - 33 bytes
+[90m2025-06-26 06:05:32[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 06:05:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 06:05:38[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 06:05:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 06:05:45[39m [INFO] : GET /api/todos?page=2&limit=10 status=[33m200[39m 9.774 ms - 1704 bytes
+[90m2025-06-26 06:14:04[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 06:14:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-26 06:14:15[39m [INFO] : GET /api/todos?page=2&limit=10 status=[33m200[39m 11.338 ms - 1720 bytes
+[90m2025-06-26 06:14:29[39m [INFO] : GET /api/todos?page=7&limit=10 status=[33m200[39m 43.438 ms - 399 bytes
+[90m2025-06-26 06:41:53[39m [INFO] : GET /api/todos status=[33m200[39m 38.729 ms - 3330 bytes
+[90m2025-06-26 06:43:49[39m [INFO] : GET /api/todos?page=0&limit=0 status=[33m200[39m 35.608 ms - 3330 bytes
+[90m2025-06-26 07:48:46[39m [INFO] : POST /api/auth/signin status=[33m200[39m 153.710 ms - 497 bytes
+[90m2025-06-26 07:48:47[39m [INFO] : GET /api/todos/?q=&page=1&limit=10 status=[33m200[39m 9.364 ms - 1725 bytes
+[90m2025-06-26 07:52:06[39m [INFO] : POST /api/auth/signin status=[33m200[39m 209.168 ms - 497 bytes
+[90m2025-06-26 07:52:06[39m [INFO] : GET /api/todos/?q=&page=1&limit=10 status=[33m200[39m 4.526 ms - 1725 bytes
+[90m2025-06-26 08:00:12[39m [INFO] : GET /api/todos/?q=&page=1&limit=10 status=[33m200[39m 61.265 ms - 1725 bytes
+[90m2025-06-26 08:03:32[39m [INFO] : GET /api/todos/?q=&page=1&limit=10 status=[33m200[39m 38.255 ms - 1725 bytes
+[90m2025-06-26 08:03:36[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-26 08:03:36[39m [INFO] : GET /api/auth/me status=[33m201[39m 4.598 ms - 91 bytes
+[90m2025-06-26 08:03:38[39m [INFO] : GET /api/todos/?q=&page=1&limit=10 status=[33m200[39m 2.492 ms - 1725 bytes
+[90m2025-06-26 08:03:57[39m [INFO] : GET /api/todos/?q=&page=1&limit=10 status=[33m200[39m 35.190 ms - 1725 bytes
+[90m2025-06-26 08:04:28[39m [INFO] : GET /api/todos/?q=&page=1&limit=10 status=[33m200[39m 38.113 ms - 1725 bytes
+[90m2025-06-26 08:04:29[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-26 08:04:29[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.727 ms - 91 bytes
+[90m2025-06-26 08:04:30[39m [INFO] : GET /api/todos/?q=&page=1&limit=10 status=[33m200[39m 2.968 ms - 1725 bytes
+[90m2025-06-26 08:05:53[39m [INFO] : GET /api/todos/?q=&page=1&limit=10 status=[33m200[39m 37.799 ms - 1725 bytes
+[90m2025-06-26 08:06:41[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 36.835 ms - 3330 bytes
+[90m2025-06-26 08:07:10[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 38.455 ms - 3330 bytes
+[90m2025-06-26 08:07:23[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 34.996 ms - 3330 bytes
+[90m2025-06-26 08:09:36[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 36.030 ms - 3330 bytes
+[90m2025-06-26 08:10:34[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 143.588 ms - 3330 bytes
+[90m2025-06-26 08:10:49[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 38.208 ms - 3330 bytes
+[90m2025-06-26 08:31:42[39m [INFO] : POST /api/auth/signin status=[33m200[39m 157.930 ms - 497 bytes
+[90m2025-06-26 08:31:42[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.502 ms - 3330 bytes
+[90m2025-06-26 08:32:35[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 72.355 ms - 3330 bytes
+[90m2025-06-26 08:32:41[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-26 08:32:41[39m [INFO] : GET /api/auth/me status=[33m201[39m 8.790 ms - 91 bytes
+[90m2025-06-26 08:34:27[39m [INFO] : POST /api/auth/signin status=[33m200[39m 155.229 ms - 497 bytes
+[90m2025-06-26 08:34:28[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.932 ms - 3330 bytes
+[90m2025-06-26 08:39:38[39m [INFO] : GET /api/todos/?q=&page=9&limit=20 status=[33m200[39m 83.343 ms - 115 bytes
+[90m2025-06-26 08:39:56[39m [INFO] : GET /api/todos/?q=&page=8&limit=20 status=[33m200[39m 66.943 ms - 115 bytes
+[90m2025-06-26 08:40:07[39m [INFO] : GET /api/todos/?q=&page=7&limit=20 status=[33m200[39m 51.067 ms - 115 bytes
+[90m2025-06-26 08:40:13[39m [INFO] : GET /api/todos/?q=&page=6&limit=20 status=[33m200[39m 3.843 ms - 115 bytes
+[90m2025-06-26 08:40:16[39m [INFO] : GET /api/todos/?q=&page=5&limit=20 status=[33m200[39m 3.645 ms - 115 bytes
+[90m2025-06-26 08:40:17[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 3.509 ms - 399 bytes
+[90m2025-06-26 08:40:26[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 4.708 ms - 3223 bytes
+[90m2025-06-26 08:40:27[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 5.447 ms - 3251 bytes
+[90m2025-06-26 08:40:28[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.452 ms - 3330 bytes
+[90m2025-06-26 08:41:31[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 102.247 ms - 3330 bytes
+[90m2025-06-26 08:41:33[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 4.937 ms - 3251 bytes
+[90m2025-06-26 08:41:34[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 6.014 ms - 3223 bytes
+[90m2025-06-26 08:41:35[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 4.431 ms - 399 bytes
+[90m2025-06-26 08:41:36[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 3.542 ms - 399 bytes
+[90m2025-06-26 08:41:37[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 3.666 ms - 399 bytes
+[90m2025-06-26 08:42:14[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 61.029 ms - 3223 bytes
+[90m2025-06-26 08:42:15[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 6.428 ms - 3251 bytes
+[90m2025-06-26 08:42:16[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 4.313 ms - 3330 bytes
+[90m2025-06-26 08:42:18[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.465 ms - 3330 bytes
+[90m2025-06-26 08:42:19[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 3.113 ms - 3251 bytes
+[90m2025-06-26 08:42:19[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 3.783 ms - 3223 bytes
+[90m2025-06-26 08:42:20[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 4.359 ms - 399 bytes
+[90m2025-06-26 08:42:21[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 3.659 ms - 399 bytes
+[90m2025-06-26 08:42:39[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 168.742 ms - 3223 bytes
+[90m2025-06-26 10:45:30[39m [INFO] : POST /api/auth/signin status=[33m200[39m 157.040 ms - 497 bytes
+[90m2025-06-26 10:45:31[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.440 ms - 3330 bytes
+[90m2025-06-26 10:45:45[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 45.932 ms - 3251 bytes
+[90m2025-06-26 10:45:46[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.597 ms - 3223 bytes
+[90m2025-06-26 10:45:47[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.521 ms - 399 bytes
+[90m2025-06-26 10:45:50[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.445 ms - 399 bytes
+[90m2025-06-26 10:45:51[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 6.512 ms - 399 bytes
+[90m2025-06-26 10:45:52[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 1.697 ms - 399 bytes
+[90m2025-06-26 10:46:24[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 37.166 ms - 3330 bytes
+[90m2025-06-26 10:46:26[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 1.932 ms - 3251 bytes
+[90m2025-06-26 10:46:27[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.692 ms - 3223 bytes
+[90m2025-06-26 10:46:28[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.237 ms - 399 bytes
+[90m2025-06-26 10:46:29[39m [INFO] : GET /api/todos/?q=&page=5&limit=20 status=[33m200[39m 1.990 ms - 115 bytes
+[90m2025-06-26 10:46:36[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 1.944 ms - 399 bytes
+[90m2025-06-26 10:46:38[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.497 ms - 399 bytes
+[90m2025-06-26 10:47:48[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 52.866 ms - 3223 bytes
+[90m2025-06-26 10:47:52[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 12.431 ms - 3251 bytes
+[90m2025-06-26 10:47:53[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.661 ms - 3330 bytes
+[90m2025-06-26 10:47:56[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.464 ms - 3330 bytes
+[90m2025-06-26 10:47:57[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 3.002 ms - 3251 bytes
+[90m2025-06-26 10:47:57[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.186 ms - 3223 bytes
+[90m2025-06-26 10:47:59[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.376 ms - 399 bytes
+[90m2025-06-26 10:48:01[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.044 ms - 3223 bytes
+[90m2025-06-26 10:48:07[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.241 ms - 399 bytes
+[90m2025-06-26 10:48:09[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.609 ms - 3223 bytes
+[90m2025-06-26 10:48:10[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.406 ms - 3251 bytes
+[90m2025-06-26 10:48:11[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.727 ms - 3330 bytes
+[90m2025-06-26 10:48:39[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 38.408 ms - 3330 bytes
+[90m2025-06-26 10:48:49[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 41.677 ms - 3330 bytes
+[90m2025-06-26 10:48:51[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.440 ms - 3251 bytes
+[90m2025-06-26 10:48:51[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.661 ms - 3223 bytes
+[90m2025-06-26 10:48:52[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.205 ms - 399 bytes
+[90m2025-06-26 10:48:54[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 3.123 ms - 3223 bytes
+[90m2025-06-26 10:48:55[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 3.018 ms - 3251 bytes
+[90m2025-06-26 10:48:55[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 15.170 ms - 3330 bytes
+[90m2025-06-26 10:48:58[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.650 ms - 3330 bytes
+[90m2025-06-26 10:49:01[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 17.946 ms - 3330 bytes
+[90m2025-06-26 10:49:15[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 148.214 ms - 3330 bytes
+[90m2025-06-26 10:49:16[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 1.781 ms - 3251 bytes
+[90m2025-06-26 10:49:18[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 16.098 ms - 3330 bytes
+[90m2025-06-26 10:49:19[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.425 ms - 3251 bytes
+[90m2025-06-26 10:49:20[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 1.704 ms - 3223 bytes
+[90m2025-06-26 10:49:21[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.237 ms - 399 bytes
+[90m2025-06-26 10:49:22[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.472 ms - 3223 bytes
+[90m2025-06-26 10:49:23[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.374 ms - 3251 bytes
+[90m2025-06-26 10:49:24[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.639 ms - 3330 bytes
+[90m2025-06-26 10:51:29[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 136.156 ms - 3251 bytes
+[90m2025-06-26 10:51:39[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.643 ms - 3330 bytes
+[90m2025-06-26 10:52:47[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 49.959 ms - 3251 bytes
+[90m2025-06-26 10:52:52[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 1.858 ms - 3223 bytes
+[90m2025-06-26 10:52:53[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.286 ms - 399 bytes
+[90m2025-06-26 10:52:54[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.902 ms - 3223 bytes
+[90m2025-06-26 10:52:55[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.798 ms - 3251 bytes
+[90m2025-06-26 10:52:55[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 13.602 ms - 3330 bytes
+[90m2025-06-26 10:54:17[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 40.760 ms - 3251 bytes
+[90m2025-06-26 10:54:34[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 45.219 ms - 3330 bytes
+[90m2025-06-26 10:55:26[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 44.704 ms - 3251 bytes
+[90m2025-06-26 10:55:30[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 3.369 ms - 3223 bytes
+[90m2025-06-26 10:55:32[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.387 ms - 3251 bytes
+[90m2025-06-26 10:55:33[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.250 ms - 3330 bytes
+[90m2025-06-26 10:55:36[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.240 ms - 3251 bytes
+[90m2025-06-26 10:56:07[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 51.584 ms - 3330 bytes
+[90m2025-06-26 10:56:50[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 144.349 ms - 3251 bytes
+[90m2025-06-26 10:56:52[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.550 ms - 3223 bytes
+[90m2025-06-26 10:56:53[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.479 ms - 399 bytes
+[90m2025-06-26 10:56:56[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.442 ms - 3223 bytes
+[90m2025-06-26 10:56:57[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.640 ms - 3251 bytes
+[90m2025-06-26 10:56:58[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.453 ms - 3330 bytes
+[90m2025-06-26 10:58:01[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 93.855 ms - 3251 bytes
+[90m2025-06-26 10:59:13[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 43.604 ms - 3330 bytes
+[90m2025-06-26 10:59:19[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.370 ms - 3251 bytes
+[90m2025-06-26 10:59:45[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 41.723 ms - 3330 bytes
+[90m2025-06-26 10:59:49[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.317 ms - 3251 bytes
+[90m2025-06-26 10:59:52[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.801 ms - 3330 bytes
+[90m2025-06-26 10:59:54[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.285 ms - 3251 bytes
+[90m2025-06-26 11:00:22[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 48.534 ms - 3330 bytes
+[90m2025-06-26 11:01:26[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 43.298 ms - 3251 bytes
+[90m2025-06-26 11:01:28[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.574 ms - 3223 bytes
+[90m2025-06-26 11:01:29[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.437 ms - 399 bytes
+[90m2025-06-26 11:01:35[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.447 ms - 3223 bytes
+[90m2025-06-26 11:01:37[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.373 ms - 3251 bytes
+[90m2025-06-26 11:01:38[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.402 ms - 3330 bytes
+[90m2025-06-26 11:03:11[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 46.733 ms - 3251 bytes
+[90m2025-06-26 11:03:13[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.056 ms - 3223 bytes
+[90m2025-06-26 11:03:14[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.131 ms - 399 bytes
+[90m2025-06-26 11:03:16[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.152 ms - 3223 bytes
+[90m2025-06-26 11:03:17[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.447 ms - 3251 bytes
+[90m2025-06-26 11:03:18[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.635 ms - 3330 bytes
+[90m2025-06-26 11:04:07[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 35.305 ms - 3330 bytes
+[90m2025-06-26 11:11:32[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 169.991 ms - 3251 bytes
+[90m2025-06-26 11:11:33[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.523 ms - 3223 bytes
+[90m2025-06-26 11:11:34[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.096 ms - 399 bytes
+[90m2025-06-26 11:11:36[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.077 ms - 3223 bytes
+[90m2025-06-26 11:16:16[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 35.494 ms - 3330 bytes
+[90m2025-06-26 11:17:01[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 42.034 ms - 3251 bytes
+[90m2025-06-26 11:21:21[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 40.983 ms - 3223 bytes
+[90m2025-06-26 11:21:26[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.081 ms - 399 bytes
+[90m2025-06-26 11:21:28[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.349 ms - 3223 bytes
+[90m2025-06-26 11:21:29[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.504 ms - 3251 bytes
+[90m2025-06-26 11:21:30[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.483 ms - 3330 bytes
+[90m2025-06-26 11:22:25[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 42.520 ms - 3251 bytes
+[90m2025-06-26 11:24:22[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 32.910 ms - 3330 bytes
+[90m2025-06-26 11:25:14[39m [INFO] : POST /api/auth/signin status=[33m200[39m 114.478 ms - 497 bytes
+[90m2025-06-26 11:25:14[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.742 ms - 3330 bytes
+[90m2025-06-26 11:33:50[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 41.589 ms - 3251 bytes
+[90m2025-06-26 11:33:53[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.241 ms - 3223 bytes
+[90m2025-06-26 11:33:55[39m [INFO] : GET /api/todos/?q=&page=4&limit=20 status=[33m200[39m 2.207 ms - 399 bytes
+[90m2025-06-26 11:33:56[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 3.289 ms - 3223 bytes
+[90m2025-06-26 11:33:57[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.294 ms - 3251 bytes
+[90m2025-06-26 11:33:58[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 1.901 ms - 3330 bytes
+[90m2025-06-26 11:34:46[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 39.257 ms - 3251 bytes
+[90m2025-06-26 11:37:10[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 50.839 ms - 3223 bytes
+[90m2025-06-26 11:38:09[39m [INFO] : Error: jwt expired,TokenExpiredError: jwt expired
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorizationCheck (C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:28:7)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-26 11:38:09[39m [INFO] : GET /api/todos?title=title%20a status=[33m401[39m 19.681 ms - 23 bytes
+[90m2025-06-26 11:38:15[39m [INFO] : POST /api/auth/signin status=[33m200[39m 107.618 ms - 497 bytes
+[90m2025-06-26 11:38:27[39m [INFO] : Error: invalid signature,JsonWebTokenError: invalid signature
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorizationCheck (C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:28:7)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-26 11:38:27[39m [INFO] : GET /api/todos?title=title%20a status=[33m401[39m 4.796 ms - 29 bytes
+[90m2025-06-26 11:39:01[39m [INFO] : Error: invalid signature,JsonWebTokenError: invalid signature
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorizationCheck (C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:28:7)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-26 11:39:01[39m [INFO] : GET /api/todos?title=titlea status=[33m401[39m 1.830 ms - 29 bytes
+[90m2025-06-26 11:39:18[39m [INFO] : Error: invalid signature,JsonWebTokenError: invalid signature
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorizationCheck (C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:28:7)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-26 11:39:18[39m [INFO] : GET /api/todos?title=a status=[33m401[39m 1.674 ms - 29 bytes
+[90m2025-06-26 11:40:43[39m [INFO] : Error: invalid signature,JsonWebTokenError: invalid signature
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorizationCheck (C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:28:7)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-26 11:40:43[39m [INFO] : GET /api/todos?q=title%20a status=[33m401[39m 1.676 ms - 29 bytes
+[90m2025-06-26 11:40:44[39m [INFO] : Error: invalid signature,JsonWebTokenError: invalid signature
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorizationCheck (C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:28:7)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-26 11:40:44[39m [INFO] : GET /api/todos?q=title%20a status=[33m401[39m 1.644 ms - 29 bytes
+[90m2025-06-26 11:41:48[39m [INFO] : Error: invalid signature,JsonWebTokenError: invalid signature
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorizationCheck (C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:28:7)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-26 11:41:48[39m [INFO] : GET /api/todos?q=a&page=2&limit=10%0A status=[33m401[39m 1.863 ms - 29 bytes
+[90m2025-06-26 11:41:57[39m [INFO] : Error: invalid signature,JsonWebTokenError: invalid signature
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorizationCheck (C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:28:7)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-26 11:41:57[39m [INFO] : GET /api/todos?q=a&page=2&limit=10 status=[33m401[39m 1.676 ms - 29 bytes
+[90m2025-06-26 11:42:24[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 36.627 ms - 3330 bytes
+[90m2025-06-26 11:42:54[39m [INFO] : GET /api/todos?q=a&page=2&limit=10 status=[33m200[39m 41.297 ms - 114 bytes
+[90m2025-06-26 11:43:04[39m [INFO] : GET /api/todos?q=a status=[33m200[39m 142.791 ms - 415 bytes
+[90m2025-06-26 11:43:15[39m [INFO] : GET /api/todos?q=title%20a status=[33m200[39m 42.260 ms - 269 bytes
+[90m2025-06-26 11:45:02[39m [INFO] : Error: jwt expired,TokenExpiredError: jwt expired
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorizationCheck (C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:28:7)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user\Desktop\man-app-server\node_modules\router\index.js:295:15
+[90m2025-06-26 11:45:02[39m [INFO] : PUT /api/todos/13 status=[33m401[39m 3.198 ms - 23 bytes
+[90m2025-06-26 11:45:10[39m [INFO] : PUT /api/todos/13 status=[33m200[39m 43.766 ms - 247 bytes
+[90m2025-06-26 11:45:16[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.651 ms - 3330 bytes
+[90m2025-06-26 11:45:18[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.554 ms - 3251 bytes
+[90m2025-06-26 11:45:24[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 1.867 ms - 3231 bytes
+[90m2025-06-26 11:50:10[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 40.571 ms - 3251 bytes
+[90m2025-06-26 11:50:11[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.728 ms - 3330 bytes
+[90m2025-06-26 12:15:05[39m [INFO] : POST /api/auth/signin status=[33m200[39m 137.679 ms - 497 bytes
+[90m2025-06-26 12:15:50[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-26 12:15:50[39m [INFO] : GET /api/auth/me status=[33m201[39m 40.631 ms - 91 bytes
+[90m2025-06-26 12:16:21[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 43.965 ms - 3330 bytes
+[90m2025-06-26 12:19:59[39m [INFO] : GET /api/todos/?q=&page=1&limit=60 status=[33m200[39m 41.884 ms - 9582 bytes
+[90m2025-06-26 12:20:25[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 40.225 ms - 3330 bytes
+[90m2025-06-26 12:24:23[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 144.372 ms - 3330 bytes
+[90m2025-06-26 12:24:28[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.541 ms - 3251 bytes
+[90m2025-06-26 12:24:33[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.607 ms - 3330 bytes
+[90m2025-06-26 12:28:41[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 39.052 ms - 3251 bytes
+[90m2025-06-26 12:28:43[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.682 ms - 3330 bytes
+[90m2025-06-26 12:29:35[39m [INFO] : GET /api/todos/?q=&page=1&limit=60 status=[33m200[39m 43.660 ms - 9582 bytes
+[90m2025-06-26 12:30:59[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 38.965 ms - 3330 bytes
+[90m2025-06-26 12:36:48[39m [INFO] : GET /api/todos/?q=&page=1&limit=60 status=[33m200[39m 45.865 ms - 9582 bytes
+[90m2025-06-26 12:36:53[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.512 ms - 3330 bytes
+[90m2025-06-26 12:37:40[39m [INFO] : GET /api/todos/?q=&page=1&limit=60 status=[33m200[39m 45.208 ms - 9582 bytes
+[90m2025-06-26 12:37:57[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 41.406 ms - 3330 bytes
+[90m2025-06-26 12:37:59[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.302 ms - 3251 bytes
+[90m2025-06-26 12:38:01[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.620 ms - 3231 bytes
+[90m2025-06-26 12:38:02[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.992 ms - 3251 bytes
+[90m2025-06-26 12:38:02[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.374 ms - 3330 bytes
+[90m2025-06-26 12:40:33[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 142.365 ms - 3330 bytes
+[90m2025-06-26 12:40:41[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.178 ms - 3330 bytes
+[90m2025-06-26 12:40:50[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 3.009 ms - 9867 bytes
+[90m2025-06-26 12:44:24[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 42.813 ms - 3330 bytes
+[90m2025-06-26 12:44:35[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 40.163 ms - 3251 bytes
+[90m2025-06-26 12:44:38[39m [INFO] : GET /api/todos/?q=&page=2&limit=62 status=[33m200[39m 1.911 ms - 115 bytes
+[90m2025-06-26 12:44:43[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.575 ms - 3251 bytes
+[90m2025-06-26 12:45:03[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 40.835 ms - 3330 bytes
+[90m2025-06-26 12:45:04[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.610 ms - 3251 bytes
+[90m2025-06-26 12:45:06[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 3.244 ms - 9867 bytes
+[90m2025-06-26 12:45:09[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.850 ms - 3330 bytes
+[90m2025-06-26 12:45:11[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.232 ms - 3251 bytes
+[90m2025-06-26 12:45:11[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 2.885 ms - 3231 bytes
+[90m2025-06-26 12:45:13[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 2.452 ms - 9867 bytes
+[90m2025-06-26 12:45:20[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.576 ms - 3330 bytes
+[90m2025-06-26 12:46:18[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 39.061 ms - 3251 bytes
+[90m2025-06-26 12:46:19[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 3.051 ms - 9867 bytes
+[90m2025-06-26 12:46:22[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.108 ms - 3330 bytes
+[90m2025-06-26 12:58:20[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 38.237 ms - 3330 bytes
+[90m2025-06-26 12:58:35[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 39.576 ms - 9867 bytes
+[90m2025-06-26 12:58:37[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.666 ms - 3330 bytes
+[90m2025-06-26 12:59:09[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 35.727 ms - 3330 bytes
+[90m2025-06-26 13:00:50[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 38.934 ms - 3330 bytes
+[90m2025-06-26 13:01:00[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 41.160 ms - 9867 bytes
+[90m2025-06-26 13:01:02[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.236 ms - 3330 bytes
+[90m2025-06-26 13:01:03[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 3.080 ms - 9867 bytes
+[90m2025-06-26 13:01:19[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 44.024 ms - 3330 bytes
+[90m2025-06-26 13:01:20[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 2.879 ms - 9867 bytes
+[90m2025-06-26 13:01:21[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.016 ms - 3330 bytes
+[90m2025-06-26 13:01:22[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 3.450 ms - 9867 bytes
+[90m2025-06-26 13:01:23[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.585 ms - 3330 bytes
+[90m2025-06-26 13:01:24[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 2.547 ms - 9867 bytes
+[90m2025-06-26 13:01:31[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.524 ms - 3330 bytes
+[90m2025-06-26 13:01:32[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 2.783 ms - 9867 bytes
+[90m2025-06-26 13:01:34[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-26 13:01:34[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.839 ms - 91 bytes
+[90m2025-06-26 13:01:35[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.737 ms - 3330 bytes
+[90m2025-06-26 13:01:37[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-26 13:01:37[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.024 ms - 91 bytes
+[90m2025-06-26 13:01:39[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.795 ms - 3330 bytes
+[90m2025-06-26 13:12:58[39m [INFO] : GET /api/todos/?q=t&page=1&limit=20 status=[33m200[39m 49.048 ms - 3330 bytes
+[90m2025-06-26 13:13:03[39m [INFO] : GET /api/todos/?q=ta&page=1&limit=20 status=[33m200[39m 2.822 ms - 114 bytes
+[90m2025-06-26 13:13:05[39m [INFO] : GET /api/todos/?q=t&page=1&limit=20 status=[33m200[39m 2.248 ms - 3330 bytes
+[90m2025-06-26 13:13:07[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.155 ms - 3330 bytes
+[90m2025-06-26 13:13:09[39m [INFO] : GET /api/todos/?q=t&page=1&limit=20 status=[33m200[39m 2.816 ms - 3330 bytes
+[90m2025-06-26 13:13:12[39m [INFO] : GET /api/todos/?q=ti&page=1&limit=20 status=[33m200[39m 2.538 ms - 3330 bytes
+[90m2025-06-26 13:13:15[39m [INFO] : GET /api/todos/?q=tit&page=1&limit=20 status=[33m200[39m 2.720 ms - 3330 bytes
+[90m2025-06-26 13:13:18[39m [INFO] : GET /api/todos/?q=titl&page=1&limit=20 status=[33m200[39m 2.514 ms - 3330 bytes
+[90m2025-06-26 13:13:21[39m [INFO] : GET /api/todos/?q=title&page=1&limit=20 status=[33m200[39m 3.042 ms - 3330 bytes
+[90m2025-06-26 13:13:22[39m [INFO] : GET /api/todos/?q=title+&page=1&limit=20 status=[33m200[39m 2.272 ms - 3330 bytes
+[90m2025-06-26 13:13:25[39m [INFO] : GET /api/todos/?q=title+a&page=1&limit=20 status=[33m200[39m 2.662 ms - 277 bytes
+[90m2025-06-26 13:13:40[39m [INFO] : GET /api/todos/?q=title+&page=1&limit=20 status=[33m200[39m 45.777 ms - 3330 bytes
+[90m2025-06-26 13:13:41[39m [INFO] : GET /api/todos/?q=title&page=1&limit=20 status=[33m200[39m 2.403 ms - 3330 bytes
+[90m2025-06-26 13:13:42[39m [INFO] : GET /api/todos/?q=titl&page=1&limit=20 status=[33m200[39m 3.051 ms - 3330 bytes
+[90m2025-06-26 13:13:43[39m [INFO] : GET /api/todos/?q=tit&page=1&limit=20 status=[33m200[39m 2.417 ms - 3330 bytes
+[90m2025-06-26 13:13:44[39m [INFO] : GET /api/todos/?q=ti&page=1&limit=20 status=[33m200[39m 2.709 ms - 3330 bytes
+[90m2025-06-26 13:13:45[39m [INFO] : GET /api/todos/?q=t&page=1&limit=20 status=[33m200[39m 3.065 ms - 3330 bytes
+[90m2025-06-26 13:13:46[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.746 ms - 3330 bytes
+[90m2025-06-26 13:17:38[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 42.419 ms - 3330 bytes
+[90m2025-06-26 13:18:51[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 34.799 ms - 3330 bytes
+[90m2025-06-26 13:18:55[39m [INFO] : GET /api/todos/?q=t&page=1&limit=20 status=[33m200[39m 1.994 ms - 3330 bytes
+[90m2025-06-26 13:18:59[39m [INFO] : GET /api/todos/?q=tt&page=1&limit=20 status=[33m200[39m 2.127 ms - 401 bytes
+[90m2025-06-26 13:19:02[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 1.860 ms - 3330 bytes
+[90m2025-06-26 13:19:26[39m [INFO] : GET /api/todos/?q=tt&page=1&limit=20 status=[33m200[39m 45.679 ms - 401 bytes
+[90m2025-06-26 13:19:30[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.344 ms - 3330 bytes
+[90m2025-06-26 13:19:34[39m [INFO] : GET /api/todos/?q=title+a&page=1&limit=20 status=[33m200[39m 2.584 ms - 277 bytes
+[90m2025-06-26 13:19:46[39m [INFO] : GET /api/todos/?q=title+a&page=1&limit=1 status=[33m200[39m 41.232 ms - 276 bytes
+[90m2025-06-26 13:19:49[39m [INFO] : GET /api/todos/?q=title+a&page=1&limit=20 status=[33m200[39m 2.404 ms - 277 bytes
+[90m2025-06-26 13:20:21[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 33.709 ms - 3330 bytes
+[90m2025-06-26 13:20:30[39m [INFO] : GET /api/todos/?q=t&page=1&limit=20 status=[33m200[39m 12.427 ms - 3330 bytes
+[90m2025-06-26 13:20:39[39m [INFO] : GET /api/todos/?q=td&page=1&limit=20 status=[33m200[39m 2.532 ms - 114 bytes
+[90m2025-06-26 13:21:12[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 145.563 ms - 3330 bytes
+[90m2025-06-26 13:21:19[39m [INFO] : GET /api/todos/?q=title+b&page=1&limit=20 status=[33m200[39m 2.739 ms - 269 bytes
+[90m2025-06-26 13:21:26[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.796 ms - 3330 bytes
+[90m2025-06-26 13:21:37[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 143.373 ms - 3251 bytes
+[90m2025-06-26 13:21:38[39m [INFO] : GET /api/todos/?q=&page=3&limit=20 status=[33m200[39m 1.978 ms - 3231 bytes
+[90m2025-06-26 13:21:40[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 2.322 ms - 9867 bytes
+[90m2025-06-26 13:21:51[39m [INFO] : GET /api/todos/?q=title+b&page=1&limit=62 status=[33m200[39m 44.170 ms - 269 bytes
+[90m2025-06-26 13:21:57[39m [INFO] : GET /api/todos/?q=description+&page=1&limit=62 status=[33m200[39m 3.057 ms - 9269 bytes
+[90m2025-06-26 13:22:01[39m [INFO] : GET /api/todos/?q=&page=1&limit=62 status=[33m200[39m 3.575 ms - 9867 bytes
+[90m2025-06-26 13:22:05[39m [INFO] : GET /api/todos/?q=dkfjd&page=1&limit=62 status=[33m200[39m 2.703 ms - 114 bytes
+[90m2025-06-26 13:22:09[39m [INFO] : GET /api/todos/?q=d&page=1&limit=62 status=[33m200[39m 3.312 ms - 9728 bytes
+[90m2025-06-26 13:22:20[39m [INFO] : GET /api/todos/?q=6&page=1&limit=62 status=[33m200[39m 41.490 ms - 268 bytes
+[90m2025-06-26 13:22:23[39m [INFO] : GET /api/todos/?q=b&page=1&limit=62 status=[33m200[39m 2.779 ms - 2686 bytes

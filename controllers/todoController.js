@@ -4,11 +4,12 @@ async function createTodo(req, res, next) {
   const { title, description } = req.body;
   const userId = req.userId;
 
-  if (title == null || description == null) {
-    return res.status(401).json({ error: "Fields require" });
-  }
   if (userId == null) {
     return res.status(401).json({ error: "Invalid user" });
+  }
+
+  if (title == null || description == null) {
+    return res.status(401).json({ error: "Fields require" });
   }
 
   try {
@@ -88,7 +89,9 @@ async function getAllTodo(req, res, next) {
 
     const todos = result.rows;
 
-    const counts = parseInt(countResult.rows[0].count, 10);
+    const itemCounts = todos.length;
+
+    const totalCounts = parseInt(countResult.rows[0].count, 10);
 
     res.status(200).json({
       error: false,
@@ -97,8 +100,9 @@ async function getAllTodo(req, res, next) {
       meta: {
         limit,
         page,
-        counts,
-        totalPage: Math.ceil(counts / limit),
+        itemCounts,
+        totalCounts,
+        totalPage: Math.ceil(totalCounts / limit),
       },
     });
   } catch (e) {
@@ -238,7 +242,7 @@ async function removeAll(req, res, next) {
 
     const deleteCount = result.rowCount;
 
-    return res.status(204).json({
+    return res.status(200).json({
       error: false,
       success: true,
       message: `Delete all items=${deleteCount} success....`,
