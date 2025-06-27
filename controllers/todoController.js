@@ -1,5 +1,7 @@
 const pool = require("../db.js");
 
+const todoService = require("../services/todoServices.js");
+
 async function createTodo(req, res, next) {
   const { title, description } = req.body;
   const userId = req.userId;
@@ -225,6 +227,25 @@ async function remove(req, res, next) {
   }
 }
 
+async function removeMany(req, res, next) {
+  const userId = req.userId;
+  const { ids } = req.body;
+
+  if (!userId) {
+    return res.status(401).json({ error: "Invalid user" });
+  }
+  if (!Array.isArray(ids) || ids.length == 0) {
+    return res.status(401).json({ error: "No ids provided" });
+  }
+
+  try {
+    const count = await todoService.deleteMany(userId, ids);
+    return res.status(200).json({ error: false, deleted: count });
+  } catch (e) {
+    return next(e);
+  }
+}
+
 async function removeAll(req, res, next) {
   const userId = req.userId;
 
@@ -259,4 +280,5 @@ module.exports = {
   editTodo,
   remove,
   removeAll,
+  removeMany,
 };
