@@ -121,12 +121,21 @@ async function signIn(req, res, next) {
 
     const user = result.rows[0];
 
+    const userId = user.id;
+
     const matchPass = await bcrypt.compare(password, user.password);
 
     if (!matchPass) {
       logger.info(`Incorrect password : status=401`);
       return res.status(401).json({ error: "Incorrect password" });
     }
+
+    await pool.query(
+      `
+      update users set last_login_at = now() where id=$1
+      `,
+      [userId]
+    );
 
     const accessToken = generateAccessToken(user.id);
 
@@ -187,7 +196,7 @@ async function refreshAccessToken(req, res, next) {
 
     const newAccess = generateAccessToken(payload.userId);
 
-    const newRefresh =await generateRefreshToken(payload.userId);
+    const newRefresh = await generateRefreshToken(payload.userId);
 
     res.status(201);
     logger.info(`Refresh success => status=${res.statusCode}`);
