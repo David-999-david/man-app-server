@@ -6,6 +6,7 @@ const logger = require("../helper/logger.js");
 const crypto = require("crypto");
 const nodemailer = require("nodemailer");
 const { error } = require("console");
+const { uploadAvatar } = require("../services/userService.js");
 
 const JWT_SECRET = process.env.JWT_SECRET;
 const EXPIRE_IN = parseInt(process.env.JWT_EXPIRE_IN, 10);
@@ -232,7 +233,7 @@ async function getUserProfile(req, res, next) {
     }
 
     const result = await pool.query(
-      "select id,name,email,created_at from users where id = $1",
+      "select id,name,email,created_at,profile_image_url from users where id = $1",
       [userId]
     );
 
@@ -450,6 +451,27 @@ async function resetPassword(req, res, next) {
   }
 }
 
+async function postAvatar(req, res, next) {
+  try {
+    if (!req.file) {
+      return res.status(400).json({ error: "No file uploaded" });
+    }
+    const userId = req.userId;
+    const fileBuffer = req.file.buffer;
+    const originalName = req.file.originalname;
+
+    if (!userId) {
+      return res.status(401).json({ error: "Invalid user" });
+    }
+
+    const url = await uploadAvatar(userId, fileBuffer, originalName);
+
+    res.json({ success: true, profileImage: url });
+  } catch (err) {
+    next(err);
+  }
+}
+
 module.exports = {
   signIn,
   signUp,
@@ -458,4 +480,5 @@ module.exports = {
   emailRequestOtp,
   verifyOtp,
   resetPassword,
+  postAvatar,
 };

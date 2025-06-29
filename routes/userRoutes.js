@@ -8,12 +8,15 @@ const {
   emailRequestOtp,
   verifyOtp,
   resetPassword,
+  postAvatar,
 } = require("../controllers/userController");
 const authMiddleware = require("../middleware/authMiddleware");
 const {
   forgotPasswordLimiter,
   verifyOtpLimitter,
 } = require("../middleware/rateLimiters");
+const multer = require("multer");
+const upload = multer();
 
 router.post("/signup", signUp);
 
@@ -32,5 +35,7 @@ router.post("/reset-password", resetPassword);
 router.use(authMiddleware);
 
 router.get("/me", getUserProfile);
+
+router.post("/upload/avatar", upload.single("avatar"), postAvatar);
 
 module.exports = router;
