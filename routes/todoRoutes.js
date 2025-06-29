@@ -8,6 +8,7 @@ const {
   remove,
   removeAll,
   removeMany,
+  updateStatus,
 } = require("../controllers/todoController");
 
 const router = express.Router();
@@ -25,5 +26,7 @@ router.delete("/batch", authMiddleware, removeMany);
 router.delete("/:id", authMiddleware, remove);
 
 router.delete("/", authMiddleware, removeAll);
+
+router.put("/status/:id", authMiddleware, updateStatus);
 
 module.exports = router;

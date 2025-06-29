@@ -273,6 +273,37 @@ async function removeAll(req, res, next) {
   }
 }
 
+async function updateStatus(req, res, next) {
+  const userId = req.userId;
+  const id = req.params.id;
+  const { status } = req.body;
+
+  if (!userId) {
+    return res.status(401).json({ error: "Invalid user" });
+  }
+  if (!id) {
+    return res.status(400).json({ error: `Can't find item with id=${id}` });
+  }
+  if (typeof status !== "boolean") {
+    return res.status(400).json({ error: `${status} must be boolean` });
+  }
+  try {
+    const updatedItem = await todoService.changeStatus(userId, id, status);
+
+    if (!updatedItem) {
+      return res
+        .status(401)
+        .json({ error: `Can't update status for items with id=${id}` });
+    }
+    return res.status(200).json({
+      success: true,
+      updatedTodo: updatedItem,
+    });
+  } catch (err) {
+    return next(err);
+  }
+}
+
 module.exports = {
   createTodo,
   getAllTodo,
@@ -281,4 +312,5 @@ module.exports = {
   remove,
   removeAll,
   removeMany,
+  updateStatus,
 };

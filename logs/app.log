@@ -2781,3 +2781,358 @@ PSQL pool connected successfully!
 [90m2025-06-29 10:04:17[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.889 ms - 3197 bytes
 [90m2025-06-29 10:04:19[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
 [90m2025-06-29 10:04:19[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.255 ms - 208 bytes
+[90m2025-06-29 13:42:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 13:43:43[39m [INFO] : POST /api/auth/signin status=[33m200[39m 159.299 ms - 497 bytes
+[90m2025-06-29 13:43:43[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 12.069 ms - 3197 bytes
+[90m2025-06-29 13:43:46[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 13:43:46[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.381 ms - 208 bytes
+[90m2025-06-29 13:53:13[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 13:53:13[39m [INFO] : GET /api/auth/me status=[33m201[39m 70.540 ms - 208 bytes
+[90m2025-06-29 13:54:02[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-29 13:54:02[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 50.827 ms - 438 bytes
+[90m2025-06-29 13:54:04[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 2188.987 ms - 128 bytes
+[90m2025-06-29 13:54:18[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 13:54:18[39m [INFO] : GET /api/auth/me status=[33m201[39m 142.725 ms - 208 bytes
+[90m2025-06-29 13:54:22[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 13:54:22[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.943 ms - 208 bytes
+[90m2025-06-29 13:55:49[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 1176.727 ms - 128 bytes
+[90m2025-06-29 13:57:42[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 5513.465 ms - 128 bytes
+[90m2025-06-29 13:58:01[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 13:58:01[39m [INFO] : GET /api/auth/me status=[33m201[39m 38.822 ms - 208 bytes
+[90m2025-06-29 13:58:03[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 13:58:03[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.118 ms - 208 bytes
+[90m2025-06-29 14:00:09[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 1013.779 ms - 128 bytes
+[90m2025-06-29 14:01:40[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 564.604 ms - 128 bytes
+[90m2025-06-29 14:02:52[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:02:52[39m [INFO] : GET /api/auth/me status=[33m201[39m 41.699 ms - 208 bytes
+[90m2025-06-29 14:04:06[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-29 14:04:06[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 44.947 ms - 438 bytes
+[90m2025-06-29 14:04:06[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:04:06[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.925 ms - 208 bytes
+[90m2025-06-29 14:04:09[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:04:09[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.730 ms - 208 bytes
+[90m2025-06-29 14:04:10[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:04:10[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.385 ms - 208 bytes
+[90m2025-06-29 14:04:11[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:04:11[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.728 ms - 208 bytes
+[90m2025-06-29 14:04:12[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:04:12[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.789 ms - 208 bytes
+[90m2025-06-29 14:04:24[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 986.960 ms - 128 bytes
+[90m2025-06-29 14:04:32[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:04:32[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.184 ms - 208 bytes
+[90m2025-06-29 14:04:53[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 45.640 ms - 3197 bytes
+[90m2025-06-29 14:04:54[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:04:54[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.151 ms - 208 bytes
+[90m2025-06-29 14:04:56[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:04:56[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.993 ms - 208 bytes
+[90m2025-06-29 14:05:32[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:05:32[39m [INFO] : GET /api/auth/me status=[33m201[39m 35.829 ms - 208 bytes
+[90m2025-06-29 14:05:35[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:05:35[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.797 ms - 208 bytes
+[90m2025-06-29 14:05:37[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:05:37[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.726 ms - 208 bytes
+[90m2025-06-29 14:06:02[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:06:02[39m [INFO] : GET /api/auth/me status=[33m201[39m 37.425 ms - 208 bytes
+[90m2025-06-29 14:06:03[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:06:03[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.174 ms - 208 bytes
+[90m2025-06-29 14:06:05[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:06:05[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.928 ms - 208 bytes
+[90m2025-06-29 14:08:14[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:08:14[39m [INFO] : GET /api/auth/me status=[33m201[39m 37.402 ms - 208 bytes
+[90m2025-06-29 14:08:15[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:08:15[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.881 ms - 208 bytes
+[90m2025-06-29 14:08:16[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:08:16[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.078 ms - 208 bytes
+[90m2025-06-29 14:08:18[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:08:18[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.643 ms - 208 bytes
+[90m2025-06-29 14:08:19[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:08:19[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.870 ms - 208 bytes
+[90m2025-06-29 14:08:20[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:08:20[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.636 ms - 208 bytes
+[90m2025-06-29 14:08:21[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:08:21[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.696 ms - 208 bytes
+[90m2025-06-29 14:08:22[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:08:22[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.686 ms - 208 bytes
+[90m2025-06-29 14:09:10[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:09:10[39m [INFO] : GET /api/auth/me status=[33m201[39m 51.741 ms - 208 bytes
+[90m2025-06-29 14:09:21[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 862.532 ms - 128 bytes
+[90m2025-06-29 14:09:30[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:09:30[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.036 ms - 208 bytes
+[90m2025-06-29 14:13:03[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:13:03[39m [INFO] : GET /api/auth/me status=[33m201[39m 37.573 ms - 208 bytes
+[90m2025-06-29 14:14:42[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-29 14:14:42[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 44.281 ms - 438 bytes
+[90m2025-06-29 14:14:43[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 4.505 ms - 3197 bytes
+[90m2025-06-29 14:14:45[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:14:45[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.781 ms - 208 bytes
+[90m2025-06-29 14:14:50[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:14:50[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.523 ms - 208 bytes
+[90m2025-06-29 14:14:52[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:14:52[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.362 ms - 208 bytes
+[90m2025-06-29 14:15:04[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 622.961 ms - 128 bytes
+[90m2025-06-29 14:17:55[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:17:55[39m [INFO] : GET /api/auth/me status=[33m201[39m 36.520 ms - 208 bytes
+[90m2025-06-29 14:17:57[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:17:57[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.744 ms - 208 bytes
+[90m2025-06-29 14:18:07[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 964.985 ms - 128 bytes
+[90m2025-06-29 14:18:07[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:18:07[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.088 ms - 208 bytes
+[90m2025-06-29 14:21:33[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:21:33[39m [INFO] : GET /api/auth/me status=[33m201[39m 40.379 ms - 208 bytes
+[90m2025-06-29 14:21:43[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 914.723 ms - 128 bytes
+[90m2025-06-29 14:21:43[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:21:43[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.926 ms - 208 bytes
+[90m2025-06-29 14:21:57[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:21:57[39m [INFO] : GET /api/auth/me status=[33m201[39m 39.459 ms - 208 bytes
+[90m2025-06-29 14:22:25[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:22:25[39m [INFO] : GET /api/auth/me status=[33m201[39m 46.647 ms - 208 bytes
+[90m2025-06-29 14:22:26[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:22:26[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.979 ms - 208 bytes
+[90m2025-06-29 14:22:27[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:22:27[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.920 ms - 208 bytes
+[90m2025-06-29 14:22:28[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:22:28[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.880 ms - 208 bytes
+[90m2025-06-29 14:22:34[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:22:34[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.829 ms - 208 bytes
+[90m2025-06-29 14:22:39[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 1091.207 ms - 128 bytes
+[90m2025-06-29 14:22:39[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:22:39[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.850 ms - 208 bytes
+[90m2025-06-29 14:22:42[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:22:42[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.925 ms - 208 bytes
+[90m2025-06-29 14:22:54[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 3243.540 ms - 128 bytes
+[90m2025-06-29 14:22:54[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:22:54[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.312 ms - 208 bytes
+[90m2025-06-29 14:24:12[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:24:12[39m [INFO] : GET /api/auth/me status=[33m201[39m 38.714 ms - 208 bytes
+[90m2025-06-29 14:24:16[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 1000.744 ms - 128 bytes
+[90m2025-06-29 14:24:44[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-29 14:24:44[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 40.224 ms - 438 bytes
+[90m2025-06-29 14:24:44[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:24:44[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.410 ms - 208 bytes
+[90m2025-06-29 14:24:48[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 532.305 ms - 128 bytes
+[90m2025-06-29 14:24:57[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:24:57[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.386 ms - 208 bytes
+[90m2025-06-29 14:25:00[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 842.478 ms - 128 bytes
+[90m2025-06-29 14:25:10[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:25:10[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.161 ms - 208 bytes
+[90m2025-06-29 14:25:13[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 545.060 ms - 128 bytes
+[90m2025-06-29 14:25:14[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:25:14[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.221 ms - 208 bytes
+[90m2025-06-29 14:25:49[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:25:49[39m [INFO] : GET /api/auth/me status=[33m201[39m 37.485 ms - 208 bytes
+[90m2025-06-29 14:25:54[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 1040.838 ms - 128 bytes
+[90m2025-06-29 14:25:54[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:25:54[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.097 ms - 208 bytes
+[90m2025-06-29 14:26:04[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:26:04[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.135 ms - 208 bytes
+[90m2025-06-29 14:26:11[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 802.014 ms - 128 bytes
+[90m2025-06-29 14:26:12[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:26:12[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.748 ms - 208 bytes
+[90m2025-06-29 14:27:42[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:27:42[39m [INFO] : GET /api/auth/me status=[33m201[39m 38.957 ms - 208 bytes
+[90m2025-06-29 14:27:45[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:27:45[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.209 ms - 208 bytes
+[90m2025-06-29 14:28:50[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-29 14:28:50[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 45.045 ms - 438 bytes
+[90m2025-06-29 14:28:50[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 4.267 ms - 3197 bytes
+[90m2025-06-29 14:28:53[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:28:53[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.614 ms - 208 bytes
+[90m2025-06-29 14:28:57[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:28:57[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.233 ms - 208 bytes
+[90m2025-06-29 14:29:12[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 1397.208 ms - 128 bytes
+[90m2025-06-29 14:29:12[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:29:12[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.486 ms - 208 bytes
+[90m2025-06-29 14:58:20[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-29 14:58:20[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 48.758 ms - 438 bytes
+[90m2025-06-29 14:58:21[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 4.792 ms - 3197 bytes
+[90m2025-06-29 14:59:55[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 14:59:55[39m [INFO] : GET /api/auth/me status=[33m201[39m 38.791 ms - 208 bytes
+[90m2025-06-29 15:00:01[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:00:01[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.028 ms - 208 bytes
+[90m2025-06-29 15:00:08[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 1378.075 ms - 128 bytes
+[90m2025-06-29 15:00:16[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:00:16[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.369 ms - 208 bytes
+[90m2025-06-29 15:02:29[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:02:29[39m [INFO] : GET /api/auth/me status=[33m201[39m 137.193 ms - 208 bytes
+[90m2025-06-29 15:02:42[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 1887.563 ms - 128 bytes
+[90m2025-06-29 15:02:42[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:02:42[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.767 ms - 208 bytes
+[90m2025-06-29 15:04:41[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:04:41[39m [INFO] : GET /api/auth/me status=[33m201[39m 37.679 ms - 208 bytes
+[90m2025-06-29 15:04:46[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 1143.671 ms - 128 bytes
+[90m2025-06-29 15:04:46[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:04:46[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.821 ms - 208 bytes
+[90m2025-06-29 15:05:05[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:05:05[39m [INFO] : GET /api/auth/me status=[33m201[39m 138.001 ms - 208 bytes
+[90m2025-06-29 15:05:13[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 1429.662 ms - 128 bytes
+[90m2025-06-29 15:05:13[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:05:13[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.942 ms - 208 bytes
+[90m2025-06-29 15:09:04[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-29 15:09:04[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 47.112 ms - 438 bytes
+[90m2025-06-29 15:09:05[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 4.361 ms - 3197 bytes
+[90m2025-06-29 15:09:07[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:09:07[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.467 ms - 208 bytes
+[90m2025-06-29 15:09:14[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:09:14[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.910 ms - 208 bytes
+[90m2025-06-29 15:09:20[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 465.600 ms - 128 bytes
+[90m2025-06-29 15:09:20[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:09:20[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.111 ms - 208 bytes
+[90m2025-06-29 15:09:23[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:09:23[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.887 ms - 208 bytes
+[90m2025-06-29 15:09:38[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 1122.610 ms - 128 bytes
+[90m2025-06-29 15:09:38[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 15:09:38[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.297 ms - 208 bytes
+[90m2025-06-29 15:09:42[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.960 ms - 3197 bytes
+[90m2025-06-29 19:00:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:04:49[39m [INFO] : POST /api/auth/signin status=[33m200[39m 354.203 ms - 497 bytes
+[90m2025-06-29 19:04:49[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 42.587 ms - 3197 bytes
+[90m2025-06-29 19:04:58[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 19:04:58[39m [INFO] : GET /api/auth/me status=[33m201[39m 4.979 ms - 208 bytes
+[90m2025-06-29 19:05:14[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 79.882 ms - 3197 bytes
+[90m2025-06-29 19:05:15[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 19:05:15[39m [INFO] : GET /api/auth/me status=[33m201[39m 6.781 ms - 208 bytes
+[90m2025-06-29 19:05:25[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 19:05:25[39m [INFO] : GET /api/auth/me status=[33m201[39m 4.821 ms - 208 bytes
+[90m2025-06-29 19:05:46[39m [INFO] : POST /api/auth/upload/avatar status=[33m200[39m 1564.526 ms - 128 bytes
+[90m2025-06-29 19:05:46[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 19:05:46[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.851 ms - 208 bytes
+[90m2025-06-29 19:07:17[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 149.714 ms - 3197 bytes
+[90m2025-06-29 19:07:20[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 19:07:20[39m [INFO] : GET /api/auth/me status=[33m201[39m 4.002 ms - 208 bytes
+[90m2025-06-29 19:07:28[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.594 ms - 3197 bytes
+[90m2025-06-29 19:07:49[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 37.986 ms - 415 bytes
+[90m2025-06-29 19:07:51[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.909 ms - 3197 bytes
+[90m2025-06-29 19:07:53[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-06-29 19:07:53[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.511 ms - 208 bytes
+[90m2025-06-29 19:08:03[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 38.049 ms - 3197 bytes
+[90m2025-06-29 19:08:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:08:48[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:08:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:08:55[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:08:57[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:09:23[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:09:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:09:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:09:48[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:09:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:09:59[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:10:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:10:13[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:10:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:10:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:10:33[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:10:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:10:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:10:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:10:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:10:57[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:11:01[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:12:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:12:14[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:12:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:12:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:13:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:13:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:14:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:14:09[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:14:11[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:14:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:14:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:14:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:14:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:14:33[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:15:36[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:15:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:15:48[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:16:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:16:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:16:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:17:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:17:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:17:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:17:41[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:17:59[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:18:01[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:18:03[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:18:14[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:18:21[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:18:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:18:33[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:18:36[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:18:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:18:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:18:45[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:18:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:18:56[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:19:14[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:19:18[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:19:22[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:19:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:19:54[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:19:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:20:03[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:20:07[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:20:09[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:20:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:20:24[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:20:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:20:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:20:36[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:21:09[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:21:14[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:21:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:21:21[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:21:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:21:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:21:36[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:21:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:21:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:21:52[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:22:00[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:22:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:22:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:22:11[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:24:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:24:23[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:24:36[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:24:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:24:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:24:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:24:56[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:25:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:34:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:36:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:36:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 19:36:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 21:32:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 21:33:53[39m [INFO] : POST /api/auth/signin status=[33m200[39m 236.225 ms - 497 bytes
+[90m2025-06-29 21:33:53[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 12.960 ms - 3197 bytes
+[90m2025-06-29 21:41:21[39m [INFO] : PUT /api/todos/72 status=[33m400[39m 1.850 ms - 41 bytes
+[90m2025-06-29 21:44:25[39m [INFO] : PSQL pool connected successfully!
+[90m2025-06-29 21:44:35[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-29 21:44:35[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 56.165 ms - 438 bytes
+[90m2025-06-29 21:44:36[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 9.323 ms - 3197 bytes
+[90m2025-06-29 21:44:54[39m [INFO] : PUT /api/todos/status72 status=[33m400[39m 2.936 ms - 41 bytes
+[90m2025-06-29 21:44:58[39m [INFO] : PUT /api/todos/status71 status=[33m400[39m 7.375 ms - 41 bytes
+[90m2025-06-29 21:48:05[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-06-29 21:48:05[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 45.568 ms - 438 bytes
+[90m2025-06-29 21:48:05[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 4.799 ms - 3197 bytes
+[90m2025-06-29 21:48:08[39m [INFO] : PUT /api/todos/status/72 status=[33m200[39m 5.789 ms - 190 bytes
+[90m2025-06-29 21:48:20[39m [INFO] : PUT /api/todos/status/61 status=[33m200[39m 42.798 ms - 194 bytes
+[90m2025-06-29 21:48:28[39m [INFO] : PUT /api/todos/status/11 status=[33m200[39m 2.964 ms - 198 bytes
+[90m2025-06-29 21:48:57[39m [INFO] : GET /api/todos/?q=t&page=1&limit=20 status=[33m200[39m 48.733 ms - 2773 bytes
+[90m2025-06-29 21:49:00[39m [INFO] : PUT /api/todos/status/15 status=[33m200[39m 8.271 ms - 198 bytes
+[90m2025-06-29 21:49:05[39m [INFO] : PUT /api/todos/status/10 status=[33m200[39m 5.977 ms - 198 bytes
+[90m2025-06-29 21:49:51[39m [INFO] : PUT /api/todos/status/17 status=[33m200[39m 41.090 ms - 198 bytes
+[90m2025-06-29 21:49:59[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.719 ms - 3193 bytes
+[90m2025-06-29 21:50:03[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 2.542 ms - 415 bytes
+[90m2025-06-29 21:50:04[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.435 ms - 3193 bytes
+[90m2025-06-29 21:50:16[39m [INFO] : GET /api/todos/?q=t&page=1&limit=20 status=[33m200[39m 39.255 ms - 2770 bytes
+[90m2025-06-29 21:50:31[39m [INFO] : GET /api/todos/?q=title+&page=1&limit=20 status=[33m200[39m 38.164 ms - 2770 bytes
+[90m2025-06-29 21:50:34[39m [INFO] : GET /api/todos/?q=title+e&page=1&limit=20 status=[33m200[39m 2.068 ms - 268 bytes
+[90m2025-06-29 21:50:41[39m [INFO] : GET /api/todos/?q=title&page=1&limit=20 status=[33m200[39m 2.906 ms - 2770 bytes
+[90m2025-06-29 21:51:25[39m [INFO] : PUT /api/todos/status/14 status=[33m200[39m 37.034 ms - 198 bytes
+[90m2025-06-29 21:51:32[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.250 ms - 3192 bytes
+[90m2025-06-29 21:51:36[39m [INFO] : PUT /api/todos/status/35 status=[33m200[39m 2.415 ms - 198 bytes
+[90m2025-06-29 21:51:43[39m [INFO] : PUT /api/todos/status/14 status=[33m200[39m 4.240 ms - 199 bytes
+[90m2025-06-29 21:51:47[39m [INFO] : PUT /api/todos/status/72 status=[33m200[39m 4.710 ms - 191 bytes
