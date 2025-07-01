@@ -3,36 +3,39 @@ const pool = require("../db.js");
 const todoService = require("../services/todoServices.js");
 
 async function createTodo(req, res, next) {
-  const { title, description } = req.body;
-  const userId = req.userId;
-
-  if (userId == null) {
-    return res.status(401).json({ error: "Invalid user" });
-  }
-
-  if (title == null || description == null) {
-    return res.status(401).json({ error: "Fields require" });
-  }
-
   try {
-    const result = await pool.query(
-      `
-        insert into todo (user_id,title,description)
-        values ($1,$2,$3) returning *
-        `,
-      [userId, title, description]
-    );
+    const { title, description, imageDescription } = req.body;
 
-    const todo = result.rows[0];
+    const userId = req.userId;
 
-    if (!todo) {
-      return res.status(500).json({ error: "Failed to add todo" });
+    if (userId == null) {
+      return res.status(401).json({ error: "Invalid user" });
     }
+
+    if (title == null || description == null) {
+      return res.status(401).json({ error: "Fields require" });
+    }
+
+    if (!req.file) {
+      return res.status(400).json({ error: "No file upload" });
+    }
+
+    const fileBuffer = req.file.buffer;
+    const originalName = req.file.originalname;
+
+    const createdTodo = await todoService.createTodo(
+      userId,
+      title,
+      description,
+      imageDescription,
+      fileBuffer,
+      originalName
+    );
 
     return res.status(201).json({
       error: false,
       success: true,
-      data: todo,
+      data: createdTodo,
     });
   } catch (e) {
     return next(e);

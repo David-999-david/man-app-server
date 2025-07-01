@@ -10,6 +10,8 @@ const {
   removeMany,
   updateStatus,
 } = require("../controllers/todoController");
+const multer = require("multer");
+const upload = multer();
 
 const router = express.Router();
 
@@ -17,7 +19,7 @@ router.get("/", authMiddleware, getAllTodo);
 
 router.get("/:id", authMiddleware, getTodoById);
 
-router.post("/", authMiddleware, createTodo);
+router.post("/", authMiddleware, upload.single("file"), createTodo);
 
 router.put("/:id", authMiddleware, editTodo);
 
