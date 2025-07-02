@@ -53,11 +53,11 @@ async function createTodo(
   const todoId = insertTodo.rows[0].id;
 
   const ext = originalName.split(".").pop();
-  const path = `${todoId}-${Date.now()}.${ext}`;
+  const path = `${todoId}.${ext}`;
 
   const { error: UpErr } = await supabase.storage
     .from("todo-images")
-    .upload(path, fileBuffer, { contentType: `image/${ext}` });
+    .upload(path, fileBuffer, { contentType: `image/${ext}`, upsert: true });
   if (UpErr) throw UpErr;
 
   const { data, error: UrlErr } = await supabase.storage
@@ -81,9 +81,14 @@ async function createTodo(
     `
     select t.*,
     coalesce(
-    array_agg(i.image_url) filter (where i.image_url is not null),
-    array[]::text[]
-    ) as image_urls
+    jsonb_agg(
+    jsonb_build_object(
+    'url',i.image_url,
+    'imageDesc',i.description
+    )
+    ) filter (where i.image_url is not null),
+     '[]'::jsonb
+    ) as images
      from todo as t
      left join todo_image as i on i.todo_id = t.id
      where t.id=$1 and t.user_id=$2
@@ -226,4 +231,116 @@ async function getAll(userId, q, page, limit) {
   return { limit, page, todos, itemCounts, totalCounts, totalPage };
 }
 
-module.exports = { deleteMany, changeStatus, createTodo, getAll };
+async function putTodo(
+  userId,
+  todoId,
+  title,
+  description,
+  completed,
+  originalName,
+  fileBuffer,
+  imageDesc
+) {
+  await pool.query(
+    `
+    update todo
+    set title = coalesce($1,title),
+        description = coalesce($2,description),
+        completed = coalesce($3,completed),
+        updated_at = now()
+    where id = $4 and user_id = $5
+    `,
+    [title, description, completed, todoId, userId]
+  );
+
+  let editedTodo;
+
+  if (fileBuffer && originalName) {
+    const ext = originalName.split(".").pop();
+    const path = `${todoId}.${ext}`;
+
+    const { err: UpErr } = await supabase.storage
+      .from("todo-images")
+      .upload(path, fileBuffer, { contentType: `image/${ext}`, upsert: true });
+    if (UpErr) throw UpErr;
+
+    const { data, err: UrlErr } = await supabase.storage
+      .from("todo-images")
+      .getPublicUrl(path);
+    if (UrlErr) throw UrlErr;
+
+    const imageUrl = data.publicUrl;
+
+    await pool.query(
+      `
+    update todo_image 
+    set 
+    image_url = coalesce($1,image_url),
+    description=coalesce($2,description),
+    updated_at= now()
+    where todo_id=$3
+    `,
+      [imageUrl, imageDesc, todoId]
+    );
+
+    const result = await pool.query(
+      `
+    select t.*,
+    coalesce(
+    jsonb_agg(
+    jsonb_build_object(
+    'url',i.image_url,
+    'imageDesc',i.description
+    ) 
+    ) filter (where i.image_url is not null),
+     '[]'::jsonb
+    )as images
+    from todo as t
+    left join todo_image as i
+    on i.todo_id = t.id
+    where t.id=$1 and t.user_id=$2
+    group by t.id
+    `,
+      [todoId, userId]
+    );
+
+    editedTodo = result.rows[0];
+  } else {
+    await pool.query(
+      `
+    update todo_image
+    set
+    description = coalesce($1,description)
+    where todo_id=$2
+    `,
+      [imageDesc, todoId]
+    );
+
+    const result = await pool.query(
+      `
+    select t.*,
+    coalesce(
+    jsonb_agg(
+    jsonb_build_object(
+    'url',i.image_url,
+    'imageDesc',i.description
+    ) 
+    ) filter (where i.image_url is not null),
+     '[]'::jsonb
+    )as images
+    from todo as t
+    left join todo_image as i
+    on i.todo_id = t.id
+    where t.id=$1 and t.user_id=$2
+    group by t.id
+    `,
+      [todoId, userId]
+    );
+
+    editedTodo = result.rows[0];
+  }
+
+  return editedTodo;
+}
+
+module.exports = { deleteMany, changeStatus, createTodo, getAll, putTodo };

@@ -21,7 +21,7 @@ router.get("/:id", authMiddleware, getTodoById);
 
 router.post("/", authMiddleware, upload.single("file"), createTodo);
 
-router.put("/:id", authMiddleware, editTodo);
+router.put("/:id", authMiddleware, upload.single("file"), editTodo);
 
 router.delete("/batch", authMiddleware, removeMany);
 

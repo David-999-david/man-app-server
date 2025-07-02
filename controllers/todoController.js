@@ -116,7 +116,7 @@ async function editTodo(req, res, next) {
   const userId = req.userId;
   const id = req.params.id;
 
-  const { title, description, completed } = req.body;
+  const { title, description, completed, imageDesc } = req.body;
 
   if (!userId) {
     return res.status(401).json({ error: "Invalid User" });
@@ -129,27 +129,25 @@ async function editTodo(req, res, next) {
   ) {
     return res.status(400).json({ error: "At least one must be provided" });
   }
+
+  // if (!req.file) {
+  //   return res.status(400).json({ error: "No file upload" });
+  // }
+
+  const fileBuffer = req.file ? req.file.buffer : null;
+  const originalName = req.file ? req.file.originalname : null;
+
   try {
-    const { rows } = await pool.query(
-      `
-        update todo
-        set title = coalesce($1,title),
-            description = coalesce($2,description),
-            completed = coalesce($3,completed),
-            updated_at = now()
-        where id=$4 and user_id=$5
-        returning *
-        `,
-      [title, description, completed, id, userId]
+    const todo = await todoService.putTodo(
+      userId,
+      id,
+      title,
+      description,
+      completed,
+      originalName,
+      fileBuffer,
+      imageDesc
     );
-
-    if (rows.length === 0) {
-      return res
-        .status(404)
-        .json({ error: `Failed to update todo with id =${id}` });
-    }
-
-    const todo = rows[0];
 
     return res.status(200).json({
       error: false,
