@@ -240,7 +240,7 @@ async function removeAll(req, res, next) {
 async function updateStatus(req, res, next) {
   const userId = req.userId;
   const id = req.params.id;
-  const { status } = req.body;
+  const { completed } = req.body;
 
   if (!userId) {
     return res.status(401).json({ error: "Invalid user" });
@@ -248,11 +248,11 @@ async function updateStatus(req, res, next) {
   if (!id) {
     return res.status(400).json({ error: `Can't find item with id=${id}` });
   }
-  if (typeof status !== "boolean") {
-    return res.status(400).json({ error: `${status} must be boolean` });
+  if (typeof completed !== "boolean") {
+    return res.status(400).json({ error: `${completed} must be boolean` });
   }
   try {
-    const updatedItem = await todoService.changeStatus(userId, id, status);
+    const updatedItem = await todoService.changeStatus(userId, id, completed);
 
     if (!updatedItem) {
       return res

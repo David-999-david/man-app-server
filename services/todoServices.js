@@ -13,18 +13,42 @@ async function deleteMany(userId, ids) {
   return result.rowCount;
 }
 
-async function changeStatus(userId, id, status) {
-  const result = await pool.query(
+async function changeStatus(userId, id, completed) {
+  const resultA = await pool.query(
     `
         update todo
         set completed = $1
         where id =$2 and user_id=$3
-        returning *
         `,
-    [status, id, userId]
+    [completed, id, userId]
   );
-  if (result.rowCount === 0) {
+  if (resultA.rowCount === 0) {
     throw new Error("Todo not found for updated status");
+  }
+
+  const result = await pool.query(
+    `
+    select t.*,
+    coalesce(
+    jsonb_agg(
+    jsonb_build_object(
+    'url',i.image_url,
+    'imageDesc',i.description
+    )
+    ) filter (where i.image_url is not null),
+     '[]'::jsonb
+    ) as images
+     from todo as t
+     left join todo_image as i
+     on i.todo_id = t.id
+     where t.id =$1 and t.user_id=$2
+     group by t.id
+    `,
+    [id, userId]
+  );
+
+  if (result.rows.length === 0) {
+    throw new Error("Todo no found after edited status");
   }
 
   return result.rows[0];
