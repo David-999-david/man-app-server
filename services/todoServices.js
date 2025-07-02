@@ -118,18 +118,42 @@ async function getAll(userId, q, page, limit) {
   if (q) {
     const pattern = `%${q}%`;
 
+    // result = await pool.query(
+    //   `
+    //   select t.*,
+    //   coalesce(
+    //   array_agg(i.image_url) filter (where i.image_url is not null),
+    //   array[]::text[]
+    //   ) as image_urls
+    //    from todo as t
+    //    left join todo_image as i on i.todo_id = t.id
+    //    where t.user_id=$1 and (t.title iLike $2 or t.description ilike $2)
+    //    group by t.id
+    //    order by created_at desc
+    //    limit $3 offset $4
+    //   `,
+    //   [userId, pattern, limit, offset]
+    // );
+
     result = await pool.query(
       `
       select t.*,
       coalesce(
-      array_agg(i.image_url) filter (where i.image_url is not null),
-      array[]::text[]
-      ) as image_urls
+      jsonb_agg(
+      jsonb_build_object(
+      'url', i.image_url,
+      'imageDesc',i.description
+      )
+      ) filter (where i.image_url is not null),
+       '[]'::jsonb
+      ) as images
        from todo as t
-       left join todo_image as i on i.todo_id = t.id
-       where t.user_id=$1 and (t.title iLike $2 or t.description ilike $2)
+       left join todo_image as i
+       on i.todo_id = t.id
+       where t.user_id=$1 and
+       (t.title ilike $2 or t.description ilike $2)
        group by t.id
-       order by created_at desc
+       order by t.created_at desc
        limit $3 offset $4
       `,
       [userId, pattern, limit, offset]
@@ -143,18 +167,41 @@ async function getAll(userId, q, page, limit) {
       [userId, pattern]
     );
   } else {
+    // result = await pool.query(
+    //   `
+    //   select t.*,
+    //   coalesce(
+    //   array_agg(i.image_url) filter (where i.image_url is not null),
+    //   array[]::text[]
+    //   ) as image_urls
+    //    from todo as t
+    //    left join todo_image as i on i.todo_id = t.id
+    //    where t.user_id=$1
+    //    group by t.id
+    //    order by created_at desc
+    //    limit $2 offset $3
+    //   `,
+    //   [userId, limit, offset]
+    // );
+
     result = await pool.query(
       `
       select t.*,
       coalesce(
-      array_agg(i.image_url) filter (where i.image_url is not null),
-      array[]::text[]
-      ) as image_urls
+      jsonb_agg(
+      jsonb_build_object(
+      'url', i.image_url,
+      'imageDesc',i.description
+      )
+      ) filter (where i.image_url is not null),
+       '[]'::jsonb
+      ) as images
        from todo as t
-       left join todo_image as i on i.todo_id = t.id
+       left join todo_image as i 
+       on i.todo_id = t.id
        where t.user_id=$1
        group by t.id
-       order by created_at desc
+       order by t.created_at desc
        limit $2 offset $3
       `,
       [userId, limit, offset]

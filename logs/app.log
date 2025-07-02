@@ -3575,3 +3575,22 @@ PSQL pool connected successfully!
 [90m2025-07-02 08:44:08[39m [INFO] : PUT /api/todos/status/76 status=[33m200[39m 2.467 ms - 188 bytes
 [90m2025-07-02 08:44:11[39m [INFO] : GET /api/todos/?q=&page=1&limit=28 status=[33m200[39m 2.929 ms - 5678 bytes
 [90m2025-07-02 08:44:12[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.920 ms - 4204 bytes
+[90m2025-07-02 09:29:54[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 09:30:52[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-02 09:30:52[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 119.571 ms - 438 bytes
+[90m2025-07-02 09:30:53[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 50.057 ms - 4280 bytes
+[90m2025-07-02 09:31:07[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-02 09:31:08[39m [INFO] : GET /api/auth/me status=[33m201[39m 131.608 ms - 208 bytes
+[90m2025-07-02 09:31:14[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-02 09:31:14[39m [INFO] : GET /api/auth/me status=[33m201[39m 5.294 ms - 208 bytes
+[90m2025-07-02 09:31:28[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 69.770 ms - 4280 bytes
+[90m2025-07-02 09:49:05[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-02 09:49:05[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 98.936 ms - 438 bytes
+[90m2025-07-02 09:49:05[39m [INFO] : GET /api/todos/?q=tti&page=1&limit=20 status=[33m200[39m 10.282 ms - 114 bytes
+[90m2025-07-02 09:49:16[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 76.899 ms - 4280 bytes
+[90m2025-07-02 09:49:27[39m [INFO] : GET /api/todos/?q=title&page=1&limit=20 status=[33m200[39m 57.143 ms - 3193 bytes
+[90m2025-07-02 09:49:33[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.416 ms - 4280 bytes
+[90m2025-07-02 09:49:34[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.778 ms - 4280 bytes
+[90m2025-07-02 10:18:26[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-02 10:18:26[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 95.898 ms - 438 bytes
+[90m2025-07-02 10:18:27[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 14.582 ms - 4280 bytes
