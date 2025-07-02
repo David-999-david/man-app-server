@@ -3393,3 +3393,185 @@ PSQL pool connected successfully!
 [90m2025-07-01 15:20:47[39m [INFO] : POST /api/auth/signin status=[33m200[39m 104.464 ms - 497 bytes
 [90m2025-07-01 15:20:47[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 4.101 ms - 3128 bytes
 [90m2025-07-01 15:20:50[39m [INFO] : PUT /api/todos/status/76 status=[33m200[39m 3.319 ms - 187 bytes
+[90m2025-07-02 07:08:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 07:09:56[39m [INFO] : POST /api/auth/signin status=[33m200[39m 130.749 ms - 497 bytes
+[90m2025-07-02 07:09:56[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 12.772 ms - 3 bytes
+[90m2025-07-02 07:09:56[39m [INFO] : Error: Cannot set headers after they are sent to the client,Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:684:10)
+    at ServerResponse.send (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:161:12)
+    at ServerResponse.json (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:250:15)
+    at getAllTodo (C:\Users\user\Desktop\man-app-server\controllers\todoController.js:64:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-07-02 07:10:42[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 40.347 ms - 3 bytes
+[90m2025-07-02 07:10:42[39m [INFO] : Error: Cannot set headers after they are sent to the client,Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:684:10)
+    at ServerResponse.send (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:161:12)
+    at ServerResponse.json (C:\Users\user\Desktop\man-app-server\node_modules\express\lib\response.js:250:15)
+    at getAllTodo (C:\Users\user\Desktop\man-app-server\controllers\todoController.js:64:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-07-02 07:11:36[39m [INFO] : POST /api/todos/ status=[33m201[39m 1943.621 ms - 317 bytes
+[90m2025-07-02 07:13:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 07:13:59[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-02 07:13:59[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 26.229 ms - 438 bytes
+[90m2025-07-02 07:13:59[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 8.338 ms - 4203 bytes
+[90m2025-07-02 07:16:49[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-02 07:16:49[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 38.733 ms - 438 bytes
+[90m2025-07-02 07:16:50[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.589 ms - 4203 bytes
+[90m2025-07-02 07:21:25[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-02 07:21:25[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 44.271 ms - 438 bytes
+[90m2025-07-02 07:21:25[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 4.296 ms - 4203 bytes
+[90m2025-07-02 08:00:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:00:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:00:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:01:00[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:01:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:01:07[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:01:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:01:38[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:23:52[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:23:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:18[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:22[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:23[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:24[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:32[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:24:56[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:03[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:21[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:32[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:45[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:49[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:55[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:25:56[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:26:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:26:13[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:26:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:26:23[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:26:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:26:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:26:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:26:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:27:07[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:27:16[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:27:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:27:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:27:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:27:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:27:45[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:27:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:27:56[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:28:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:28:48[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:28:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:28:56[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:28:57[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:28:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:29:00[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:29:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:29:07[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:29:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:29:21[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:29:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:29:32[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:29:36[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:29:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:29:49[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:29:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:29:59[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:30:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:30:11[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:30:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:30:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:30:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:30:33[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:30:36[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:30:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:30:45[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:30:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:31:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:31:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:31:21[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:31:22[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:31:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:31:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:32:21[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:32:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:32:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:32:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:32:45[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:33:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:35:59[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-02 08:35:59[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 100.273 ms - 438 bytes
+[90m2025-07-02 08:36:00[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 12.057 ms - 4203 bytes
+[90m2025-07-02 08:36:30[39m [INFO] : GET /api/todos/?q=&page=1&limit=28 status=[33m200[39m 41.743 ms - 5677 bytes
+[90m2025-07-02 08:36:35[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.007 ms - 4203 bytes
+[90m2025-07-02 08:36:39[39m [INFO] : Error: column reference "description" is ambiguous,error: column reference "description" is ambiguous
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.getAll (C:\Users\user\Desktop\man-app-server\services\todoServices.js:121:14)
+    at async getAllTodo (C:\Users\user\Desktop\man-app-server\controllers\todoController.js:62:9)
+[90m2025-07-02 08:36:39[39m [INFO] : GET /api/todos/?q=s&page=1&limit=20 status=[33m500[39m 14.347 ms - 57 bytes
+[90m2025-07-02 08:36:45[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 37.548 ms - 4203 bytes
+[90m2025-07-02 08:36:47[39m [INFO] : Error: column reference "description" is ambiguous,error: column reference "description" is ambiguous
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.getAll (C:\Users\user\Desktop\man-app-server\services\todoServices.js:121:14)
+    at async getAllTodo (C:\Users\user\Desktop\man-app-server\controllers\todoController.js:62:9)
+[90m2025-07-02 08:36:47[39m [INFO] : GET /api/todos/?q=t&page=1&limit=20 status=[33m500[39m 4.102 ms - 57 bytes
+[90m2025-07-02 08:38:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:38:59[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:39:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:39:04[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:39:26[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-02 08:39:26[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 56.606 ms - 438 bytes
+[90m2025-07-02 08:39:27[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.929 ms - 4203 bytes
+[90m2025-07-02 08:39:31[39m [INFO] : Error: column reference "description" is ambiguous,error: column reference "description" is ambiguous
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.getAll (C:\Users\user\Desktop\man-app-server\services\todoServices.js:121:14)
+    at async getAllTodo (C:\Users\user\Desktop\man-app-server\controllers\todoController.js:62:9)
+[90m2025-07-02 08:39:31[39m [INFO] : GET /api/todos/?q=b&page=1&limit=20 status=[33m500[39m 4.018 ms - 57 bytes
+[90m2025-07-02 08:41:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:41:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:42:00[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:42:09[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:42:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-02 08:42:42[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-02 08:42:42[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 58.167 ms - 438 bytes
+[90m2025-07-02 08:42:43[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.291 ms - 4203 bytes
+[90m2025-07-02 08:42:52[39m [INFO] : GET /api/todos/?q=s&page=1&limit=20 status=[33m200[39m 5.545 ms - 4154 bytes
+[90m2025-07-02 08:43:01[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.815 ms - 4203 bytes
+[90m2025-07-02 08:43:05[39m [INFO] : GET /api/todos/?q=c&page=1&limit=20 status=[33m200[39m 3.558 ms - 4143 bytes
+[90m2025-07-02 08:43:11[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.620 ms - 4203 bytes
+[90m2025-07-02 08:43:15[39m [INFO] : GET /api/todos/?q=title&page=1&limit=20 status=[33m200[39m 3.029 ms - 3261 bytes
+[90m2025-07-02 08:43:25[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.276 ms - 4203 bytes
+[90m2025-07-02 08:43:25[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.418 ms - 4203 bytes
+[90m2025-07-02 08:43:30[39m [INFO] : GET /api/todos/?q=cckns&page=1&limit=20 status=[33m200[39m 2.535 ms - 114 bytes
+[90m2025-07-02 08:43:37[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-02 08:43:37[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 12.543 ms - 438 bytes
+[90m2025-07-02 08:43:38[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.340 ms - 4203 bytes
+[90m2025-07-02 08:43:42[39m [INFO] : GET /api/todos/?q=ckns&page=1&limit=20 status=[33m200[39m 2.586 ms - 660 bytes
+[90m2025-07-02 08:43:51[39m [INFO] : PUT /api/todos/status/75 status=[33m200[39m 3.008 ms - 187 bytes
+[90m2025-07-02 08:43:57[39m [INFO] : PUT /api/todos/status/75 status=[33m200[39m 5.227 ms - 187 bytes
+[90m2025-07-02 08:44:03[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.771 ms - 4202 bytes
+[90m2025-07-02 08:44:05[39m [INFO] : PUT /api/todos/status/75 status=[33m200[39m 5.233 ms - 188 bytes
+[90m2025-07-02 08:44:08[39m [INFO] : PUT /api/todos/status/76 status=[33m200[39m 2.467 ms - 188 bytes
+[90m2025-07-02 08:44:11[39m [INFO] : GET /api/todos/?q=&page=1&limit=28 status=[33m200[39m 2.929 ms - 5678 bytes
+[90m2025-07-02 08:44:12[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.920 ms - 4204 bytes

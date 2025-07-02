@@ -108,4 +108,75 @@ async function createTodo(
   return createdTodo;
 }
 
-module.exports = { deleteMany, changeStatus, createTodo };
+async function getAll(userId, q, page, limit) {
+  page = Math.max(parseInt(page, 10) || 1, 1);
+  limit = Math.max(parseInt(limit, 10) || 20, 1);
+  const offset = (page - 1) * limit;
+
+  let result, countResult;
+
+  if (q) {
+    const pattern = `%${q}%`;
+
+    result = await pool.query(
+      `
+      select t.*,
+      coalesce(
+      array_agg(i.image_url) filter (where i.image_url is not null),
+      array[]::text[]
+      ) as image_urls
+       from todo as t
+       left join todo_image as i on i.todo_id = t.id
+       where t.user_id=$1 and (t.title iLike $2 or t.description ilike $2)
+       group by t.id
+       order by created_at desc
+       limit $3 offset $4
+      `,
+      [userId, pattern, limit, offset]
+    );
+
+    countResult = await pool.query(
+      `
+      select count(*) from todo where user_id=$1
+      and (title ilike $2 or description ilike $2)
+      `,
+      [userId, pattern]
+    );
+  } else {
+    result = await pool.query(
+      `
+      select t.*,
+      coalesce(
+      array_agg(i.image_url) filter (where i.image_url is not null),
+      array[]::text[]
+      ) as image_urls
+       from todo as t
+       left join todo_image as i on i.todo_id = t.id
+       where t.user_id=$1
+       group by t.id
+       order by created_at desc
+       limit $2 offset $3
+      `,
+      [userId, limit, offset]
+    );
+
+    countResult = await pool.query(
+      `
+      select count(*) from todo where user_id=$1
+      `,
+      [userId]
+    );
+  }
+
+  const todos = result.rows;
+
+  const itemCounts = todos.length;
+
+  const totalCounts = parseInt(countResult.rows[0].count, 10);
+
+  const totalPage = Math.ceil(totalCounts / limit);
+
+  return { limit, page, todos, itemCounts, totalCounts, totalPage };
+}
+
+module.exports = { deleteMany, changeStatus, createTodo, getAll };

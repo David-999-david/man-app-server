@@ -49,65 +49,28 @@ async function getAllTodo(req, res, next) {
     return res.status(401).json({ error: "Invalid user" });
   }
 
-  const { q } = req.query;
-  const page = Math.max(parseInt(req.query.page, 10) || 1, 1);
-  const limit = Math.max(parseInt(req.query.limit, 10) || 20, 1);
-  const offset = (page - 1) * limit;
-
-  let result, countResult;
+  const { q, page, limit } = req.query;
 
   try {
-    if (q) {
-      const pattern = `%${q}%`;
+    const {
+      limit: L,
+      page: P,
+      todos,
+      itemCounts,
+      totalCounts,
+      totalPage,
+    } = await todoService.getAll(userId, q, page, limit);
 
-      result = await pool.query(
-        ` 
-        select id,title,description,completed,created_at,updated_at from todo
-        where user_id = $1 and
-        (title ilike $2 or description ilike $2)
-        order by created_at desc
-        limit $3 offset $4
-        `,
-        [userId, pattern, limit, offset]
-      );
-
-      countResult = await pool.query(
-        `select count(*) from todo where user_id = $1 
-        and (title ilike $2 or description ilike $2)`,
-        [userId, pattern]
-      );
-    } else {
-      result = await pool.query(
-        `
-        select id,title,description,completed,created_at,updated_at from todo
-        where user_id = $1 order by created_at desc
-        limit $2 offset $3 
-        `,
-        [userId, limit, offset]
-      );
-
-      countResult = await pool.query(
-        `select count(*) from todo where user_id = $1`,
-        [userId]
-      );
-    }
-
-    const todos = result.rows;
-
-    const itemCounts = todos.length;
-
-    const totalCounts = parseInt(countResult.rows[0].count, 10);
-
-    res.status(200).json({
+    return res.status(200).json({
       error: false,
       success: true,
       data: todos,
       meta: {
-        limit,
-        page,
+        limit: L,
+        page: P,
         itemCounts,
         totalCounts,
-        totalPage: Math.ceil(totalCounts / limit),
+        totalPage,
       },
     });
   } catch (e) {
