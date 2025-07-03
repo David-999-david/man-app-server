@@ -4204,3 +4204,98 @@ PSQL pool connected successfully!
 [90m2025-07-03 00:15:35[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
 [90m2025-07-03 00:15:35[39m [INFO] : GET /api/auth/me status=[33m201[39m 37.534 ms - 208 bytes
 [90m2025-07-03 00:15:37[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 4.643 ms - 5631 bytes
+[90m2025-07-03 08:38:09[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 08:39:28[39m [INFO] : POST /api/auth/signin status=[33m200[39m 132.340 ms - 497 bytes
+[90m2025-07-03 08:39:29[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 13.040 ms - 5631 bytes
+[90m2025-07-03 08:40:02[39m [INFO] : PUT /api/todos/status/87 status=[33m200[39m 42.439 ms - 330 bytes
+[90m2025-07-03 08:40:06[39m [INFO] : PUT /api/todos/status/87 status=[33m200[39m 6.749 ms - 331 bytes
+[90m2025-07-03 08:40:09[39m [INFO] : PUT /api/todos/status/87 status=[33m200[39m 3.533 ms - 330 bytes
+[90m2025-07-03 08:40:11[39m [INFO] : PUT /api/todos/status/87 status=[33m200[39m 4.891 ms - 331 bytes
+[90m2025-07-03 09:11:22[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-03 09:11:22[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 55.453 ms - 438 bytes
+[90m2025-07-03 09:11:22[39m [INFO] : DELETE /api/todos/76 status=[33m200[39m 6.043 ms - 63 bytes
+[90m2025-07-03 09:11:22[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.508 ms - 5509 bytes
+[90m2025-07-03 09:12:30[39m [INFO] : DELETE /api/todos/75 status=[33m200[39m 41.690 ms - 63 bytes
+[90m2025-07-03 09:12:41[39m [INFO] : PUT /api/todos/status/23 status=[33m200[39m 42.131 ms - 210 bytes
+[90m2025-07-03 09:13:00[39m [INFO] : GET /api/todos/?q=&page=2&limit=20 status=[33m200[39m 38.334 ms - 2642 bytes
+[90m2025-07-03 09:13:04[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.751 ms - 5376 bytes
+[90m2025-07-03 09:44:53[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-03 09:44:53[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 103.330 ms - 438 bytes
+[90m2025-07-03 09:44:53[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 10.394 ms - 5376 bytes
+[90m2025-07-03 09:46:23[39m [INFO] : DELETE /api/todos/23 status=[33m200[39m 99.076 ms - 63 bytes
+[90m2025-07-03 09:46:24[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 8.710 ms - 5377 bytes
+[90m2025-07-03 10:04:47[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-03 10:04:47[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 93.958 ms - 438 bytes
+[90m2025-07-03 10:04:48[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 13.953 ms - 5377 bytes
+[90m2025-07-03 10:05:34[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 86.775 ms - 5377 bytes
+[90m2025-07-03 10:05:38[39m [INFO] : DELETE /api/todos/22 status=[33m200[39m 10.238 ms - 63 bytes
+[90m2025-07-03 10:06:10[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 64.404 ms - 5387 bytes
+[90m2025-07-03 10:06:18[39m [INFO] : DELETE /api/todos/21 status=[33m200[39m 34.008 ms - 63 bytes
+[90m2025-07-03 10:06:18[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 8.110 ms - 5387 bytes
+[90m2025-07-03 13:08:48[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:08:57[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:08:59[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:09:04[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:09:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:09:13[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:09:18[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:09:22[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:09:33[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:09:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:09:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:09:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:10:04[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:10:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:10:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:10:25[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:10:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:10:30[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:11:00[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:11:05[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:11:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:11:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:11:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:11:22[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:11:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:11:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:11:48[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:11:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:11:56[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:12:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:12:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:12:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:12:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:12:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:12:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:12:24[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:12:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:12:41[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:12:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:13:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:13:09[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:13:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:13:16[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:13:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:15:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:15:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:15:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:15:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:15:48[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:16:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:16:11[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:16:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:16:22[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:16:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:17:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:17:30[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:17:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:17:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:17:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:19:52[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:19:54[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:20:21[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:20:32[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:20:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:20:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:20:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 13:20:43[39m [INFO] : PSQL pool connected successfully!

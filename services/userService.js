@@ -27,6 +27,4 @@ async function uploadAvatar(userId, fileBuffer, originalName) {
   return publicUrl;
 }
 
-
-
 module.exports = { uploadAvatar };
