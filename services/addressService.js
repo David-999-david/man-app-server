@@ -88,7 +88,7 @@ async function getAllAddress(userId) {
     'imageDesc',i.description
     )
     ) filter (where i.image_url is not null),
-     '[]'jsonb
+     '[]'::jsonb
     ) as images
      from user_address as a
      left join location_image as i
