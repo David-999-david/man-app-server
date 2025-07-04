@@ -4500,3 +4500,25 @@ PSQL pool connected successfully!
 [90m2025-07-04 15:46:51[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
 [90m2025-07-04 15:46:51[39m [INFO] : GET /api/auth/me status=[33m201[39m 6.975 ms - 208 bytes
 [90m2025-07-04 15:46:53[39m [INFO] : GET /api/address/ status=[33m200[39m 9.562 ms - 3181 bytes
+[90m2025-07-04 20:33:25[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 20:34:42[39m [INFO] : POST /api/auth/signin status=[33m200[39m 220.376 ms - 497 bytes
+[90m2025-07-04 20:34:42[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 19.735 ms - 5388 bytes
+[90m2025-07-04 20:34:44[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-04 20:34:44[39m [INFO] : GET /api/auth/me status=[33m201[39m 5.006 ms - 208 bytes
+[90m2025-07-04 20:34:56[39m [INFO] : GET /api/address/ status=[33m200[39m 62.033 ms - 3181 bytes
+[90m2025-07-04 20:36:00[39m [INFO] : GET /api/address/ status=[33m200[39m 67.766 ms - 3181 bytes
+[90m2025-07-04 20:43:07[39m [INFO] : GET /api/address/ status=[33m200[39m 78.322 ms - 3181 bytes
+[90m2025-07-04 20:56:39[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-04 20:56:39[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 122.015 ms - 438 bytes
+[90m2025-07-04 20:56:40[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 12.090 ms - 5388 bytes
+[90m2025-07-04 20:57:29[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-04 20:57:29[39m [INFO] : GET /api/auth/me status=[33m201[39m 125.196 ms - 208 bytes
+[90m2025-07-04 20:57:39[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-04 20:57:39[39m [INFO] : GET /api/auth/me status=[33m201[39m 92.777 ms - 208 bytes
+[90m2025-07-04 20:57:58[39m [INFO] : GET /api/address/ status=[33m200[39m 80.758 ms - 3181 bytes
+[90m2025-07-04 21:11:08[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-04 21:11:08[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 74.564 ms - 438 bytes
+[90m2025-07-04 21:11:09[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 18.418 ms - 5388 bytes
+[90m2025-07-04 21:11:16[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-04 21:11:16[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.944 ms - 208 bytes
+[90m2025-07-04 21:11:18[39m [INFO] : GET /api/address/ status=[33m200[39m 5.880 ms - 3181 bytes

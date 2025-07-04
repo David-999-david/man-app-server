@@ -1,4 +1,8 @@
-const { addAddress, getAllAddress } = require("../services/addressService");
+const {
+  addAddress,
+  getAllAddress,
+  updateAddress,
+} = require("../services/addressService");
 
 async function createAddress(req, res, next) {
   const userId = req.userId;
@@ -65,4 +69,48 @@ async function fetchAllAddress(req, res, next) {
   }
 }
 
-module.exports = { createAddress, fetchAllAddress };
+async function editAddress(req, res, next) {
+  const userId = req.userId;
+
+  if (!userId) {
+    return res.status(401).json({ error: "Invalid user" });
+  }
+
+  const addressId = req.params.id;
+
+  if (!addressId) {
+    return res.status(401).json({ error: "Address id missing or error " });
+  }
+
+  const { label, street, city, state, country, postalCode, imageDesc } =
+    req.body;
+
+  const fileBuffer = req.file ? req.file.buffer : null;
+  const originalName = req.file ? req.file.originalname : null;
+
+  try {
+    const updatedAddress = await updateAddress(
+      userId,
+      addressId,
+      label,
+      street,
+      city,
+      state,
+      country,
+      postalCode,
+      imageDesc,
+      fileBuffer,
+      originalName
+    );
+
+    return res.status(200).json({
+      error: false,
+      success: true,
+      data: updatedAddress,
+    });
+  } catch (e) {
+    return next(e);
+  }
+}
+
+module.exports = { createAddress, fetchAllAddress, editAddress };

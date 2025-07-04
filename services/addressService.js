@@ -102,4 +102,95 @@ async function getAllAddress(userId) {
   return result.rows;
 }
 
-module.exports = { addAddress, getAllAddress };
+async function updateAddress(
+  userId,
+  addressId,
+  label,
+  street,
+  city,
+  state,
+  country,
+  postalCode,
+  imageDesc,
+  fileBuffer,
+  originalName
+) {
+  const updateRes = await pool.query(
+    `
+    update user_address
+    set
+    label=coalesce($1,label),
+    street=coalesce($2,street),
+    city=coalesce($3,city),
+    state=coalesce($4,state),
+    country=coalesce($5,country),
+    postal_code=coalesce($6,postal_code),
+    updated_at=now()
+    where id =$7 and user_id=$8
+    returning *
+    `,
+    [label, street, city, state, country, postalCode, addressId, userId]
+  );
+
+  if (updateRes.rows.length === 0) {
+    throw new Error("Address failed to updated!");
+  }
+
+  const editedId = updateRes.rows[0].id;
+
+  if (fileBuffer && originalName) {
+    const ext = originalName.split(".").pop();
+
+    const path = `${editedId}.${ext}`;
+
+    const { error: UpErr } = await supabase.storage
+      .from("address")
+      .upload(path, fileBuffer, { contentType: `image/${ext}`, upsert: true });
+    if (UpErr) throw UpErr;
+
+    const { data, error: UrlErr } = await supabase.storage
+      .from("address")
+      .getPublicUrl(path);
+    if (UrlErr) throw UrlErr;
+
+    const imageUrl = data.publicUrl;
+
+    await pool.query(
+      `
+      insert into location_image
+      (address_id,image_url,description) values ($1,$2,$3)
+      on conflict (address_id)
+      do update
+      set image_url=excluded.image_url,
+      description=excluded.description,
+      updated_at=now()
+      `,
+      [editedId, imageUrl, imageDesc]
+    );
+  }
+
+  const fetchRes = await pool.query(
+    `
+      select a.*,
+      coalesce(
+      jsonb_agg(
+      jsonb_build_object(
+      'url',i.image_url,
+      'imageDesc',i.description
+      )
+      ) filter (where i.image_url is not null),
+       '[]'::jsonb
+      ) as images
+       from user_address as a
+       left join location_image as i
+       on i.address_id=a.id
+       where a.id=$1 and a.user_id=$2
+       group by a.id
+      `,
+    [editedId, userId]
+  );
+
+  return fetchRes.rows[0];
+}
+
+module.exports = { addAddress, getAllAddress, updateAddress };
