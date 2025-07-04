@@ -77,4 +77,29 @@ async function addAddress(
   return address;
 }
 
-module.exports = { addAddress };
+async function getAllAddress(userId) {
+  const result = await pool.query(
+    `
+    select a.*,
+    coalesce(
+    jsonb_agg(
+    jsonb_build_object(
+    'url',i.image_url,
+    'imageDesc',i.description
+    )
+    ) filter (where i.image_url is not null),
+     '[]'jsonb
+    ) as images
+     from user_address as a
+     left join location_image as i
+     on i.address_id = a.id
+      where user_id=$1
+      group by a.id
+      order by created_at desc
+    `,
+    [userId]
+  );
+  return result.rows;
+}
+
+module.exports = { addAddress, getAllAddress };

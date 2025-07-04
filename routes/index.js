@@ -7,6 +7,6 @@ const router = express.Router();
 
 router.use("/auth", authroutes);
 router.use("/todos", todoRoutes);
-router.use("/address");
+router.use("/address", address);
 
 module.exports = router;

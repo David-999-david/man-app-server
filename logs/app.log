@@ -4299,3 +4299,143 @@ PSQL pool connected successfully!
 [90m2025-07-03 13:20:37[39m [INFO] : PSQL pool connected successfully!
 [90m2025-07-03 13:20:42[39m [INFO] : PSQL pool connected successfully!
 [90m2025-07-03 13:20:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 20:19:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-03 20:43:49[39m [INFO] : POST /api/auth/signin status=[33m200[39m 216.796 ms - 497 bytes
+[90m2025-07-03 20:43:49[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 15.325 ms - 5387 bytes
+[90m2025-07-03 20:44:04[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-03 20:44:04[39m [INFO] : GET /api/auth/me status=[33m201[39m 41.930 ms - 208 bytes
+[90m2025-07-03 20:56:51[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-03 20:56:51[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 52.003 ms - 438 bytes
+[90m2025-07-03 20:56:52[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.173 ms - 5387 bytes
+[90m2025-07-03 20:56:58[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-03 20:56:58[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.630 ms - 208 bytes
+[90m2025-07-03 21:05:17[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-03 21:05:17[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 48.348 ms - 438 bytes
+[90m2025-07-03 21:05:18[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.427 ms - 5387 bytes
+[90m2025-07-03 21:05:20[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-03 21:05:20[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.341 ms - 208 bytes
+[90m2025-07-03 21:23:38[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 07:06:24[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 07:07:48[39m [INFO] : POST /api/auth/signin status=[33m200[39m 239.837 ms - 497 bytes
+[90m2025-07-04 07:07:49[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 50.731 ms - 5387 bytes
+[90m2025-07-04 07:08:24[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-04 07:08:24[39m [INFO] : GET /api/auth/me status=[33m201[39m 101.690 ms - 208 bytes
+[90m2025-07-04 07:10:54[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-04 07:10:54[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 96.475 ms - 438 bytes
+[90m2025-07-04 07:10:54[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 13.688 ms - 5387 bytes
+[90m2025-07-04 07:11:28[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-04 07:11:28[39m [INFO] : GET /api/auth/me status=[33m201[39m 68.055 ms - 208 bytes
+[90m2025-07-04 08:37:45[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-04 08:37:45[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 54.002 ms - 438 bytes
+[90m2025-07-04 08:37:46[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.589 ms - 5387 bytes
+[90m2025-07-04 08:38:04[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-04 08:38:04[39m [INFO] : GET /api/auth/me status=[33m201[39m 37.329 ms - 208 bytes
+[90m2025-07-04 09:34:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 09:35:31[39m [INFO] : POST /api/auth/signin status=[33m200[39m 127.807 ms - 497 bytes
+[90m2025-07-04 09:35:32[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 9.082 ms - 5387 bytes
+[90m2025-07-04 09:35:34[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-04 09:35:34[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.062 ms - 208 bytes
+[90m2025-07-04 10:42:05[39m [INFO] : POST /api/auth/signin status=[33m200[39m 157.070 ms - 497 bytes
+[90m2025-07-04 10:42:05[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 18.488 ms - 5387 bytes
+[90m2025-07-04 10:42:08[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-04 10:42:08[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.807 ms - 208 bytes
+[90m2025-07-04 10:57:58[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-04 10:57:58[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 45.898 ms - 438 bytes
+[90m2025-07-04 10:58:01[39m [INFO] : POST /api/address/ status=[33m201[39m 2122.130 ms - 365 bytes
+[90m2025-07-04 11:05:26[39m [INFO] : POST /api/address/ status=[33m201[39m 5597.650 ms - 371 bytes
+[90m2025-07-04 11:06:53[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-04 11:06:53[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 44.374 ms - 438 bytes
+[90m2025-07-04 11:06:53[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.911 ms - 5387 bytes
+[90m2025-07-04 11:07:11[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-04 11:07:11[39m [INFO] : GET /api/auth/me status=[33m201[39m 38.417 ms - 208 bytes
+[90m2025-07-04 11:08:25[39m [INFO] : POST /api/address/ status=[33m201[39m 2655.055 ms - 353 bytes
+[90m2025-07-04 11:11:30[39m [INFO] : POST /api/address/ status=[33m201[39m 2976.291 ms - 365 bytes
+[90m2025-07-04 11:15:05[39m [INFO] : Error: Cannot read properties of undefined (reading 'buffer'),TypeError: Cannot read properties of undefined (reading 'buffer')
+    at createAddress (C:\Users\user\Desktop\man-app-server\controllers\addressController.js:17:31)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at done (C:\Users\user\Desktop\man-app-server\node_modules\multer\lib\make-middleware.js:59:7)
+    at indicateDone (C:\Users\user\Desktop\man-app-server\node_modules\multer\lib\make-middleware.js:63:68)
+    at Multipart.<anonymous> (C:\Users\user\Desktop\man-app-server\node_modules\multer\lib\make-middleware.js:182:7)
+    at Multipart.emit (node:events:518:28)
+    at emitCloseNT (node:internal/streams/destroy:148:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+[90m2025-07-04 11:15:05[39m [INFO] : POST /api/address/ status=[33m500[39m 4.416 ms - 66 bytes
+[90m2025-07-04 11:17:55[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:18:04[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:18:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:18:18[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-04 11:18:18[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 29.646 ms - 438 bytes
+[90m2025-07-04 11:18:18[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.963 ms - 5387 bytes
+[90m2025-07-04 11:18:22[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-04 11:18:22[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.724 ms - 208 bytes
+[90m2025-07-04 11:19:04[39m [INFO] : POST /api/address/ status=[33m201[39m 46.617 ms - 252 bytes
+[90m2025-07-04 11:38:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:38:05[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:38:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:38:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:38:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:38:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:38:33[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:38:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:39:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:39:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:39:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:39:21[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:39:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:39:35[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:39:41[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:39:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:40:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:40:23[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:40:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:40:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:40:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:40:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:40:45[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:40:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:40:55[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:41:00[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:41:11[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:41:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:41:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:41:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:41:38[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:41:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:41:49[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:41:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:41:57[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:42:01[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:42:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:42:07[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:42:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:42:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:42:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:42:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:42:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:42:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:42:52[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:42:55[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:43:00[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:43:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:44:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:44:55[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:45:11[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:45:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:45:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:45:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:45:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:46:01[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:46:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:46:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:46:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:46:30[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:46:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:46:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:47:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:47:36[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:47:55[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:48:05[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:48:11[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:48:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-04 11:48:48[39m [INFO] : PSQL pool connected successfully!
