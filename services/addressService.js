@@ -138,6 +138,8 @@ async function updateAddress(
 
   const editedId = updateRes.rows[0].id;
 
+  let imageUrl = null;
+
   if (fileBuffer && originalName) {
     const ext = originalName.split(".").pop();
 
@@ -153,16 +155,18 @@ async function updateAddress(
       .getPublicUrl(path);
     if (UrlErr) throw UrlErr;
 
-    const imageUrl = data.publicUrl;
+    imageUrl = data.publicUrl;
+  }
 
+  if (fileBuffer || imageDesc != null) {
     await pool.query(
       `
       insert into location_image
       (address_id,image_url,description) values ($1,$2,$3)
       on conflict (address_id)
       do update
-      set image_url=excluded.image_url,
-      description=excluded.description,
+      set image_url=coalesce(excluded.image_url,location_image.image_url),
+      description=coalesce(excluded.description,location_image.description),
       updated_at=now()
       `,
       [editedId, imageUrl, imageDesc]

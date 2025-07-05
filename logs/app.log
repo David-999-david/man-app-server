@@ -4522,3 +4522,291 @@ PSQL pool connected successfully!
 [90m2025-07-04 21:11:16[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
 [90m2025-07-04 21:11:16[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.944 ms - 208 bytes
 [90m2025-07-04 21:11:18[39m [INFO] : GET /api/address/ status=[33m200[39m 5.880 ms - 3181 bytes
+[90m2025-07-05 06:22:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:23:35[39m [INFO] : POST /api/auth/signin status=[33m200[39m 190.830 ms - 497 bytes
+[90m2025-07-05 06:23:35[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 15.049 ms - 5388 bytes
+[90m2025-07-05 06:23:37[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 06:23:37[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.809 ms - 208 bytes
+[90m2025-07-05 06:23:43[39m [INFO] : GET /api/address/ status=[33m200[39m 8.871 ms - 3181 bytes
+[90m2025-07-05 06:26:12[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:26:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:26:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:26:30[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:26:32[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:26:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:26:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:26:43[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:26:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:26:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:27:14[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:27:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:27:24[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:27:25[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:27:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:27:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:27:32[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:27:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:28:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:28:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:28:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:28:39[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:28:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:28:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:28:47[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:32:54[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:33:04[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:33:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:33:18[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:35:49[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:35:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:35:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:36:00[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:36:15[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:36:25[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:36:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:36:36[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:36:38[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:36:41[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 06:50:56[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 06:50:56[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 70.528 ms - 438 bytes
+[90m2025-07-05 06:50:56[39m [INFO] : GET /api/address/ status=[33m200[39m 11.808 ms - 3181 bytes
+[90m2025-07-05 06:55:19[39m [INFO] : GET /api/address/ status=[33m200[39m 37.904 ms - 3181 bytes
+[90m2025-07-05 07:24:23[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 07:24:23[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 87.532 ms - 438 bytes
+[90m2025-07-05 07:24:23[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 13.874 ms - 5388 bytes
+[90m2025-07-05 07:24:33[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 07:24:33[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.324 ms - 208 bytes
+[90m2025-07-05 07:24:38[39m [INFO] : GET /api/address/ status=[33m200[39m 4.515 ms - 3181 bytes
+[90m2025-07-05 07:27:39[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 07:27:39[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 40.231 ms - 438 bytes
+[90m2025-07-05 07:27:39[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.790 ms - 5388 bytes
+[90m2025-07-05 07:27:43[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 07:27:43[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.415 ms - 208 bytes
+[90m2025-07-05 07:27:44[39m [INFO] : GET /api/address/ status=[33m200[39m 4.410 ms - 3181 bytes
+[90m2025-07-05 07:32:31[39m [INFO] : GET /api/address/ status=[33m200[39m 35.736 ms - 3181 bytes
+[90m2025-07-05 08:03:28[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 08:03:28[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 111.823 ms - 438 bytes
+[90m2025-07-05 08:03:29[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 19.171 ms - 5388 bytes
+[90m2025-07-05 08:03:31[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 08:03:31[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.835 ms - 208 bytes
+[90m2025-07-05 08:03:33[39m [INFO] : GET /api/address/ status=[33m200[39m 9.153 ms - 3181 bytes
+[90m2025-07-05 08:11:16[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 08:11:16[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 63.695 ms - 438 bytes
+[90m2025-07-05 08:11:16[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 11.372 ms - 5388 bytes
+[90m2025-07-05 08:12:15[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 08:12:15[39m [INFO] : GET /api/auth/me status=[33m201[39m 45.896 ms - 208 bytes
+[90m2025-07-05 08:12:16[39m [INFO] : GET /api/address/ status=[33m200[39m 9.539 ms - 3181 bytes
+[90m2025-07-05 08:25:48[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 08:25:48[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 130.697 ms - 438 bytes
+[90m2025-07-05 08:25:49[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 39.910 ms - 5388 bytes
+[90m2025-07-05 08:25:58[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 08:25:58[39m [INFO] : GET /api/auth/me status=[33m201[39m 8.659 ms - 208 bytes
+[90m2025-07-05 08:25:59[39m [INFO] : GET /api/address/ status=[33m200[39m 8.707 ms - 3181 bytes
+[90m2025-07-05 08:43:46[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 08:43:46[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 65.464 ms - 438 bytes
+[90m2025-07-05 08:43:47[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 27.366 ms - 5388 bytes
+[90m2025-07-05 08:43:52[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 08:43:52[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.686 ms - 208 bytes
+[90m2025-07-05 08:43:53[39m [INFO] : GET /api/address/ status=[33m200[39m 27.091 ms - 3181 bytes
+[90m2025-07-05 11:35:59[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:38:07[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:38:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:38:21[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:38:23[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:38:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:38:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:38:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:39:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:39:07[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:39:08[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:39:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:39:37[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:39:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:40:19[39m [INFO] : POST /api/auth/signin status=[33m200[39m 137.623 ms - 497 bytes
+[90m2025-07-05 11:40:19[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 13.786 ms - 5388 bytes
+[90m2025-07-05 11:40:21[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 11:40:21[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.899 ms - 208 bytes
+[90m2025-07-05 11:40:23[39m [INFO] : GET /api/address/ status=[33m200[39m 4.334 ms - 3181 bytes
+[90m2025-07-05 11:41:48[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:42:21[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:42:25[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:42:27[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:42:44[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:42:55[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:43:04[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:43:09[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 11:43:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 12:16:21[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 12:16:21[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 117.370 ms - 438 bytes
+[90m2025-07-05 12:16:22[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 13.462 ms - 5388 bytes
+[90m2025-07-05 12:17:06[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 12:17:06[39m [INFO] : GET /api/auth/me status=[33m201[39m 85.278 ms - 208 bytes
+[90m2025-07-05 12:17:07[39m [INFO] : GET /api/address/ status=[33m200[39m 8.150 ms - 3181 bytes
+[90m2025-07-05 12:20:13[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 74.742 ms - 5388 bytes
+[90m2025-07-05 12:21:43[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 12:21:43[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 94.490 ms - 438 bytes
+[90m2025-07-05 12:21:44[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 11.254 ms - 5388 bytes
+[90m2025-07-05 12:21:50[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 12:21:50[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.194 ms - 208 bytes
+[90m2025-07-05 12:21:54[39m [INFO] : GET /api/address/ status=[33m200[39m 9.793 ms - 3181 bytes
+[90m2025-07-05 12:27:04[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 12:27:04[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 96.842 ms - 438 bytes
+[90m2025-07-05 12:27:05[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 11.429 ms - 5388 bytes
+[90m2025-07-05 12:27:29[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 12:27:29[39m [INFO] : GET /api/auth/me status=[33m201[39m 67.666 ms - 208 bytes
+[90m2025-07-05 12:27:31[39m [INFO] : GET /api/address/ status=[33m200[39m 9.010 ms - 3181 bytes
+[90m2025-07-05 12:27:54[39m [INFO] : Error: there is no unique or exclusion constraint matching the ON CONFLICT specification,error: there is no unique or exclusion constraint matching the ON CONFLICT specification
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async updateAddress (C:\Users\user\Desktop\man-app-server\services\addressService.js:162:5)
+    at async editAddress (C:\Users\user\Desktop\man-app-server\controllers\addressController.js:92:28)
+[90m2025-07-05 12:27:54[39m [INFO] : PUT /api/address/6 status=[33m500[39m 116.014 ms - 93 bytes
+[90m2025-07-05 12:44:40[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 12:45:18[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 12:45:18[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 65.930 ms - 438 bytes
+[90m2025-07-05 12:45:19[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 8.517 ms - 5388 bytes
+[90m2025-07-05 12:45:24[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 12:45:24[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.671 ms - 208 bytes
+[90m2025-07-05 12:45:26[39m [INFO] : GET /api/address/ status=[33m200[39m 5.211 ms - 3188 bytes
+[90m2025-07-05 12:46:23[39m [INFO] : Error: null value in column "image_url" of relation "location_image" violates not-null constraint,error: null value in column "image_url" of relation "location_image" violates not-null constraint
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async updateAddress (C:\Users\user\Desktop\man-app-server\services\addressService.js:162:5)
+    at async editAddress (C:\Users\user\Desktop\man-app-server\controllers\addressController.js:92:28)
+[90m2025-07-05 12:46:23[39m [INFO] : PUT /api/address/1 status=[33m500[39m 49.391 ms - 106 bytes
+[90m2025-07-05 12:47:35[39m [INFO] : POST /api/address/ status=[33m201[39m 1040.116 ms - 349 bytes
+[90m2025-07-05 12:47:51[39m [INFO] : Error: null value in column "image_url" of relation "location_image" violates not-null constraint,error: null value in column "image_url" of relation "location_image" violates not-null constraint
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async updateAddress (C:\Users\user\Desktop\man-app-server\services\addressService.js:162:5)
+    at async editAddress (C:\Users\user\Desktop\man-app-server\controllers\addressController.js:92:28)
+[90m2025-07-05 12:47:51[39m [INFO] : PUT /api/address/11 status=[33m500[39m 38.831 ms - 106 bytes
+[90m2025-07-05 12:48:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 12:50:09[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 12:50:16[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 12:50:16[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 23.046 ms - 438 bytes
+[90m2025-07-05 12:50:17[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.706 ms - 5388 bytes
+[90m2025-07-05 12:50:20[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 12:50:20[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.652 ms - 208 bytes
+[90m2025-07-05 12:50:23[39m [INFO] : GET /api/address/ status=[33m200[39m 5.082 ms - 3506 bytes
+[90m2025-07-05 12:50:38[39m [INFO] : GET /api/address/ status=[33m200[39m 36.285 ms - 3506 bytes
+[90m2025-07-05 12:51:22[39m [INFO] : PUT /api/address/11 status=[33m200[39m 150.417 ms - 248 bytes
+[90m2025-07-05 12:51:26[39m [INFO] : GET /api/address/ status=[33m200[39m 3.206 ms - 3401 bytes
+[90m2025-07-05 12:52:01[39m [INFO] : PUT /api/address/9 status=[33m200[39m 40.311 ms - 248 bytes
+[90m2025-07-05 12:52:11[39m [INFO] : GET /api/address/ status=[33m200[39m 3.188 ms - 3297 bytes
+[90m2025-07-05 12:52:59[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 12:53:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 12:53:07[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 12:53:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 12:53:18[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 12:53:35[39m [INFO] : PUT /api/address/9 status=[33m200[39m 595.004 ms - 352 bytes
+[90m2025-07-05 12:53:40[39m [INFO] : GET /api/address/ status=[33m200[39m 3.125 ms - 3401 bytes
+[90m2025-07-05 12:53:57[39m [INFO] : PUT /api/address/9 status=[33m200[39m 38.578 ms - 248 bytes
+[90m2025-07-05 12:54:02[39m [INFO] : GET /api/address/ status=[33m200[39m 2.627 ms - 3297 bytes
+[90m2025-07-05 12:54:49[39m [INFO] : POST /api/address/ status=[33m201[39m 431.029 ms - 350 bytes
+[90m2025-07-05 12:56:39[39m [INFO] : PUT /api/address/12 status=[33m200[39m 4840.771 ms - 350 bytes
+[90m2025-07-05 12:56:45[39m [INFO] : GET /api/address/ status=[33m200[39m 2.781 ms - 3610 bytes
+[90m2025-07-05 12:57:04[39m [INFO] : PUT /api/address/11 status=[33m200[39m 608.773 ms - 353 bytes
+[90m2025-07-05 12:57:09[39m [INFO] : GET /api/address/ status=[33m200[39m 3.171 ms - 3715 bytes
+[90m2025-07-05 12:57:45[39m [INFO] : PUT /api/address/11 status=[33m200[39m 42.403 ms - 256 bytes
+[90m2025-07-05 12:58:01[39m [INFO] : GET /api/address/ status=[33m200[39m 32.755 ms - 3618 bytes
+[90m2025-07-05 12:59:49[39m [INFO] : POST /api/address/ status=[33m201[39m 668.462 ms - 353 bytes
+[90m2025-07-05 13:00:03[39m [INFO] : PUT /api/address/13 status=[33m200[39m 37.384 ms - 243 bytes
+[90m2025-07-05 13:00:42[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 13:00:42[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 46.505 ms - 438 bytes
+[90m2025-07-05 13:00:42[39m [INFO] : GET /api/address/ status=[33m200[39m 5.305 ms - 3824 bytes
+[90m2025-07-05 13:00:56[39m [INFO] : PUT /api/address/13 status=[33m200[39m 547.826 ms - 352 bytes
+[90m2025-07-05 13:01:13[39m [INFO] : GET /api/address/ status=[33m200[39m 32.753 ms - 3933 bytes
+[90m2025-07-05 13:08:16[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:08:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:08:24[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:08:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:08:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:09:42[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 13:09:42[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 52.820 ms - 438 bytes
+[90m2025-07-05 13:09:43[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.576 ms - 5388 bytes
+[90m2025-07-05 13:11:15[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 13:11:15[39m [INFO] : GET /api/auth/me status=[33m201[39m 40.303 ms - 208 bytes
+[90m2025-07-05 13:11:17[39m [INFO] : GET /api/address/ status=[33m200[39m 5.835 ms - 3933 bytes
+[90m2025-07-05 13:11:29[39m [INFO] : Error: column reference "image_url" is ambiguous,error: column reference "image_url" is ambiguous
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async updateAddress (C:\Users\user\Desktop\man-app-server\services\addressService.js:162:5)
+    at async editAddress (C:\Users\user\Desktop\man-app-server\controllers\addressController.js:92:28)
+[90m2025-07-05 13:11:29[39m [INFO] : PUT /api/address/13 status=[33m500[39m 46.793 ms - 55 bytes
+[90m2025-07-05 13:11:49[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:11:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:11:55[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:12:00[39m [INFO] : PUT /api/address/13 status=[33m200[39m 23.747 ms - 355 bytes
+[90m2025-07-05 13:12:09[39m [INFO] : GET /api/address/ status=[33m200[39m 4.588 ms - 3936 bytes
+[90m2025-07-05 13:12:20[39m [INFO] : PUT /api/address/13 status=[33m200[39m 153.727 ms - 359 bytes
+[90m2025-07-05 13:12:32[39m [INFO] : GET /api/address/ status=[33m200[39m 39.874 ms - 3940 bytes
+[90m2025-07-05 13:13:02[39m [INFO] : PUT /api/address/11 status=[33m200[39m 941.301 ms - 361 bytes
+[90m2025-07-05 13:13:06[39m [INFO] : GET /api/address/ status=[33m200[39m 2.941 ms - 4045 bytes
+[90m2025-07-05 13:13:21[39m [INFO] : PUT /api/address/11 status=[33m200[39m 44.243 ms - 363 bytes
+[90m2025-07-05 13:13:25[39m [INFO] : GET /api/address/ status=[33m200[39m 2.740 ms - 4047 bytes
+[90m2025-07-05 13:14:16[39m [INFO] : PUT /api/address/9 status=[33m200[39m 624.512 ms - 352 bytes
+[90m2025-07-05 13:14:27[39m [INFO] : GET /api/address/ status=[33m200[39m 39.415 ms - 4151 bytes
+[90m2025-07-05 13:20:52[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 13:20:52[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 50.955 ms - 438 bytes
+[90m2025-07-05 13:20:52[39m [INFO] : PUT /api/address/5 status=[33m200[39m 525.994 ms - 368 bytes
+[90m2025-07-05 13:21:02[39m [INFO] : GET /api/address/ status=[33m200[39m 38.948 ms - 4255 bytes
+[90m2025-07-05 13:21:49[39m [INFO] : GET /api/address/ status=[33m200[39m 38.228 ms - 4255 bytes
+[90m2025-07-05 13:22:30[39m [INFO] : GET /api/address/ status=[33m200[39m 40.791 ms - 4255 bytes
+[90m2025-07-05 13:23:12[39m [INFO] : GET /api/address/ status=[33m200[39m 40.858 ms - 4255 bytes
+[90m2025-07-05 13:23:30[39m [INFO] : GET /api/address/ status=[33m200[39m 42.605 ms - 4255 bytes
+[90m2025-07-05 13:26:07[39m [INFO] : POST /api/address/ status=[33m201[39m 148.677 ms - 236 bytes
+[90m2025-07-05 13:26:23[39m [INFO] : PUT /api/address/14 status=[33m200[39m 143.048 ms - 248 bytes
+[90m2025-07-05 13:27:24[39m [INFO] : Error: fetch failed,TypeError: fetch failed
+    at node:internal/deps/undici/undici:13510:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2025-07-05 13:27:24[39m [INFO] : PUT /api/address/14 status=[33m500[39m 9897.889 ms - 24 bytes
+[90m2025-07-05 13:27:33[39m [INFO] : GET /api/address/ status=[33m200[39m 144.180 ms - 4466 bytes
+[90m2025-07-05 13:28:16[39m [INFO] : PUT /api/address/14 status=[33m200[39m 771.557 ms - 353 bytes
+[90m2025-07-05 13:28:20[39m [INFO] : GET /api/address/ status=[33m200[39m 2.198 ms - 4571 bytes
+[90m2025-07-05 13:28:48[39m [INFO] : POST /api/address/ status=[33m201[39m 40.697 ms - 226 bytes
+[90m2025-07-05 13:33:04[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 13:33:04[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 143.657 ms - 438 bytes
+[90m2025-07-05 13:33:05[39m [INFO] : PUT /api/address/15 status=[33m200[39m 6.605 ms - 238 bytes
+[90m2025-07-05 13:33:44[39m [INFO] : GET /api/address/ status=[33m200[39m 144.216 ms - 4772 bytes
+[90m2025-07-05 13:35:17[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:35:20[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:35:22[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:35:24[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:35:25[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:35:30[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:35:37[39m [INFO] : GET /api/address/ status=[33m200[39m 11.115 ms - 4772 bytes
+[90m2025-07-05 13:36:10[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:36:15[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 13:36:15[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 166.785 ms - 438 bytes
+[90m2025-07-05 13:36:16[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.735 ms - 5388 bytes
+[90m2025-07-05 13:36:21[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 13:36:21[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.818 ms - 208 bytes
+[90m2025-07-05 13:36:23[39m [INFO] : GET /api/address/ status=[33m200[39m 5.059 ms - 4772 bytes
+[90m2025-07-05 13:36:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:36:57[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:37:01[39m [INFO] : Error: type "jsonb_agg" does not exist,error: type "jsonb_agg" does not exist
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getAllAddress (C:\Users\user\Desktop\man-app-server\services\addressService.js:81:18)
+    at async fetchAllAddress (C:\Users\user\Desktop\man-app-server\controllers\addressController.js:60:23)
+[90m2025-07-05 13:37:01[39m [INFO] : GET /api/address/ status=[33m500[39m 10.269 ms - 45 bytes
+[90m2025-07-05 13:37:23[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:37:38[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:37:44[39m [INFO] : GET /api/address/ status=[33m200[39m 12.820 ms - 4802 bytes
+[90m2025-07-05 13:37:52[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-05 13:37:52[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 17.488 ms - 438 bytes
+[90m2025-07-05 13:37:53[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.380 ms - 5388 bytes
+[90m2025-07-05 13:37:55[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 13:37:55[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.847 ms - 208 bytes
+[90m2025-07-05 13:37:56[39m [INFO] : GET /api/address/ status=[33m200[39m 2.772 ms - 4802 bytes
+[90m2025-07-05 13:38:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:38:11[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:38:14[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 13:38:20[39m [INFO] : GET /api/address/ status=[33m200[39m 12.152 ms - 4772 bytes
+[90m2025-07-05 13:46:00[39m [INFO] : PUT /api/address/13 status=[33m200[39m 54.930 ms - 361 bytes
+[90m2025-07-05 13:46:27[39m [INFO] : GET /api/address/ status=[33m200[39m 37.993 ms - 4774 bytes
+[90m2025-07-05 13:46:55[39m [INFO] : PUT /api/address/13 status=[33m200[39m 36.575 ms - 362 bytes
+[90m2025-07-05 13:46:55[39m [INFO] : GET /api/address/ status=[33m200[39m 2.797 ms - 4775 bytes
+[90m2025-07-05 13:47:17[39m [INFO] : PUT /api/address/12 status=[33m200[39m 41.682 ms - 356 bytes
+[90m2025-07-05 13:47:17[39m [INFO] : GET /api/address/ status=[33m200[39m 2.052 ms - 4781 bytes
