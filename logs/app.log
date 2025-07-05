@@ -4810,3 +4810,13 @@ PSQL pool connected successfully!
 [90m2025-07-05 13:46:55[39m [INFO] : GET /api/address/ status=[33m200[39m 2.797 ms - 4775 bytes
 [90m2025-07-05 13:47:17[39m [INFO] : PUT /api/address/12 status=[33m200[39m 41.682 ms - 356 bytes
 [90m2025-07-05 13:47:17[39m [INFO] : GET /api/address/ status=[33m200[39m 2.052 ms - 4781 bytes
+[90m2025-07-05 16:36:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-05 16:38:10[39m [INFO] : POST /api/auth/signin status=[33m200[39m 209.231 ms - 497 bytes
+[90m2025-07-05 16:38:10[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 44.228 ms - 5388 bytes
+[90m2025-07-05 16:38:20[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-05 16:38:20[39m [INFO] : GET /api/auth/me status=[33m201[39m 88.078 ms - 208 bytes
+[90m2025-07-05 16:38:22[39m [INFO] : GET /api/address/ status=[33m200[39m 8.689 ms - 4781 bytes
+[90m2025-07-05 16:40:45[39m [INFO] : DELETE /api/address/13 status=[33m200[39m 526.467 ms - 62 bytes
+[90m2025-07-05 16:41:02[39m [INFO] : GET /api/address/ status=[33m200[39m 64.211 ms - 4456 bytes
+[90m2025-07-05 16:41:12[39m [INFO] : DELETE /api/address/12 status=[33m200[39m 322.082 ms - 62 bytes
+[90m2025-07-05 16:44:53[39m [INFO] : DELETE /api/address/4 status=[33m200[39m 520.018 ms - 62 bytes

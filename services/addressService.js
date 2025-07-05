@@ -1,3 +1,4 @@
+const { Pool } = require("pg");
 const pool = require("../db");
 const supabase = require("../lib/supabase");
 
@@ -197,4 +198,45 @@ async function updateAddress(
   return fetchRes.rows[0];
 }
 
-module.exports = { addAddress, getAllAddress, updateAddress };
+async function removeAddress(userId, addressId) {
+  const row = await pool.query(
+    `
+    select image_url from
+    location_image 
+    where address_id=$1
+    `,
+    [addressId]
+  );
+
+  if (row.rows.length > 0 && row.rows[0].image_url) {
+    const imageURl = row.rows[0].image_url;
+
+    const url = new URL(imageURl);
+
+    const part = url.pathname.split("/address/");
+
+    const path = part[1];
+
+    const { error: RemoveErr } = await supabase.storage
+      .from("address")
+      .remove([path]);
+
+    if (RemoveErr) throw RemoveErr;
+  }
+
+  const result = await pool.query(
+    `
+    delete from user_address
+    where user_id=$1 and id=$2
+    `,
+    [userId, addressId]
+  );
+
+  if (result.rowCount === 0) {
+    throw new Error(`Failed to delete address with id=${id}`);
+  }
+
+  return result.rowCount;
+}
+
+module.exports = { addAddress, getAllAddress, updateAddress, removeAddress };

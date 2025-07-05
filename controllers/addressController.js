@@ -2,6 +2,7 @@ const {
   addAddress,
   getAllAddress,
   updateAddress,
+  removeAddress,
 } = require("../services/addressService");
 
 async function createAddress(req, res, next) {
@@ -113,4 +114,30 @@ async function editAddress(req, res, next) {
   }
 }
 
-module.exports = { createAddress, fetchAllAddress, editAddress };
+async function deleteAddress(req, res, next) {
+  const userId = req.userId;
+
+  if (!userId) {
+    return res.status(401).json({ error: "Invalid user" });
+  }
+
+  const addressId = req.params.id;
+
+  if (!addressId) {
+    return res.status(401).json({ error: `Can't find address with id=${id}` });
+  }
+
+  try {
+    await removeAddress(userId, addressId);
+
+    return res.status(200).json({
+      error: false,
+      success: true,
+      message: "Delete successfully",
+    });
+  } catch (e) {
+    return next(e);
+  }
+}
+
+module.exports = { createAddress, fetchAllAddress, editAddress, deleteAddress };
