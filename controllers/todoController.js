@@ -160,31 +160,57 @@ async function editTodo(req, res, next) {
   }
 }
 
+// async function remove(req, res, next) {
+//   const userId = req.userId;
+//   const id = req.params.id;
+
+//   if (!userId) {
+//     return res.status(401).json({ error: "Invalid user" });
+//   }
+
+//   try {
+//     const result = await pool.query(
+//       `
+//         delete from todo
+//         where id=$1 and user_id=$2
+//         `,
+//       [id, userId]
+//     );
+
+//     if (result.rowCount === 0) {
+//       res.status(404).json({ error: `Failed to delete with id=${id}` });
+//     }
+
+//     return res.status(200).json({
+//       error: false,
+//       success: true,
+//       message: `Delete id=${id} success`,
+//     });
+//   } catch (e) {
+//     return next(e);
+//   }
+// }
+
 async function remove(req, res, next) {
   const userId = req.userId;
-  const id = req.params.id;
 
   if (!userId) {
     return res.status(401).json({ error: "Invalid user" });
   }
 
-  try {
-    const result = await pool.query(
-      `
-        delete from todo
-        where id=$1 and user_id=$2
-        `,
-      [id, userId]
-    );
+  const todoId = req.params.id;
 
-    if (result.rowCount === 0) {
-      res.status(404).json({ error: `Failed to delete with id=${id}` });
-    }
+  if (!todoId) {
+    return res.status(401).json({ error: `Can't find todo with id=${id}` });
+  }
+
+  try {
+    await todoService.removeTodo(userId, todoId);
 
     return res.status(200).json({
       error: false,
       success: true,
-      message: `Delete id=${id} success`,
+      message: "Delete success",
     });
   } catch (e) {
     return next(e);

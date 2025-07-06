@@ -239,4 +239,49 @@ async function removeAddress(userId, addressId) {
   return result.rowCount;
 }
 
-module.exports = { addAddress, getAllAddress, updateAddress, removeAddress };
+async function createMultiItem(userId, items) {
+  const values = [];
+
+  const placeholders = items
+    .map((item, idx) => {
+      values.push(
+        item.label,
+        item.street,
+        item.city,
+        item.state,
+        item.country,
+        item.postalCode,
+        userId
+      );
+
+      const i = idx * 7 + 1;
+
+      return `($${i}, $${i + 1} , $${i + 2} , $${i + 3} ,$${i + 4},$${i + 5},$${
+        i + 6
+      })`;
+    })
+    .join(", \n");
+
+  const { rows } = await pool.query(
+    `
+      insert into user_address
+      (label,street,city,state,country,postal_code,user_id)
+      values
+      ${placeholders}
+      returning *
+      `,
+    values
+  );
+
+  
+
+  return rows;
+}
+
+module.exports = {
+  addAddress,
+  getAllAddress,
+  updateAddress,
+  removeAddress,
+  createMultiItem,
+};

@@ -367,4 +367,50 @@ async function putTodo(
   return editedTodo;
 }
 
-module.exports = { deleteMany, changeStatus, createTodo, getAll, putTodo };
+async function removeTodo(userId, todoId) {
+  const { rows } = await pool.query(
+    `
+    select image_url
+    from todo_image
+    where todo_id=$1
+    `,
+    [todoId]
+  );
+
+  if (rows.length > 0 && rows[0].image_url) {
+    const imageURl = rows[0].image_url;
+
+    const url = new URL(imageURl);
+
+    const part = url.pathname.split("/todo-images/");
+
+    const path = part[1];
+
+    const { error: RemoveErr } = await supabase.storage
+      .from("todo-images")
+      .remove([path]);
+    if (RemoveErr) throw RemoveErr;
+  }
+
+  const result = await pool.query(
+    `
+    delete from todo
+    where user_id=$1 and id=$2
+    `,
+    [userId, todoId]
+  );
+
+  if (result.rowCount === 0) {
+    throw new Error(`Failed to remove todo with id=${todoId}`);
+  }
+  return result.rowCount;
+}
+
+module.exports = {
+  deleteMany,
+  changeStatus,
+  createTodo,
+  getAll,
+  putTodo,
+  removeTodo,
+};

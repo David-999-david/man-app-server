@@ -3,6 +3,8 @@ const {
   getAllAddress,
   updateAddress,
   removeAddress,
+  createMultiAddress,
+  createMultiItem,
 } = require("../services/addressService");
 
 async function createAddress(req, res, next) {
@@ -140,4 +142,34 @@ async function deleteAddress(req, res, next) {
   }
 }
 
-module.exports = { createAddress, fetchAllAddress, editAddress, deleteAddress };
+async function addMultiItems(req, res, next) {
+  const userId = req.userId;
+
+  if (!userId) {
+    return res.status(401).json({
+      error: "Invalid user",
+    });
+  }
+
+  const items = req.body.items;
+
+  if (!Array.isArray(items) || items.length === 0) {
+    return res.status(401).json({
+      error: "Address list is empty",
+    });
+  }
+
+  try {
+    const created = await createMultiItem(userId, items);
+
+    return res.status(201).json({
+      error: false,
+      success: true,
+      data: created,
+    });
+  } catch (e) {
+    return next(e);
+  }
+}
+
+module.exports = { createAddress, fetchAllAddress, editAddress, deleteAddress,addMultiItems };
