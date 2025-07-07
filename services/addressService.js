@@ -88,7 +88,7 @@ async function getAllAddress(userId) {
     'url',i.image_url,
     'imageDesc',i.description
     )
-    ) filter (where i.image_url is not null),
+    ) filter (where i.id is not null),
      '[]'::jsonb
     ) as images
      from user_address as a
@@ -240,42 +240,91 @@ async function removeAddress(userId, addressId) {
 }
 
 async function createMultiItem(userId, items) {
-  const values = [];
-
-  const placeholders = items
+  const parentValues = [];
+  const parentPh = items
     .map((item, idx) => {
-      values.push(
+      parentValues.push(
+        userId,
         item.label,
         item.street,
         item.city,
         item.state,
         item.country,
-        item.postalCode,
-        userId
+        item.postalCode
       );
-
       const i = idx * 7 + 1;
 
-      return `($${i}, $${i + 1} , $${i + 2} , $${i + 3} ,$${i + 4},$${i + 5},$${
+      return `($${i},$${i + 1},$${i + 2},$${i + 3},$${i + 4},$${i + 5},$${
         i + 6
       })`;
     })
-    .join(", \n");
+    .join(",\n");
 
-  const { rows } = await pool.query(
+  const { rows: AddressRows } = await pool.query(
     `
       insert into user_address
-      (label,street,city,state,country,postal_code,user_id)
+      (user_id,label,street,city,state,country,postal_code)
       values
-      ${placeholders}
-      returning *
+      
+      ${parentPh}
+      returning id
       `,
-    values
+    parentValues
   );
 
-  
+  const childValues = [];
 
-  return rows;
+  const childPh = [];
+
+  AddressRows.forEach((address, idx) => {
+    const desc = items[idx].imageDesc;
+
+    if (desc) {
+      childValues.push(address.id, desc);
+
+      const i = childValues.length - 1;
+
+      childPh.push(`($${i},$${i + 1})`);
+    }
+  });
+
+  if (childPh.length) {
+    await pool.query(
+      `
+      insert into location_image
+      (address_id,description)
+      values
+      ${childPh.join(",\n")}
+      `,
+      childValues
+    );
+  }
+
+  const { rows: Created } = await pool.query(
+    `
+    select a.*,
+    coalesce(
+    jsonb_agg(
+    jsonb_build_object(
+    'id',i.id,
+    'description',i.description
+    ) 
+    ) filter (where i.id is not null),
+     '[]'::jsonb
+    ) as images
+     from user_address as a
+     left join location_image as i
+     on i.address_id = a.id
+     where a.user_id = $1
+     and
+     a.id = any($2::int[])
+     group by a.id
+     order by a.created_at desc
+    `,
+    [userId, AddressRows.map((a) => a.id)]
+  );
+
+  return Created;
 }
 
 module.exports = {
