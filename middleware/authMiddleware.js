@@ -11,21 +11,14 @@ module.exports = function authorizationCheck(req, res, next) {
     return next(err);
   }
 
-  const parts = header.split(" ");
-  if (parts.length !== 2 || parts[0].toLowerCase() !== "bearer") {
+  const [schema, token] = header.split(" ");
+  if (schema.toLowerCase() !== "bearer" || !token) {
     const err = new Error("Authorization part is not match");
     err.status = 401;
     return next(err);
   }
 
-  const token = parts[1];
-  if (!token) {
-    const err = new Error("Token is missing");
-    err.status = 401;
-    return next(err);
-  }
-
-  jwt.verify(token, JWT_SECRET, (err, payload) => {
+  jwt.verify(token, JWT_SECRET, { algorithms: ["HS256"] }, (err, payload) => {
     if (err) {
       err.status = 401;
       return next(err);

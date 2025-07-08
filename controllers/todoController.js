@@ -294,6 +294,36 @@ async function updateStatus(req, res, next) {
   }
 }
 
+async function insertManyTodo(req, res, next) {
+  const userId = req.userId;
+
+  if (!userId) {
+    return res.status(401).json({
+      error: "Invalid user",
+    });
+  }
+
+  const items = req.body.items;
+
+  if (Array.isArray(items) || items.lenght === 0) {
+    return res.status(401).json({
+      error: "Missing require fileds.",
+    });
+  }
+
+  try {
+    const createdItems = await todoService.createManyTdodo(userId, items);
+
+    return res.status(201).json({
+      error: false,
+      success: true,
+      createdItems,
+    });
+  } catch (e) {
+    return next(e);
+  }
+}
+
 module.exports = {
   createTodo,
   getAllTodo,
@@ -303,4 +333,5 @@ module.exports = {
   removeAll,
   removeMany,
   updateStatus,
+  insertManyTodo,
 };

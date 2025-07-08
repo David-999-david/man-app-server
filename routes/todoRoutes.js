@@ -9,6 +9,7 @@ const {
   removeAll,
   removeMany,
   updateStatus,
+  insertManyTodo,
 } = require("../controllers/todoController");
 const multer = require("multer");
 const upload = multer();
@@ -30,5 +31,7 @@ router.delete("/:id", authMiddleware, remove);
 router.delete("/", authMiddleware, removeAll);
 
 router.put("/status/:id", authMiddleware, updateStatus);
+
+router.post("/bulk", authMiddleware, insertManyTodo);
 
 module.exports = router;

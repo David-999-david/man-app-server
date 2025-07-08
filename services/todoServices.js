@@ -406,6 +406,83 @@ async function removeTodo(userId, todoId) {
   return result.rowCount;
 }
 
+async function createManyTdodo(userId, items) {
+  const parentValues = [];
+  const parentPh = items
+    .map((item, idx) => {
+      parentValues.push(userId, item.title, item.description);
+
+      const i = idx * 3 + 1;
+
+      return `($${i}, $${i + 1}, $${i + 2})`;
+    })
+    .join(",\n");
+
+  const { rows: todoRows } = await pool.query(
+    `
+    insert into todo
+    (user_id,title,description)
+    values
+    ${parentPh}
+    returning id
+    `,
+    parentValues
+  );
+
+  const childValues = [];
+  const childPh = [];
+
+  todoRows.forEach((todo, idx) => {
+    const imageDesc = items[idx].imageDesc;
+
+    if (!imageDesc) return;
+
+    const i = childValues.length + 1;
+
+    childValues.push(todo.id, imageDesc);
+
+    childPh.push(`($${i},$${i + 1})`);
+  });
+
+  if (childPh.length) {
+    await pool.query(
+      `
+      insert into todo_image
+      (todo_id,description)
+      values
+      ${childPh.join(",\n")}
+
+      `,
+      childValues
+    );
+  }
+
+  const { rows: createdAll } = await pool.query(
+    `
+    select t.*,
+    coalesce(
+    jsonb_agg(
+    jsonb_build_object(
+    'imageId',i.id,
+    'imageDesc',i.description
+    )
+    ) filter (where i.id is not null),
+     '[]'::jsonb
+    ) as images
+     from todo as t
+     left join todo_image as i
+     on i.todo_id = t.id
+     where t.user_id=$1 and
+     t.id=any($2::int[])
+     group by t.id
+     order by t.created_at desc
+    `,
+    [userId, todoRows.map((todo) => todo.id)]
+  );
+
+  return createdAll;
+}
+
 module.exports = {
   deleteMany,
   changeStatus,
@@ -413,4 +490,5 @@ module.exports = {
   getAll,
   putTodo,
   removeTodo,
+  createManyTdodo,
 };
