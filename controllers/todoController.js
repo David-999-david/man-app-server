@@ -305,7 +305,7 @@ async function insertManyTodo(req, res, next) {
 
   const items = req.body.items;
 
-  if (Array.isArray(items) || items.lenght === 0) {
+  if (!Array.isArray(items) || items.length === 0) {
     return res.status(401).json({
       error: "Missing require fileds.",
     });
