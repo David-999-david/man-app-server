@@ -2,6 +2,8 @@ const pool = require("../db.js");
 
 const todoService = require("../services/todoServices.js");
 
+const qs = require('qs');
+
 async function createTodo(req, res, next) {
   try {
     const { title, description, imageDescription } = req.body;
@@ -303,16 +305,30 @@ async function insertManyTodo(req, res, next) {
     });
   }
 
-  const items = req.body.items;
+  const praseBody = qs.parse(req.body);
 
-  if (!Array.isArray(items) || items.length === 0) {
-    return res.status(401).json({
-      error: "Missing require fileds.",
-    });
-  }
+  const fileByField = Object.fromEntries(
+    req.files.map((file) => [file.fieldname, file])
+  );
+
+  const itemsWithFile = praseBody.items.map((item, idx) => {
+    const upload = fileByField[`items[${idx}][file]`] || null;
+
+    return {
+      title: item.title,
+      description: item.description,
+      imageDesc: item.imageDesc,
+      file: upload
+        ? {
+            originalName: upload.originalname,
+            fileBuffer: upload.buffer,
+          }
+        : null,
+    };
+  });
 
   try {
-    const createdItems = await todoService.createManyTdodo(userId, items);
+    const createdItems = await todoService.many(userId, itemsWithFile);
 
     return res.status(201).json({
       error: false,

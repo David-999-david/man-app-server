@@ -1,3 +1,4 @@
+const { exceptions } = require("winston");
 const pool = require("../db");
 const supabase = require("../lib/supabase");
 
@@ -173,7 +174,7 @@ async function getAll(userId, q, page, limit) {
       'url', i.image_url,
       'imageDesc',i.description
       )
-      ) filter (where i.image_url is not null),
+      ) filter (where i.id is not null),
        '[]'::jsonb
       ) as images
        from todo as t
@@ -222,7 +223,7 @@ async function getAll(userId, q, page, limit) {
       'url', i.image_url,
       'imageDesc',i.description
       )
-      ) filter (where i.image_url is not null),
+      ) filter (where i.id is not null),
        '[]'::jsonb
       ) as images
        from todo as t
@@ -435,20 +436,44 @@ async function createManyTdodo(userId, items) {
   todoRows.forEach((todo, idx) => {
     const imageDesc = items[idx].imageDesc;
 
-    if (!imageDesc) return;
-
     const i = childValues.length + 1;
 
-    childValues.push(todo.id, imageDesc);
+    const originalName = items[idx].originalName;
 
-    childPh.push(`($${i},$${i + 1})`);
+    const fileBuffer = items[idx].filebuffer;
+
+    if (!originalName) return;
+
+    const ext = originalName.split(".").pop();
+
+    const path = `${todo.id}.${ext}`;
+
+    const { error: UpErr } = supabase.storage
+      .from("todo-images")
+      .upload(path, fileBuffer, { contentType: `image/${ext}` });
+
+    if (UpErr) throw UpErr;
+
+    const { data, error: UrlErr } = supabase.storage
+      .from("todo-images")
+      .getPublicUrl(path);
+
+    if (UrlErr) throw UrlErr;
+
+    const url = data.publicUrl;
+
+    if (!imageDesc) return;
+
+    childValues.push(todo.id, imageDesc, url);
+
+    childPh.push(`($${i},$${i + 1}, $${i + 2})`);
   });
 
   if (childPh.length) {
     await pool.query(
       `
       insert into todo_image
-      (todo_id,description)
+      (todo_id,description,image_url)
       values
       ${childPh.join(",\n")}
 
@@ -464,7 +489,8 @@ async function createManyTdodo(userId, items) {
     jsonb_agg(
     jsonb_build_object(
     'imageId',i.id,
-    'imageDesc',i.description
+    'imageDesc',i.description,
+    'imageUrl',i.image_url
     )
     ) filter (where i.id is not null),
      '[]'::jsonb
@@ -483,6 +509,116 @@ async function createManyTdodo(userId, items) {
   return createdAll;
 }
 
+async function many(userId, items) {
+  const parentValues = [];
+  const parentPh = items
+    .map((item, idx) => {
+      parentValues.push(userId, item.title, item.description);
+
+      const i = idx * 3 + 1;
+
+      return `($${i},$${i + 1},$${i + 2})`;
+    })
+    .join(",\n");
+
+  const { rows: todoRows } = await pool.query(
+    `
+      insert into todo
+      (user_id,title,description)
+      values
+      ${parentPh}
+      returning id
+      `,
+    parentValues
+  );
+
+  if (todoRows.length === 0) {
+    throw new Error("No insert todo row.");
+  }
+
+  const childValues = [];
+
+  const childPh = [];
+
+  for (var i = 0; i < todoRows.length; i++) {
+    const todoId = todoRows[i].id;
+
+    const imageDesc = items[i].imageDesc;
+    const file = items[i].file;
+
+    const start = childValues.length + 1;
+
+    if (!imageDesc && !file) continue;
+
+    let url = null;
+    if (file) {
+      const filebuffer = file.fileBuffer;
+      const originalName = file.originalName;
+
+      const ext = originalName.split(".").pop();
+      const path = `${todoId}.${ext}`;
+
+      const { error: UpErr } = await supabase.storage
+        .from("todo-images")
+        .upload(path, filebuffer, { contentType: `image/${ext}` });
+      if (UpErr) throw UpErr;
+
+      const { data, error: UrlErr } = await supabase.storage
+        .from("todo-images")
+        .getPublicUrl(path);
+      if (UrlErr) throw UrlErr;
+
+      url = data.publicUrl;
+    }
+
+    const desc = imageDesc ? imageDesc : null;
+    const imageUrl = url ? url : null;
+
+    childValues.push(todoId, imageUrl, desc);
+
+    childPh.push(`($${start},$${start + 1},$${start + 2})`);
+  }
+
+  if (childPh.length) {
+    await pool.query(
+      `
+    insert into todo_image
+    (todo_id,image_url,description)
+    values
+    ${childPh.join(",\n")}
+    `,
+      childValues
+    );
+  }
+
+  const { rows: createdRows } = await pool.query(
+    `
+    select t.*,
+    coalesce(
+    jsonb_agg(
+    jsonb_build_object(
+    'id',i.id,
+    'url',i.image_url,
+    'imageDesc',i.description
+    )
+    ) filter (where i.id is not null),
+     '[]'::jsonb
+    ) as images
+     from todo as t
+     left join todo_image as i
+     on i.todo_id = t.id
+     where t.user_id=$1
+     and 
+     t.id =any($2::int[])
+     group by t.id
+     order by t.created_at desc
+    `,
+    [userId, todoRows.map((t) => t.id)]
+  );
+
+  return createdRows;
+}
+
 module.exports = {
   deleteMany,
   changeStatus,
@@ -490,5 +626,5 @@ module.exports = {
   getAll,
   putTodo,
   removeTodo,
-  createManyTdodo,
+  many,
 };

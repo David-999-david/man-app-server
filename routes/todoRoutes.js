@@ -32,6 +32,6 @@ router.delete("/", authMiddleware, removeAll);
 
 router.put("/status/:id", authMiddleware, updateStatus);
 
-router.post("/bulk", authMiddleware, insertManyTodo);
+router.post("/bulk", authMiddleware, upload.any(), insertManyTodo);
 
 module.exports = router;

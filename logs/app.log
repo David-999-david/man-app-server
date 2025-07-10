@@ -5347,3 +5347,302 @@ PSQL pool connected successfully!
 [90m2025-07-09 08:15:04[39m [INFO] : PSQL pool connected successfully!
 [90m2025-07-09 08:15:09[39m [INFO] : POST /api/todos/bulk status=[33m201[39m 53.102 ms - 441 bytes
 [90m2025-07-09 08:15:10[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.240 ms - 5120 bytes
+[90m2025-07-10 13:26:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 13:31:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 13:31:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 13:31:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 13:35:15[39m [INFO] : POST /api/auth/signin status=[33m200[39m 141.539 ms - 497 bytes
+[90m2025-07-10 13:35:15[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 21.577 ms - 5120 bytes
+[90m2025-07-10 13:35:44[39m [INFO] : GET /api/me - Request receive: userId=[36m40[39m
+[90m2025-07-10 13:35:44[39m [INFO] : GET /api/auth/me status=[33m201[39m 37.651 ms - 208 bytes
+[90m2025-07-10 13:36:57[39m [INFO] : Email had already taken! : status=[33m401[39m
+[90m2025-07-10 13:36:57[39m [INFO] : POST /api/auth/signup status=[33m401[39m 37.263 ms - 36 bytes
+[90m2025-07-10 13:45:57[39m [INFO] : Email had already taken! : status=[33m401[39m
+[90m2025-07-10 13:45:57[39m [INFO] : POST /api/auth/signup status=[33m401[39m 141.815 ms - 36 bytes
+[90m2025-07-10 13:49:42[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 13:49:49[39m [INFO] : POST /api/auth/signup status=[33m201[39m 91.257 ms - 493 bytes
+[90m2025-07-10 13:49:49[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.500 ms - 114 bytes
+[90m2025-07-10 13:49:55[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 13:49:55[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.630 ms - 133 bytes
+[90m2025-07-10 14:01:49[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 14:01:49[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 44.823 ms - 438 bytes
+[90m2025-07-10 14:01:49[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.999 ms - 114 bytes
+[90m2025-07-10 14:01:49[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 14:01:49[39m [INFO] : GET /api/auth/me status=[33m201[39m 3.222 ms - 133 bytes
+[90m2025-07-10 14:01:51[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.434 ms - 114 bytes
+[90m2025-07-10 14:01:52[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 14:01:52[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.369 ms - 133 bytes
+[90m2025-07-10 14:04:23[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 14:04:23[39m [INFO] : GET /api/auth/me status=[33m201[39m 38.007 ms - 133 bytes
+[90m2025-07-10 14:06:09[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 14:06:09[39m [INFO] : GET /api/auth/me status=[33m201[39m 145.287 ms - 133 bytes
+[90m2025-07-10 14:08:36[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 14:08:36[39m [INFO] : GET /api/auth/me status=[33m201[39m 38.854 ms - 133 bytes
+[90m2025-07-10 14:08:51[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 14:08:51[39m [INFO] : GET /api/auth/me status=[33m201[39m 39.080 ms - 133 bytes
+[90m2025-07-10 14:16:06[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 14:16:06[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 41.615 ms - 438 bytes
+[90m2025-07-10 14:16:06[39m [INFO] : GET /api/address/ status=[33m200[39m 7.003 ms - 46 bytes
+[90m2025-07-10 14:23:27[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 40.489 ms - 114 bytes
+[90m2025-07-10 14:57:36[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 14:57:36[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 72.720 ms - 438 bytes
+[90m2025-07-10 14:57:36[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 8.671 ms - 114 bytes
+[90m2025-07-10 14:57:50[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 14:57:50[39m [INFO] : GET /api/auth/me status=[33m201[39m 80.254 ms - 133 bytes
+[90m2025-07-10 14:57:58[39m [INFO] : GET /api/address/ status=[33m200[39m 7.782 ms - 46 bytes
+[90m2025-07-10 14:58:02[39m [INFO] : GET /api/address/ status=[33m200[39m 3.596 ms - 46 bytes
+[90m2025-07-10 14:59:15[39m [INFO] : GET /api/address/ status=[33m200[39m 161.485 ms - 46 bytes
+[90m2025-07-10 15:01:26[39m [INFO] : GET /api/address/ status=[33m200[39m 62.205 ms - 46 bytes
+[90m2025-07-10 15:02:51[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 73.886 ms - 114 bytes
+[90m2025-07-10 15:36:20[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 15:36:20[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 96.153 ms - 438 bytes
+[90m2025-07-10 15:36:21[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.795 ms - 114 bytes
+[90m2025-07-10 15:50:30[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 15:50:30[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 99.519 ms - 438 bytes
+[90m2025-07-10 15:50:30[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 13.816 ms - 114 bytes
+[90m2025-07-10 15:51:14[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 15:51:14[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 69.118 ms - 438 bytes
+[90m2025-07-10 15:51:15[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 10.535 ms - 114 bytes
+[90m2025-07-10 15:53:22[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 15:53:22[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 64.524 ms - 438 bytes
+[90m2025-07-10 15:53:23[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.847 ms - 114 bytes
+[90m2025-07-10 15:54:22[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 15:54:22[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 103.320 ms - 438 bytes
+[90m2025-07-10 15:54:23[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 10.959 ms - 114 bytes
+[90m2025-07-10 16:04:39[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 16:04:39[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 44.517 ms - 438 bytes
+[90m2025-07-10 16:04:40[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.660 ms - 114 bytes
+[90m2025-07-10 16:05:50[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 16:05:50[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 42.322 ms - 438 bytes
+[90m2025-07-10 16:05:51[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 4.773 ms - 114 bytes
+[90m2025-07-10 16:15:06[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 16:15:06[39m [INFO] : GET /api/auth/me status=[33m201[39m 41.962 ms - 133 bytes
+[90m2025-07-10 16:15:09[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.901 ms - 114 bytes
+[90m2025-07-10 16:15:09[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 16:15:09[39m [INFO] : GET /api/auth/me status=[33m201[39m 2.604 ms - 133 bytes
+[90m2025-07-10 16:16:47[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 16:16:47[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 46.344 ms - 438 bytes
+[90m2025-07-10 16:16:47[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 16:16:47[39m [INFO] : GET /api/auth/me status=[33m201[39m 1.837 ms - 133 bytes
+[90m2025-07-10 16:16:49[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.982 ms - 114 bytes
+[90m2025-07-10 16:16:52[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.117 ms - 114 bytes
+[90m2025-07-10 16:17:04[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 16:17:04[39m [INFO] : GET /api/auth/me status=[33m201[39m 38.276 ms - 133 bytes
+[90m2025-07-10 16:17:05[39m [INFO] : GET /api/address/ status=[33m200[39m 4.829 ms - 46 bytes
+[90m2025-07-10 16:17:08[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.139 ms - 114 bytes
+[90m2025-07-10 18:58:59[39m [INFO] : POST /api/auth/signin status=[33m200[39m 159.469 ms - 512 bytes
+[90m2025-07-10 18:59:00[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.155 ms - 114 bytes
+[90m2025-07-10 19:03:29[39m [INFO] : Error: Multipart: Boundary not found,Error: Multipart: Boundary not found
+    at new Multipart (C:\Users\user\Desktop\man-app-server\node_modules\busboy\lib\types\multipart.js:233:13)
+    at getInstance (C:\Users\user\Desktop\man-app-server\node_modules\busboy\lib\index.js:33:12)
+    at module.exports (C:\Users\user\Desktop\man-app-server\node_modules\busboy\lib\index.js:56:10)
+    at multerMiddleware (C:\Users\user\Desktop\man-app-server\node_modules\multer\lib\make-middleware.js:38:16)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at C:\Users\user\Desktop\man-app-server\middleware\authMiddleware.js:27:5
+    at C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:261:12
+    at getSecret (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\user\Desktop\man-app-server\node_modules\jsonwebtoken\verify.js:101:10)
+[90m2025-07-10 19:03:29[39m [INFO] : POST /api/todos/bulk status=[33m500[39m 8.608 ms - 41 bytes
+[90m2025-07-10 19:25:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 19:26:35[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 19:26:35[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 90.408 ms - 438 bytes
+[90m2025-07-10 19:26:37[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 11.774 ms - 114 bytes
+[90m2025-07-10 19:29:10[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 19:29:10[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 46.921 ms - 438 bytes
+[90m2025-07-10 19:29:11[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.188 ms - 114 bytes
+[90m2025-07-10 19:34:46[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 19:34:46[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 49.872 ms - 438 bytes
+[90m2025-07-10 19:34:47[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.303 ms - 114 bytes
+[90m2025-07-10 19:35:18[39m [INFO] : Error: qs is not defined,ReferenceError: qs is not defined
+    at insertManyTodo (C:\Users\user\Desktop\man-app-server\controllers\todoController.js:306:21)
+    at Layer.handleRequest (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user\Desktop\man-app-server\node_modules\router\lib\route.js:157:13)
+    at done (C:\Users\user\Desktop\man-app-server\node_modules\multer\lib\make-middleware.js:59:7)
+    at indicateDone (C:\Users\user\Desktop\man-app-server\node_modules\multer\lib\make-middleware.js:63:68)
+    at Multipart.<anonymous> (C:\Users\user\Desktop\man-app-server\node_modules\multer\lib\make-middleware.js:182:7)
+    at Multipart.emit (node:events:518:28)
+    at emitCloseNT (node:internal/streams/destroy:148:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+[90m2025-07-10 19:35:18[39m [INFO] : POST /api/todos/bulk status=[33m500[39m 27.110 ms - 29 bytes
+[90m2025-07-10 19:36:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 19:36:06[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 19:36:13[39m [INFO] : Error: syntax error at or near "$1",error: syntax error at or near "$1"
+    at C:\Users\user\Desktop\man-app-server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.many (C:\Users\user\Desktop\man-app-server\services\todoServices.js:524:30)
+    at async insertManyTodo (C:\Users\user\Desktop\man-app-server\controllers\todoController.js:331:26)
+[90m2025-07-10 19:36:13[39m [INFO] : POST /api/todos/bulk status=[33m500[39m 17.292 ms - 42 bytes
+[90m2025-07-10 19:37:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 19:37:57[39m [INFO] : POST /api/todos/bulk status=[33m201[39m 1387.887 ms - 343 bytes
+[90m2025-07-10 19:39:21[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 19:39:21[39m [INFO] : GET /api/auth/me status=[33m201[39m 40.516 ms - 133 bytes
+[90m2025-07-10 19:39:22[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.806 ms - 401 bytes
+[90m2025-07-10 19:45:39[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 19:45:39[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 55.495 ms - 438 bytes
+[90m2025-07-10 19:45:40[39m [INFO] : POST /api/todos/bulk status=[33m201[39m 1088.918 ms - 342 bytes
+[90m2025-07-10 19:45:49[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.754 ms - 688 bytes
+[90m2025-07-10 19:50:42[39m [INFO] : POST /api/todos/bulk status=[33m201[39m 2286.798 ms - 639 bytes
+[90m2025-07-10 19:53:41[39m [INFO] : POST /api/todos/bulk status=[33m201[39m 1961.784 ms - 641 bytes
+[90m2025-07-10 19:53:41[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.180 ms - 1842 bytes
+[90m2025-07-10 19:53:55[39m [INFO] : PUT /api/todos/status/99 status=[33m200[39m 41.457 ms - 316 bytes
+[90m2025-07-10 19:53:59[39m [INFO] : PUT /api/todos/status/100 status=[33m200[39m 6.136 ms - 320 bytes
+[90m2025-07-10 19:54:02[39m [INFO] : PUT /api/todos/status/97 status=[33m200[39m 8.278 ms - 316 bytes
+[90m2025-07-10 19:54:04[39m [INFO] : PUT /api/todos/status/98 status=[33m200[39m 3.387 ms - 318 bytes
+[90m2025-07-10 19:54:06[39m [INFO] : PUT /api/todos/status/97 status=[33m200[39m 3.021 ms - 317 bytes
+[90m2025-07-10 19:55:00[39m [INFO] : PUT /api/todos/98 status=[33m200[39m 1288.286 ms - 355 bytes
+[90m2025-07-10 19:55:00[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.878 ms - 1836 bytes
+[90m2025-07-10 19:55:11[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 38.203 ms - 1836 bytes
+[90m2025-07-10 19:57:02[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 19:57:02[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 45.920 ms - 438 bytes
+[90m2025-07-10 19:57:03[39m [INFO] : PUT /api/todos/98 status=[33m200[39m 606.998 ms - 355 bytes
+[90m2025-07-10 19:57:03[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.094 ms - 1836 bytes
+[90m2025-07-10 19:57:30[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 46.007 ms - 1836 bytes
+[90m2025-07-10 19:59:03[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 19:59:03[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 42.206 ms - 438 bytes
+[90m2025-07-10 19:59:04[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.337 ms - 1836 bytes
+[90m2025-07-10 20:00:03[39m [INFO] : POST /api/todos/bulk status=[33m201[39m 44.688 ms - 250 bytes
+[90m2025-07-10 20:00:15[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 39.360 ms - 2002 bytes
+[90m2025-07-10 20:01:31[39m [INFO] : POST /api/todos/bulk status=[33m201[39m 44.425 ms - 253 bytes
+[90m2025-07-10 20:01:36[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.505 ms - 2172 bytes
+[90m2025-07-10 20:06:29[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:06:35[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 14.231 ms - 2172 bytes
+[90m2025-07-10 20:06:44[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 20:06:44[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 22.793 ms - 438 bytes
+[90m2025-07-10 20:06:45[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.793 ms - 2172 bytes
+[90m2025-07-10 20:07:09[39m [INFO] : POST /api/todos/bulk status=[33m201[39m 51.911 ms - 252 bytes
+[90m2025-07-10 20:07:17[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 2.938 ms - 2338 bytes
+[90m2025-07-10 20:07:24[39m [INFO] : PUT /api/todos/status/103 status=[33m200[39m 6.358 ms - 195 bytes
+[90m2025-07-10 20:07:28[39m [INFO] : PUT /api/todos/status/103 status=[33m200[39m 4.394 ms - 196 bytes
+[90m2025-07-10 20:11:18[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 134.910 ms - 2338 bytes
+[90m2025-07-10 20:12:41[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 38.767 ms - 2338 bytes
+[90m2025-07-10 20:13:28[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:13:33[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:14:02[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 57.020 ms - 2426 bytes
+[90m2025-07-10 20:14:16[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 39.792 ms - 2426 bytes
+[90m2025-07-10 20:14:51[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 20:14:51[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 52.399 ms - 438 bytes
+[90m2025-07-10 20:14:52[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.108 ms - 2426 bytes
+[90m2025-07-10 20:15:19[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:15:24[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 20:15:24[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 25.754 ms - 438 bytes
+[90m2025-07-10 20:15:25[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.653 ms - 2426 bytes
+[90m2025-07-10 20:15:30[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:15:31[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:15:34[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:15:39[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 20:15:39[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 26.419 ms - 438 bytes
+[90m2025-07-10 20:15:40[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.445 ms - 2338 bytes
+[90m2025-07-10 20:15:51[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:15:56[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:16:00[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:17:38[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:17:41[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:17:46[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:17:53[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:17:58[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 20:17:58[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 23.813 ms - 438 bytes
+[90m2025-07-10 20:17:59[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.137 ms - 2426 bytes
+[90m2025-07-10 20:25:33[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 48.930 ms - 2426 bytes
+[90m2025-07-10 20:29:17[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 20:29:17[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 150.656 ms - 438 bytes
+[90m2025-07-10 20:29:17[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.196 ms - 2426 bytes
+[90m2025-07-10 20:33:07[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 20:33:07[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 150.643 ms - 438 bytes
+[90m2025-07-10 20:33:07[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.059 ms - 2426 bytes
+[90m2025-07-10 20:37:27[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 20:37:27[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 49.448 ms - 438 bytes
+[90m2025-07-10 20:37:27[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.308 ms - 2426 bytes
+[90m2025-07-10 20:43:19[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 39.948 ms - 2426 bytes
+[90m2025-07-10 20:51:50[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:51:52[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 20:53:31[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 20:53:31[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 171.595 ms - 438 bytes
+[90m2025-07-10 20:53:31[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.377 ms - 2426 bytes
+[90m2025-07-10 20:54:01[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 20:54:01[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 47.821 ms - 438 bytes
+[90m2025-07-10 20:54:02[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.440 ms - 2426 bytes
+[90m2025-07-10 20:59:41[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 20:59:41[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 45.613 ms - 438 bytes
+[90m2025-07-10 20:59:42[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.904 ms - 2426 bytes
+[90m2025-07-10 21:00:18[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 21:00:18[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 153.716 ms - 438 bytes
+[90m2025-07-10 21:00:19[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.764 ms - 2426 bytes
+[90m2025-07-10 21:50:54[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 21:50:56[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 21:50:58[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 21:51:02[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 21:56:20[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 21:56:20[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 135.706 ms - 438 bytes
+[90m2025-07-10 21:56:21[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 52.568 ms - 2338 bytes
+[90m2025-07-10 21:56:56[39m [INFO] : PUT /api/todos/103 status=[33m200[39m 104.354 ms - 236 bytes
+[90m2025-07-10 21:56:56[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 8.065 ms - 2338 bytes
+[90m2025-07-10 21:57:14[39m [INFO] : PUT /api/todos/103 status=[33m200[39m 86.772 ms - 236 bytes
+[90m2025-07-10 21:57:14[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.412 ms - 2338 bytes
+[90m2025-07-10 21:57:23[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 21:57:23[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 29.405 ms - 438 bytes
+[90m2025-07-10 21:57:24[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 3.945 ms - 2338 bytes
+[90m2025-07-10 21:57:49[39m [INFO] : GET /api/me - Request receive: userId=[36m42[39m
+[90m2025-07-10 21:57:49[39m [INFO] : GET /api/auth/me status=[33m201[39m 118.462 ms - 133 bytes
+[90m2025-07-10 21:57:56[39m [INFO] : GET /api/address/ status=[33m200[39m 40.384 ms - 46 bytes
+[90m2025-07-10 21:58:21[39m [INFO] : POST /api/address/bulk status=[33m201[39m 108.590 ms - 266 bytes
+[90m2025-07-10 21:58:21[39m [INFO] : GET /api/address/ status=[33m200[39m 6.083 ms - 273 bytes
+[90m2025-07-10 21:58:37[39m [INFO] : PUT /api/address/44 status=[33m200[39m 125.738 ms - 237 bytes
+[90m2025-07-10 21:58:37[39m [INFO] : GET /api/address/ status=[33m200[39m 3.696 ms - 275 bytes
+[90m2025-07-10 21:58:40[39m [INFO] : GET /api/address/ status=[33m200[39m 3.613 ms - 275 bytes
+[90m2025-07-10 21:59:37[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 72.776 ms - 2338 bytes
+[90m2025-07-10 22:07:50[39m [INFO] : POST /api/auth/signin status=[33m200[39m 166.581 ms - 512 bytes
+[90m2025-07-10 22:08:44[39m [INFO] : GET /api/todos status=[33m200[39m 56.258 ms - 2338 bytes
+[90m2025-07-10 22:09:26[39m [INFO] : PSQL pool connected successfully!
+[90m2025-07-10 22:09:33[39m [INFO] : GET /api/todos status=[33m200[39m 22.441 ms - 2424 bytes
+[90m2025-07-10 22:11:16[39m [INFO] : POST /api/auth/token/refresh status=[33m500[39m 106.967 ms - 33 bytes
+[90m2025-07-10 22:12:13[39m [INFO] : POST /api/auth/signin status=[33m200[39m 217.105 ms - 512 bytes
+[90m2025-07-10 22:12:13[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 11.989 ms - 2424 bytes
+[90m2025-07-10 22:22:26[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:22:26[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 96.489 ms - 438 bytes
+[90m2025-07-10 22:22:27[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 8.730 ms - 2424 bytes
+[90m2025-07-10 22:22:46[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:22:46[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 97.123 ms - 438 bytes
+[90m2025-07-10 22:22:47[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 10.050 ms - 2424 bytes
+[90m2025-07-10 22:23:32[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:23:32[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 77.505 ms - 438 bytes
+[90m2025-07-10 22:23:33[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 10.036 ms - 2424 bytes
+[90m2025-07-10 22:23:57[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:23:57[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 93.808 ms - 438 bytes
+[90m2025-07-10 22:23:58[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.947 ms - 2424 bytes
+[90m2025-07-10 22:39:19[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:39:19[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 108.422 ms - 438 bytes
+[90m2025-07-10 22:39:20[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 14.487 ms - 2424 bytes
+[90m2025-07-10 22:40:15[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:40:15[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 46.158 ms - 438 bytes
+[90m2025-07-10 22:40:15[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.393 ms - 2424 bytes
+[90m2025-07-10 22:42:05[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:42:05[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 42.050 ms - 438 bytes
+[90m2025-07-10 22:42:06[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.275 ms - 2424 bytes
+[90m2025-07-10 22:46:51[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:46:51[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 50.172 ms - 438 bytes
+[90m2025-07-10 22:46:52[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.516 ms - 2424 bytes
+[90m2025-07-10 22:48:12[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:48:12[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 47.061 ms - 438 bytes
+[90m2025-07-10 22:48:13[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.957 ms - 2424 bytes
+[90m2025-07-10 22:50:58[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:50:58[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 47.742 ms - 438 bytes
+[90m2025-07-10 22:50:58[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.103 ms - 2424 bytes
+[90m2025-07-10 22:51:49[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:51:49[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 41.286 ms - 438 bytes
+[90m2025-07-10 22:51:50[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 7.120 ms - 2424 bytes
+[90m2025-07-10 22:53:10[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:53:10[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 45.671 ms - 438 bytes
+[90m2025-07-10 22:53:11[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.762 ms - 2424 bytes
+[90m2025-07-10 22:54:45[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 22:54:45[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 149.474 ms - 438 bytes
+[90m2025-07-10 22:54:46[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.313 ms - 2424 bytes
+[90m2025-07-10 23:06:56[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 23:06:56[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 48.232 ms - 438 bytes
+[90m2025-07-10 23:06:57[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 5.805 ms - 2424 bytes
+[90m2025-07-10 23:20:10[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 23:20:10[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 50.899 ms - 438 bytes
+[90m2025-07-10 23:20:11[39m [INFO] : GET /api/todos/?q=&page=1&limit=20 status=[33m200[39m 6.062 ms - 2424 bytes
+[90m2025-07-10 23:36:01[39m [INFO] : Refresh success => status=[33m201[39m
+[90m2025-07-10 23:36:01[39m [INFO] : POST /api/auth/token/refresh status=[33m201[39m 43.660 ms - 438 bytes
+[90m2025-07-10 23:36:01[39m [INFO] : POST /api/todos/bulk status=[33m201[39m 30.155 ms - 257 bytes
